@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from 'next/link';
 import styles from "@/styles/components/UnderConstruction.module.css";
 
 function UnderConstruction() {
+  const whatsappUrl = 'https://wa.me/17542441721?text=Hi,%20I%20am%20interesting%20of%20knowing%20more%20about%20your%20services!';
   return (
     <section className={styles.main_section_container}>
       <section className={styles.container_full_content}>
@@ -47,9 +49,14 @@ function UnderConstruction() {
               NOTIFY US
             </button>
           </section>
-          <section className={styles.btn_whatsapp}>
-            <FaWhatsapp className={styles.btn_whatsapp_icon} />
-            <span>Whatsapp</span>
+          <section >
+            <Link
+              className={styles.btn_whatsapp}
+              href={whatsappUrl}
+            >
+              <FaWhatsapp className={styles.btn_whatsapp_icon} />
+              <span>Whatsapp</span>
+            </Link>
           </section>
         </article>
       </section>

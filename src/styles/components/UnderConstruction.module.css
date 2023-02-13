@@ -31,8 +31,8 @@
 }
 
 .logo {
-    height: 10.5rem;
-    width: 14rem;
+    height: 14.5rem;
+    width: 18rem;
     margin-bottom: 2rem;
 }
 
@@ -89,6 +89,7 @@
     background: #3cbe44;
     color: var(--grey);
     border-radius: 2rem;
+    text-decoration: none;
     border: none;
     cursor: pointer;
 }
@@ -125,7 +126,7 @@
 .btn_email {
     height: 100%;
     padding: 0 2rem;
-    background: var(--pink);
+    background: var(--blue);
     color: var(--grey);
     border: none;
     border-top-right-radius: 0.5rem;
@@ -153,8 +154,8 @@
     }
 
     .logo {
-        height: 14.5rem;
-        width: 18.5rem;
+        height: 18.5rem;
+        width: 22.5rem;
         margin-bottom: 4rem;
     }
 
