@@ -4,6 +4,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 import styles from "@/styles/components/UnderConstruction.module.css";
 
+const DAY_MILLISECONDS = (1000 * 60 * 60 * 24)
+const HOURS_MILLISECONDS = (1000 * 60 * 60)
+const MINUTES_MILLISECONDS = (1000 * 60)
+const SECONDS_MILLISECONDS = (1000)
+
 function UnderConstruction() {
 
   const [days, setDays] = useState(0)
@@ -12,16 +17,16 @@ function UnderConstruction() {
   const [seconds, setSeconds] = useState(0)
 
   useEffect(() => {
-    const target = new Date('03/10/2023 23:59:59')
+    const target = new Date('03/15/2023 23:59:59')
 
     const interval = setInterval(() => {
       const now = new Date()
       const difference = target.getTime() - now.getTime()
 
-      const DAY_MILLISECONDS = (1000 * 60 * 60 * 24)
-      const HOURS_MILLISECONDS = (1000 * 60 * 60 )
-      const MINUTES_MILLISECONDS = (1000 * 60)
-      const SECONDS_MILLISECONDS = (1000)
+      if (difference <= 0) {
+        clearInterval(interval)
+        return
+      }
 
       const day = Math.floor(difference / DAY_MILLISECONDS)
       setDays(day)
