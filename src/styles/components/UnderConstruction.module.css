@@ -143,7 +143,6 @@
     .section_container_buttons {
         font-size: 3rem;
     }
-
 }
 
 
@@ -190,5 +189,10 @@
 
     .cards_container {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .logo {
+        height: 20.5rem;
+        width: 24.5rem;
     }
 }
