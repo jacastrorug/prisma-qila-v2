@@ -18,16 +18,21 @@ function UnderConstruction() {
       const now = new Date()
       const difference = target.getTime() - now.getTime()
 
-      const day = Math.floor(difference / (1000 * 60 * 60 * 24))
+      const DAY_MILLISECONDS = (1000 * 60 * 60 * 24)
+      const HOURS_MILLISECONDS = (1000 * 60 * 60 )
+      const MINUTES_MILLISECONDS = (1000 * 60)
+      const SECONDS_MILLISECONDS = (1000)
+
+      const day = Math.floor(difference / DAY_MILLISECONDS)
       setDays(day)
 
-      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      const hours = Math.floor((difference % DAY_MILLISECONDS) / HOURS_MILLISECONDS)
       setHours(hours)
 
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+      const minutes = Math.floor((difference % HOURS_MILLISECONDS) / MINUTES_MILLISECONDS)
       setMinutes(minutes)
 
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000)
+      const seconds = Math.floor((difference % MINUTES_MILLISECONDS) / SECONDS_MILLISECONDS)
       setSeconds(seconds)
 
     }, 1000);
@@ -36,7 +41,7 @@ function UnderConstruction() {
   }, [])
 
 
-  const whatsappUrl = 'https://wa.me/17542441721?text=Hi,%20I%20am%20interesting%20of%20knowing%20more%20about%20your%20services!';
+  const whatsappUrl = 'https://wa.me/17542441721?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
   return (
     <section className={styles.main_section_container}>
       <section className={styles.container_full_content}>
@@ -77,7 +82,7 @@ function UnderConstruction() {
               placeholder="Enter your email"
             />
             <button className={styles.btn_email} type="button">
-              NOTIFY US
+              NOTIFY
             </button>
           </section>
           <section >
