@@ -15,7 +15,9 @@ function UnderConstruction() {
             height={100}
             width={100}
           />
-          <p className={styles.main_text}>We are building something great for you!</p>
+          <p className={styles.main_text}>
+            We are building something great for you!
+          </p>
         </section>
         <section className={styles.cards_container}>
           <div className={styles.card_item}>
@@ -44,7 +46,7 @@ function UnderConstruction() {
               placeholder="Enter your email"
             />
             <button className={styles.btn_email} type="button">
-              NOTIFY US
+              Notify
             </button>
           </section>
           <section className={styles.btn_whatsapp}>
