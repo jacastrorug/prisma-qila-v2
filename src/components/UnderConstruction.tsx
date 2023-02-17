@@ -11,6 +11,7 @@ const HOURS_MILLISECONDS = (1000 * 60 * 60)
 const MINUTES_MILLISECONDS = (1000 * 60)
 const SECONDS_MILLISECONDS = (1000)
 
+
 function UnderConstruction() {
 
   const [days, setDays] = useState(0)
@@ -65,23 +66,23 @@ function UnderConstruction() {
 
     if (isValidEmail(email)) {
       console.log('send succesfull', email)
-      sendEmail
+      sendEmail(event)
     } else {
       console.log(`invalid email, try again`)
     }
   }
 
   const form = useRef()
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = (event) => {
+    event.preventDefault();
 
     emailjs.sendForm('service_yh4bx2k', 'template_9998i0f', form.current, 'UmKaAQ9Cah4KKB30y')
       .then((result) => {
-        console.log(result.text);
+        console.log(result.status);
       }, (err) => {
         console.log(err)
       });
-    e.target.reset();
+    event.target.reset();
   }
 
 
