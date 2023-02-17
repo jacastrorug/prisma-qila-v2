@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 import styles from "@/styles/components/UnderConstruction.module.css";
+import emailjs from '@emailjs/browser';
+
 
 const DAY_MILLISECONDS = (1000 * 60 * 60 * 24)
 const HOURS_MILLISECONDS = (1000 * 60 * 60)
@@ -45,8 +47,44 @@ function UnderConstruction() {
     return () => clearInterval(interval)
   }, [])
 
-
   const whatsappUrl = 'https://wa.me/17542441721?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
+
+  const [email, setEmail] = useState('')
+
+  function isValidEmail(email: string) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChange = event => {
+    const inputValue = event.target.value
+    setEmail(inputValue)
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault()
+
+    if (isValidEmail(email)) {
+      console.log('send succesfull', email)
+      sendEmail
+    } else {
+      console.log(`invalid email, try again`)
+    }
+  }
+
+  const form = useRef()
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_yh4bx2k', 'template_9998i0f', form.current, 'UmKaAQ9Cah4KKB30y')
+      .then((result) => {
+        console.log(result.text);
+      }, (err) => {
+        console.log(err)
+      });
+    e.target.reset();
+  }
+
+
   return (
     <section className={styles.main_section_container}>
       <section className={styles.container_full_content}>
@@ -78,18 +116,23 @@ function UnderConstruction() {
             <p className={styles.card_title}>Seconds</p>
           </div>
         </section>
-        <article className={styles.section_container_buttons}>
-          <section className={styles.container_btn_email}>
+        <article className={styles.section_container_buttons} >
+          <form
+            className={styles.container_btn_email}
+            ref={form}
+            onSubmit={handleSubmit}>
             <input
               className={styles.input_email}
               type="email"
               name="email"
+              value={email}
               placeholder="Enter your email"
+              onChange={handleChange}
             />
-            <button className={styles.btn_email} type="button">
+            <button className={styles.btn_email} type="submit" >
               NOTIFY
             </button>
-          </section>
+          </form>
           <section >
             <Link
               className={styles.btn_whatsapp}
