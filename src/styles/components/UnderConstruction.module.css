@@ -118,9 +118,9 @@
     justify-content: center;
     padding-left: 0.5rem;
     border: none;
-    border: none;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+    font-size: 1.8rem;
 }
 
 .btn_email {
@@ -132,6 +132,7 @@
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     cursor: pointer;
+    font-size: 1.8rem;
 }
 
 /* Shared Styles */
@@ -144,7 +145,6 @@
         font-size: 3rem;
     }
 }
-
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 500px) and (max-width: 900px) {

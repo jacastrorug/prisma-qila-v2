@@ -58,7 +58,9 @@ function UnderConstruction() {
             height={100}
             width={100}
           />
-          <p className={styles.main_text}>We are building something great for you!</p>
+          <p className={styles.main_text}>
+            We are building something great for you!
+          </p>
         </section>
         <section className={styles.cards_container}>
           <div className={styles.card_item}>
