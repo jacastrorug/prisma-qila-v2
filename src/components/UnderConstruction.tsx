@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, InputHTMLAttributes } from "react";
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
@@ -48,41 +48,49 @@ function UnderConstruction() {
     return () => clearInterval(interval)
   }, [])
 
-  const whatsappUrl = 'https://wa.me/17542441721?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
+  const whatsappUrl = 'https://wa.me/17542440661?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
 
-  const [email, setEmail] = useState('')
+
+  const form = useRef(null)
+  const inputRef = useRef<HTMLInputElement>(null)
 
   function isValidEmail(email: string) {
     return /\S+@\S+\.\S+/.test(email);
   }
 
-  const handleChange = event => {
-    const inputValue = event.target.value
-    setEmail(inputValue)
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    //Check email validity
+    const isValid = isValidEmail(inputValue);
+    console.log('Is valid:', isValid);
+
+    //setEmail(inputValue)
   }
 
-  const handleSubmit = event => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
+    const value = inputRef.current?.value ?? '';
 
-    if (isValidEmail(email)) {
-      console.log('send succesfull', email)
-      sendEmail(event)
+    if (isValidEmail(value)) {
+      console.log('send succesfull', value)
+      sendEmail({ email: value })
     } else {
       console.log(`invalid email, try again`)
     }
   }
 
-  const form = useRef()
-  const sendEmail = (event) => {
-    event.preventDefault();
+  const sendEmail = (form: { [key: string] : any }) => {
+    const templateParams = {
+      from_name: form.email
+    };
 
-    emailjs.sendForm('service_yh4bx2k', 'template_9998i0f', form.current, 'UmKaAQ9Cah4KKB30y')
+    emailjs.send('service_yh4bx2k', 'template_9998i0f', templateParams, 'UmKaAQ9Cah4KKB30y')
       .then((result) => {
-        console.log(result.status);
+        console.log(result.text);
       }, (err) => {
         console.log(err)
       });
-    event.target.reset();
+
   }
 
 
@@ -126,9 +134,9 @@ function UnderConstruction() {
               className={styles.input_email}
               type="email"
               name="email"
-              value={email}
               placeholder="Enter your email"
               onChange={handleChange}
+              ref={inputRef}
             />
             <button className={styles.btn_email} type="submit" >
               NOTIFY
