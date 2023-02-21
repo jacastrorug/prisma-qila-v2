@@ -87,6 +87,10 @@ function UnderConstruction() {
     emailjs.send('service_yh4bx2k', 'template_9998i0f', templateParams, 'UmKaAQ9Cah4KKB30y')
       .then((result) => {
         console.log(result.text);
+        if(inputRef.current?.value){
+          inputRef.current.value = '';
+        }
+
       }, (err) => {
         console.log(err)
       });
