@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef, InputHTMLAttributes } from "react";
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 import styles from "@/styles/components/UnderConstruction.module.css";
+import emailjs from '@emailjs/browser';
+
 
 const DAY_MILLISECONDS = (1000 * 60 * 60 * 24)
 const HOURS_MILLISECONDS = (1000 * 60 * 60)
 const MINUTES_MILLISECONDS = (1000 * 60)
 const SECONDS_MILLISECONDS = (1000)
+
 
 function UnderConstruction() {
 
@@ -45,8 +48,56 @@ function UnderConstruction() {
     return () => clearInterval(interval)
   }, [])
 
+  const whatsappUrl = 'https://wa.me/17542440661?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
 
-  const whatsappUrl = 'https://wa.me/17542441721?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
+
+  const form = useRef(null)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  function isValidEmail(email: string) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    //Check email validity
+    const isValid = isValidEmail(inputValue);
+    console.log('Is valid:', isValid);
+
+    //setEmail(inputValue)
+  }
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault()
+    const value = inputRef.current?.value ?? '';
+
+    if (isValidEmail(value)) {
+      console.log('send succesfull', value)
+      sendEmail({ email: value })
+    } else {
+      console.log(`invalid email, try again`)
+    }
+  }
+
+  const sendEmail = (form: { [key: string] : any }) => {
+    const templateParams = {
+      from_name: form.email
+    };
+
+    emailjs.send('service_yh4bx2k', 'template_9998i0f', templateParams, 'UmKaAQ9Cah4KKB30y')
+      .then((result) => {
+        console.log(result.text);
+        if(inputRef.current?.value){
+          inputRef.current.value = '';
+        }
+
+      }, (err) => {
+        console.log(err)
+      });
+
+  }
+
+
   return (
     <section className={styles.main_section_container}>
       <section className={styles.container_full_content}>
@@ -80,18 +131,23 @@ function UnderConstruction() {
             <p className={styles.card_title}>Seconds</p>
           </div>
         </section>
-        <article className={styles.section_container_buttons}>
-          <section className={styles.container_btn_email}>
+        <article className={styles.section_container_buttons} >
+          <form
+            className={styles.container_btn_email}
+            ref={form}
+            onSubmit={handleSubmit}>
             <input
               className={styles.input_email}
               type="email"
               name="email"
               placeholder="Enter your email"
+              onChange={handleChange}
+              ref={inputRef}
             />
-            <button className={styles.btn_email} type="button">
+            <button className={styles.btn_email} type="submit" >
               NOTIFY
             </button>
-          </section>
+          </form>
           <section >
             <Link
               className={styles.btn_whatsapp}
