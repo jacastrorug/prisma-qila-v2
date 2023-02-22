@@ -3,10 +3,11 @@ import "@/styles/globals.css";
 import "@/styles/index.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Script from "next/script";
 import { useEffect } from "react";
 import { Provider } from "react-redux";
 import { wrapper, store } from "../redux/configStore";
-import Script from "next/script";
+import { appWithTranslation } from "next-i18next";
 
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -23,7 +24,6 @@ function App({ Component, pageProps }: AppProps) {
       <Script src="/assets/js/popper.min.js" />
       <Script src="/assets/js/owl.js" />
       <Script src="/assets/js/wow.js" />
-      <Script src="/assets/js/validation.js" />
       <Script src="/assets/js/jquery.fancybox.js" />
       <Script src="/assets/js/appear.js" />
       <Script src="/assets/js/jquery.countTo.js" />
@@ -35,4 +35,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default wrapper.withRedux(App);
+export default wrapper.withRedux(appWithTranslation(App));
