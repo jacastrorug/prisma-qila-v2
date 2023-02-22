@@ -2,22 +2,37 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/styles/globals.css";
 import "@/styles/index.css";
 import type { AppProps } from "next/app";
-import { useEffect } from "react";
 import Head from "next/head";
+import Script from "next/script";
+import { useEffect } from "react";
+import { Provider } from "react-redux";
+import { wrapper, store } from "../redux/configStore";
+import { appWithTranslation } from "next-i18next";
 
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    //require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
   return (
-    <>
+    <Provider store={store}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Component {...pageProps} />
-    </>
+      <Script src="/assets/js/jquery.js" />
+      <Script src="/assets/js/popper.min.js" />
+      <Script src="/assets/js/owl.js" />
+      <Script src="/assets/js/wow.js" />
+      <Script src="/assets/js/jquery.fancybox.js" />
+      <Script src="/assets/js/appear.js" />
+      <Script src="/assets/js/jquery.countTo.js" />
+      <Script src="/assets/js/scrollbar.js" />
+      <Script src="/assets/js/jquery.nice-select.min.js" />
+
+      <Script src="/assets/js/script.js" />
+    </Provider>
   );
 }
 
-export default App;
+export default wrapper.withRedux(appWithTranslation(App));

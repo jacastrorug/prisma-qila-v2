@@ -8,6 +8,7 @@ function Layout(props: React.PropsWithChildren) {
       <Header />
       <main>{props.children}</main>
       <Footer />
+      
     </main>
   );
 }
