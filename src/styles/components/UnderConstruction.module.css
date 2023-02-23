@@ -38,7 +38,9 @@
 
 .main_text {
     font-size: var(--mobile-lg);
+    font-weight: 500;
     text-align: center;
+    color: var(--black);
 }
 
 .cards_container {
@@ -57,7 +59,6 @@
     height: 10rem;
     border-radius: 1.4rem;
     background-color: var(--black);
-    color: var(--grey);
     margin-right: 1rem;
     font-size: var(--mobile-md);
 }
@@ -65,11 +66,14 @@
 .card_number {
     margin: 0;
     font-size: 4.5rem;
+    color: var(--white);
+    margin-bottom: 0.2em;
 }
 
 .card_title {
     margin-top: 0;
     font-size: 1.2rem;
+    color: var(--white);
 }
 
 .section_container_buttons {
@@ -150,6 +154,7 @@
 @media (min-width: 500px) and (max-width: 900px) {
     .main_text {
         font-size: var(--tablet-lg);
+        font-weight: 500;
     }
 
     .logo {
@@ -173,6 +178,7 @@
 
     .card_number {
         font-size: 6.2rem;
+        margin-bottom: 0.4em;
     }
 
     .card_title {

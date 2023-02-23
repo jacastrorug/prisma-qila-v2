@@ -1,9 +1,12 @@
-import React, { useEffect, useState, useRef, InputHTMLAttributes } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 import styles from "@/styles/components/UnderConstruction.module.css";
 import emailjs from '@emailjs/browser';
+import { useTranslation } from "next-i18next";
+
+
 
 
 const DAY_MILLISECONDS = (1000 * 60 * 60 * 24)
@@ -62,9 +65,6 @@ function UnderConstruction() {
     const inputValue = event.target.value;
     //Check email validity
     const isValid = isValidEmail(inputValue);
-    console.log('Is valid:', isValid);
-
-    //setEmail(inputValue)
   }
 
   const handleSubmit = (event: React.FormEvent) => {
@@ -79,7 +79,7 @@ function UnderConstruction() {
     }
   }
 
-  const sendEmail = (form: { [key: string] : any }) => {
+  const sendEmail = (form: { [key: string]: any }) => {
     const templateParams = {
       from_name: form.email
     };
@@ -87,16 +87,17 @@ function UnderConstruction() {
     emailjs.send('service_yh4bx2k', 'template_9998i0f', templateParams, 'UmKaAQ9Cah4KKB30y')
       .then((result) => {
         console.log(result.text);
-        if(inputRef.current?.value){
+        if (inputRef.current?.value) {
           inputRef.current.value = '';
         }
 
       }, (err) => {
         console.log(err)
       });
-
   }
 
+  const { t, i18n } = useTranslation("common");
+  console.log(i18n);
 
   return (
     <section className={styles.main_section_container}>
@@ -110,25 +111,33 @@ function UnderConstruction() {
             width={100}
           />
           <p className={styles.main_text}>
-            We are building something great for you!
+            {t("main_text_underConstruction")}
           </p>
         </section>
         <section className={styles.cards_container}>
           <div className={styles.card_item}>
             <p className={styles.card_number}>{days}</p>
-            <p className={styles.card_title}>Days</p>
+            <p className={styles.card_title}>
+              {t("days_text_underConstruction")}
+            </p>
           </div>
           <div className={styles.card_item}>
             <p className={styles.card_number}>{hours}</p>
-            <p className={styles.card_title}>Hours</p>
+            <p className={styles.card_title}>
+              {t("hours_text_underConstruction")}
+            </p>
           </div>
           <div className={styles.card_item}>
             <p className={styles.card_number}>{minutes}</p>
-            <p className={styles.card_title}>Minutes</p>
+            <p className={styles.card_title}>
+              {t("minutes_text_underConstruction")}
+            </p>
           </div>
           <div className={styles.card_item}>
             <p className={styles.card_number}>{seconds}</p>
-            <p className={styles.card_title}>Seconds</p>
+            <p className={styles.card_title}>
+              {t("seconds_text_underConstruction")}
+            </p>
           </div>
         </section>
         <article className={styles.section_container_buttons} >
@@ -140,12 +149,12 @@ function UnderConstruction() {
               className={styles.input_email}
               type="email"
               name="email"
-              placeholder="Enter your email"
+              placeholder={t("input_placeholder")}
               onChange={handleChange}
               ref={inputRef}
             />
             <button className={styles.btn_email} type="submit" >
-              NOTIFY
+              {t("notify_btn")}
             </button>
           </form>
           <section >
@@ -162,5 +171,7 @@ function UnderConstruction() {
     </section>
   );
 }
+
+
 
 export default UnderConstruction;

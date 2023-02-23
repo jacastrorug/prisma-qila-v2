@@ -1,3 +1,11 @@
 {
-  "banner_1_description": "{ES} Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment"
+  "banner_1_description": "{ES} Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment",
+  "main_text_underConstruction": "Estamos construyendo algo genial para ti!",
+  "days_text_underConstruction": "Días",
+  "hours_text_underConstruction": "Horas",
+  "minutes_text_underConstruction": "Minutos",
+  "seconds_text_underConstruction": "Segundos",
+  "input_placeholder": "Escribe tu correo",
+  "notify_btn": "Notificar"
 }
+
