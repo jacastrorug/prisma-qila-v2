@@ -7,6 +7,31 @@ function Home() {
   const { t, i18n } = useTranslation("common");
   console.log(i18n);
 
+  const bannersContent = [
+    {
+      imgUrl: "url(/assets/imgs/banner/banner-1.jpg",
+      title: " Global <br /> Expertise in Sanitizing",
+      paragraph: "banner_1_description",
+      aHref: "about.html",
+      anchor: "About Company"
+    },
+    {
+      imgUrl: "url(/assets/imgs/banner/banner-2.jpg)",
+      title: "The Fine <br /> Experience of Cleaning",
+      paragraph: "Must explain to you how all this mistaken idea denouncing pleasure and praising pain was born will give you.",
+      aHref: "service.html",
+      anchor: "Our Services"
+    },
+    {
+      imgUrl: "url(/assets/imgs/banner/banner-3.jpg)",
+      title: " Clean <br /> and Safe Office <br /> From Today",
+      paragraph: " Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.",
+      aHref: "about.html",
+      anchor: "About Company"
+    },
+
+  ]
+
   return (
     <Layout>
       <section className="banner-section style-one">
@@ -86,7 +111,7 @@ function Home() {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout >
   );
 }
 
