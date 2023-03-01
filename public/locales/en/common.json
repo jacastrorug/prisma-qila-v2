@@ -1,10 +1,16 @@
 {
-    "banner_1_description": "Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment",
-    "main_text_underConstruction": "We are building something great for you!",
-    "days_text_underConstruction": "Days",
-    "hours_text_underConstruction": "Hours",
-    "minutes_text_underConstruction": "Minutes",
-    "seconds_text_underConstruction": "Seconds",
-    "input_placeholder": "Enter your email",
-    "notify_btn": "Notify"
+  "home": {
+    "carousel": {
+      "banner_1_description": "Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.",
+      "banner_2_description": "Must explain to you how all this mistaken idea denouncing pleasure and praising pain was born will give you.",
+      "banner_3_description": "Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment."
+    }
+  },
+  "main_text_underConstruction": "We are building something great for you!",
+  "days_text_underConstruction": "Days",
+  "hours_text_underConstruction": "Hours",
+  "minutes_text_underConstruction": "Minutes",
+  "seconds_text_underConstruction": "Seconds",
+  "input_placeholder": "Enter your email",
+  "notify_btn": "Notify"
 }

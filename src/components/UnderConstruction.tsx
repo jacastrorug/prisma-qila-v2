@@ -7,8 +7,6 @@ import emailjs from '@emailjs/browser';
 import { useTranslation } from "next-i18next";
 
 
-
-
 const DAY_MILLISECONDS = (1000 * 60 * 60 * 24)
 const HOURS_MILLISECONDS = (1000 * 60 * 60)
 const MINUTES_MILLISECONDS = (1000 * 60)
@@ -171,7 +169,5 @@ function UnderConstruction() {
     </section>
   );
 }
-
-
 
 export default UnderConstruction;
