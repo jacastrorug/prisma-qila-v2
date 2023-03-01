@@ -8,7 +8,6 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { TOOGLE_MENU } from "@/redux/types";
-import Image from "next/image";
 
 function Header() {
   const dispatch = useDispatch();
@@ -55,9 +54,6 @@ function Header() {
                     <ul className="navigation clearfix">
                       <li className="current dropdown">
                         <a href="">Home</a>
-                      </li>
-                      <li className="dropdown">
-                        <a href="">About</a>
                       </li>
                       <li className="dropdown">
                         <a href="">Services</a>
