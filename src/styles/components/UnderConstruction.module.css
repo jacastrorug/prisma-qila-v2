@@ -83,6 +83,10 @@
     max-width: 23rem;
 }
 
+.btn_whatsapp_container > *:hover{
+    color: var(--white);
+}
+
 .btn_whatsapp {
     display: flex;
     flex-direction: row;
