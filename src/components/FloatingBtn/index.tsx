@@ -10,7 +10,9 @@ function FloatingBtn() {
       <Link
         href={whatsappUrl}
       >
-        <FaWhatsapp className={styles.btn_whatsapp_float_icon} />
+        <section className={styles.btn_whatsapp_float_container}>
+          <FaWhatsapp className={styles.btn_whatsapp_float_icon} />
+        </section>
       </Link>
     </section>)
 }

@@ -1,5 +1,8 @@
+.btn_whatsapp_float_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.btn_whatsapp_float_icon {
   position:fixed;
   width:60px;
 	height:60px;
@@ -11,5 +14,11 @@
   text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px #b1b0b0;
-  z-index:100;
+  z-index:10;
+}
+
+.btn_whatsapp_float_icon {
+  width: 80%;
+  height: 80%;
+  color: var(--white);
 }
