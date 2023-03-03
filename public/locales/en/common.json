@@ -1,9 +1,18 @@
 {
   "home": {
     "carousel": {
-      "banner_1_description": "Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.",
-      "banner_2_description": "Must explain to you how all this mistaken idea denouncing pleasure and praising pain was born will give you.",
-      "banner_3_description": "Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment."
+      "banner_1_title": "We do maintenance and floor cleaning",
+      "banner_1_description": "Emphasizing prevention to maintain the useful life of the material.",
+      "banner_1_btnLabel": "Know more",
+
+      "banner_2_title": "We clean your carpets",
+      "banner_2_description": "Using the right technology and products for each material.",
+      "banner_2_btnLabel": "Know more",
+
+      "banner_3_title": "We offer you general cleaning",
+      "banner_3_description": "A service tailored to the needs of our customers. We do cleaning and maintenance indoors and outdoors.",
+      "banner_3_btnLabel": "Know more"
+  
     }
   },
   "main_text_underConstruction": "We are building something great for you!",

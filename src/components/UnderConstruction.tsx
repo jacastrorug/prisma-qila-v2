@@ -155,13 +155,13 @@ function UnderConstruction() {
               {t("notify_btn")}
             </button>
           </form>
-          <section >
+          <section className={styles.btn_whatsapp_container}>
             <Link
               className={styles.btn_whatsapp}
               href={whatsappUrl}
             >
               <FaWhatsapp className={styles.btn_whatsapp_icon} />
-              <span>Whatsapp</span>
+              <span className={styles.btn_whatsapp_label}>Whatsapp</span>
             </Link>
           </section>
         </article>
