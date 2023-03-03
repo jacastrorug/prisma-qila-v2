@@ -1,11 +1,11 @@
 import Layout from "@/components/Layout";
 import React from "react";
-import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Carousel from "@/components/Carousel";
+import { useTranslation } from "react-i18next";
 
 function Home() {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <Layout>
@@ -16,7 +16,7 @@ function Home() {
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common"])),
+    ...(await serverSideTranslations(locale, ["common"], null, ["es", "en"])),
   },
 });
 

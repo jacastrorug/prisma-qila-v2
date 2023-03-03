@@ -4,6 +4,11 @@
       "banner_1_description": "{ES} Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment"
     }
   },
+  "layout": {
+    "header": {
+      "ask_quote": "Haz tu cotización"
+    }
+  },
   "main_text_underConstruction": "Estamos construyendo algo genial para ti!",
   "days_text_underConstruction": "Días",
   "hours_text_underConstruction": "Horas",

@@ -6,6 +6,11 @@
       "banner_3_description": "Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment."
     }
   },
+  "layout": {
+    "header": {
+      "ask_quote": "Ask for a quote"
+    }
+  },
   "main_text_underConstruction": "We are building something great for you!",
   "days_text_underConstruction": "Days",
   "hours_text_underConstruction": "Hours",

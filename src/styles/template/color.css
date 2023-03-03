@@ -110,7 +110,7 @@
 
 .banner-section .owl-nav .owl-next:hover,
 .banner-section .owl-nav .owl-prev:hover{
-  color: #3133d0;
+  color: var(--primary-color);
 }
 
 .banner-section .other-content{
@@ -1339,7 +1339,7 @@
 }
 
 .mobile-menu .navigation li > a:before{
-	border-left: 5px solid #3133d0;
+	border-left: 5px solid var(--pink);
 }
 
 .green-color .mobile-menu .navigation li > a:before{

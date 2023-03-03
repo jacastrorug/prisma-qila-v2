@@ -1,14 +1,14 @@
 :root {
   --main-font: "Poppins";
-  --primary-color: #43cad9;
-  --secondary-color: #f291ec;
+  --primary-color: #0bd3d3;
+  --secondary-color: #e5007d;
   --white-light: #f2f2f2;
   --white: #FFFFFF;
-  --black: #0d0d0d;
+  --black: #262626;
   --grey: #f2f2f2;
   --pink: #f291ec;
-  --green: #0DD9C4;
-  --blue: #43cad9;
+  --green: #0bd3d3;
+  --blue: #00a0bd;
   --gray-contrast: #646578;
   --gray-bg: #e3e8ed;
   --mobile-sm: 1.4rem;
