@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Footer from "../Footer";
 import Header from "../Header";
+import { FloatingBtn } from "../FloatingBtn/index";
 import { useTranslation } from "react-i18next";
 
 function Layout(props: React.PropsWithChildren) {
@@ -17,6 +18,7 @@ function Layout(props: React.PropsWithChildren) {
       <main className="boxed_wrapper">
         <Header />
         <main>{props.children}</main>
+        <FloatingBtn />
         <Footer />
       </main>
     </>

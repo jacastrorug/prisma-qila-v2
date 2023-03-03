@@ -9,29 +9,26 @@ function Carousel() {
     {
       id: "banner_1",
       imgUrl: "url(/assets/imgs/banner/banner-1.jpg",
-      title: "Global",
-      subtitle: "Expertise in Sanitizing",
+      title: t("home.carousel.banner_1_title"),
       description: t("home.carousel.banner_1_description"),
       link: "about.html",
-      btnLabel: "About Company",
+      btnLabel: t("home.carousel.banner_1_btnLabel"),
     },
     {
       id: "banner_2",
       imgUrl: "url(/assets/imgs/banner/banner-2.jpg)",
-      title: "The Fine",
-      subtitle: "Experience of Cleaning",
+      title: t("home.carousel.banner_2_title"),
       description: t("home.carousel.banner_2_description"),
       link: "service.html",
-      btnLabel: "Our Services",
+      btnLabel: t("home.carousel.banner_2_btnLabel"),
     },
     {
       id: "banner_3",
       imgUrl: "url(/assets/imgs/banner/banner-3.jpg)",
-      title: "Clean",
-      subtitle: "and Safe Office From Today",
+      title: t("home.carousel.banner_3_title"),
       description: t("home.carousel.banner_3_description"),
       link: "about.html",
-      btnLabel: "About Company",
+      btnLabel: t("home.carousel.banner_3_btnLabel"),
     },
   ];
 
@@ -43,7 +40,6 @@ function Carousel() {
             key={banner.id}
             img={banner.imgUrl}
             title={banner.title}
-            subtitle={banner.subtitle}
             description={banner.description}
             link={banner.link}
             btnLabel={banner.btnLabel}

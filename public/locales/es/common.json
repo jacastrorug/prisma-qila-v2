@@ -1,7 +1,17 @@
 {
   "home": {
     "carousel": {
-      "banner_1_description": "{ES} Indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment"
+      "banner_1_title": "Realizamos mantenimiento y limpieza de pisos",
+      "banner_1_description": "Haciendo énfasis en la prevención para mantener la vida útil del material.",
+      "banner_1_btnLabel": "Saber más",
+
+      "banner_2_title": "Limpiamos tus alfombras",
+      "banner_2_description": "Usando la tecnología y productos adecuados para cada material.",
+      "banner_2_btnLabel": "Saber más",
+
+      "banner_3_title": "Te ofrecemos limpieza general",
+      "banner_3_description": "Un servicio a la medida de las necesidades de nuestros clientes. Realizamos limpieza y mantenimiento en interiores y exteriores.",
+      "banner_3_btnLabel": "Saber más"
     }
   },
   "layout": {
