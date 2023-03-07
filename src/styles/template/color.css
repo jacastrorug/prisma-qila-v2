@@ -1359,7 +1359,7 @@
 }
 
 .main-header.style-five{
-	background: var(--primary-color);
+	background: var(--black);
 }
 
 .main-header.style-five .menu-right-content .restore-option a:hover{
