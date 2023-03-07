@@ -6,10 +6,15 @@ import {
   FaYoutube,
   FaInstagram,
   FaTimes,
+  FaAngleDown
 } from "react-icons/fa";
 import { TOOGLE_MENU } from "@/redux/types";
+import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 function Header() {
+  const { t, i18n } = useTranslation("common");
+
   const dispatch = useDispatch();
   const menuIsOpen = useSelector((state: StateModel) => state.menu_is_open);
 
@@ -25,12 +30,13 @@ function Header() {
             <div className="top-inner clearfix">
               <ul className="info pull-left clearfix">
                 <li>
-                  <i className="flaticon-telephone"></i>Ask for a quote{" "}
-                  <a href="tel:4412345678">+44 123-456-78</a>
+                  <i className="flaticon-telephone"></i>
+                  {"layout.header.ask_quote"}{" "}
+                  <a href="tel:17542441721">+1 (754) 244-1721</a>
                 </li>
                 <li>
                   <i className="flaticon-email"></i>
-                  <a href="mailto:support@info.com">support@info.com</a>
+                  <a href="mailto:info@prismaqila.com">info@prismaqila.com</a>
                 </li>
               </ul>
             </div>
@@ -130,9 +136,57 @@ function Header() {
 
         <nav className="menu-box">
           <div className="nav-logo">
-            <a href=""></a>
+            <Image src="/assets/imgs/prisma-qila-white.png" alt="PrismaQila Logo" width="150" height="150" />
           </div>
-          <div className="menu-outer"></div>
+          <div className="menu-outer">
+
+            <div
+              className="collapse navbar-collapse show clearfix"
+              id="navbarSupportedContent"
+            >
+              <ul className="navigation clearfix">
+                <li className="current dropdown">
+                  <a href="">Home</a>
+                </li>
+                <li className="dropdown">
+                  <a href="">Services</a>
+                  <ul style={{display: "none"}}>
+                    <li>
+                      <a href="service.html">Commerical</a>
+                    </li>
+                    <li>
+                      <a href="service-2.html">Residential</a>
+                    </li>
+                    <li>
+                      <a href="service-details.html">Hospitality &amp; Hotel</a>
+                    </li>
+                    <li>
+                      <a href="service-details-2.html">Municipalities</a>
+                    </li>
+                    <li>
+                      <a href="service-details-3.html">Education Centre</a>
+                    </li>
+                    <li>
+                      <a href="service-details-4.html">Office Buildings</a>
+                    </li>
+                    <li>
+                      <a href="service-details-5.html">Restaurants</a>
+                    </li>
+                    <li>
+                      <a href="service-details-6.html">Car Showrooms</a>
+                    </li>
+                  </ul>
+                  <div className="dropdown-btn">
+                    <FaAngleDown size={16} />
+                  </div>
+                </li>
+                <li className="dropdown">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
           <div className="contact-info">
             <h4>Contact Info</h4>
             <ul>

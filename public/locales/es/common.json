@@ -14,6 +14,11 @@
       "banner_3_btnLabel": "Saber más"
     }
   },
+  "layout": {
+    "header": {
+      "ask_quote": "Haz tu cotización"
+    }
+  },
   "main_text_underConstruction": "Estamos construyendo algo genial para ti!",
   "days_text_underConstruction": "Días",
   "hours_text_underConstruction": "Horas",

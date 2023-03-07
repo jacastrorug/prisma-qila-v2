@@ -44,11 +44,13 @@
     if ($(".mobile-menu .menu-box").mCustomScrollbar) {
       $(".mobile-menu .menu-box").mCustomScrollbar();
     }
-
+    
+    /*
     var mobileMenuContent = $(".main-header .menu-area .main-menu").html();
     $(".mobile-menu .menu-box .menu-outer").append(mobileMenuContent);
     $(".sticky-header .main-menu").append(mobileMenuContent);
-
+    */
+    
     //Dropdown Button
     $(".mobile-menu li.dropdown .dropdown-btn").on("click", function () {
       $(this).toggleClass("open");
@@ -58,6 +60,7 @@
     $(".mobile-menu li.dropdown .dropdown-btn").on("click", function () {
       $(this).prev(".megamenu").slideToggle(900);
     });
+  
     //Menu Toggle Btn
     $(".mobile-nav-toggler").on("click", function () {
       //$("body").addClass("mobile-menu-visible");
