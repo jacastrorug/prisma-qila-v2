@@ -15,11 +15,13 @@
   
     }
   },
+
   "layout": {
     "header": {
       "ask_quote": "Ask for a quote"
     }
   },
+ "whatsapp_message": "Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!",
   "main_text_underConstruction": "We are building something great for you!",
   "days_text_underConstruction": "Days",
   "hours_text_underConstruction": "Hours",
@@ -27,4 +29,5 @@
   "seconds_text_underConstruction": "Seconds",
   "input_placeholder": "Enter your email",
   "notify_btn": "Notify"
+
 }

@@ -134,7 +134,7 @@
 .btn_email {
     height: 100%;
     padding: 0 2rem;
-    background: var(--blue);
+    background: var(--primary-color);
     color: var(--grey);
     border: none;
     border-top-right-radius: 0.5rem;
