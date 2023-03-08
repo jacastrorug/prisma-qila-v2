@@ -64,16 +64,16 @@
 
 .main-menu .navigation > li > ul,
 .main-menu .navigation > li > .megamenu{
-	border-top: 3px solid var(--primary-color);
+	border-top: 3px solid var(--secondary-color);
 }
 
 .main-menu .navigation > li > ul > li > a:hover,
 .main-menu .navigation > li > .megamenu li > a:hover{
-	color: var(--primary-color);
+	color: var(--secondary-color);
 }
 
 .main-menu .navigation > li > ul > li > a:hover:before{
-	color: var(--primary-color);
+	color: var(--secondary-color);
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a:hover{
@@ -1359,7 +1359,7 @@
 }
 
 .main-header.style-five{
-	background: var(--primary-color);
+	background: var(--black);
 }
 
 .main-header.style-five .menu-right-content .restore-option a:hover{

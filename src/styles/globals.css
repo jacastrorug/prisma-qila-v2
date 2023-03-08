@@ -1,5 +1,5 @@
 :root {
-  --main-font: "Poppins";
+  --main-font: "Inter";
   --primary-color: #0bd3d3;
   --secondary-color: #e5007d;
   --white-light: #f2f2f2;
@@ -17,7 +17,7 @@
 
   --tablet-sm: 1.6rem;
   --tablet-md: 2rem;
-  --tablet-lg: 2.4rem;
+  --tablet-lg: 2.6rem;
 
   --desktop-sm: 1.8rem;
   --desktop-md: 2.2rem;
