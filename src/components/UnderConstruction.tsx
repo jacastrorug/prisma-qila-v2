@@ -49,8 +49,11 @@ function UnderConstruction() {
     return () => clearInterval(interval)
   }, [])
 
-  const whatsappUrl = 'https://wa.me/17542440661?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
+  const { t, i18n } = useTranslation("common");
+  console.log(i18n);
 
+  const whatsappMessage = t("whatsapp_message");
+  const whatsappUrl = `https://wa.me/${process.env.WHATSAPP}?text=${whatsappMessage}`;
 
   const form = useRef(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -93,9 +96,6 @@ function UnderConstruction() {
         console.log(err)
       });
   }
-
-  const { t, i18n } = useTranslation("common");
-  console.log(i18n);
 
   return (
     <section className={styles.main_section_container}>

@@ -2,9 +2,16 @@ import React from 'react';
 import Link from 'next/link';
 import styles from "@/styles/components/FloatingBtn.module.css";
 import { FaWhatsapp } from "react-icons/fa";
+import { useTranslation } from "next-i18next";
 
 function FloatingBtn() {
-  const whatsappUrl = 'https://wa.me/17542440661?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
+
+  const { t, i18n } = useTranslation("common");
+  console.log(i18n);
+
+  const whatsappMessage = t("whatsapp_message");
+  const whatsappUrl = `https://wa.me/${process.env.WHATSAPP}?text=${whatsappMessage}`;
+  
   return (
     <section>
       <Link
