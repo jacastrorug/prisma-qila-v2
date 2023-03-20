@@ -46,7 +46,7 @@ function UnderConstruction() {
   }, [])
 
 
-  const whatsappUrl = 'https://wa.me/17542441721?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
+  const whatsappUrl = 'https://wa.me/17868097925?text=Hi,%20I%20am%20interested%20in%20knowing%20more%20about%20your%20services!';
   return (
     <section className={styles.main_section_container}>
       <section className={styles.container_full_content}>
