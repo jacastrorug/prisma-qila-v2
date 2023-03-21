@@ -3,6 +3,7 @@ import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Carousel from "@/components/Carousel";
 import { useTranslation } from "react-i18next";
+import { ServicesList } from "@/components/Services/ServicesList";
 
 function Home() {
   const { t } = useTranslation("common");
@@ -10,6 +11,7 @@ function Home() {
   return (
     <Layout>
       <Carousel />
+      <ServicesList />
     </Layout>
   );
 }

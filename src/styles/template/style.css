@@ -136,13 +136,17 @@
    outline: none;
  }
 
- input, button, select, textarea {
+ input,
+ button,
+ select,
+ textarea {
    font-family: 'Inter', sans-serif;
    font-weight: 400;
    font-size: 15px;
  }
 
- ul, li {
+ ul,
+ li {
    list-style: none;
    padding: 0px;
    margin: 0px;
@@ -169,7 +173,12 @@
    transition: all 500ms ease;
  }
 
- h1, h2, h3, h4, h5, h6 {
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
    position: relative;
    font-family: 'Inter', sans-serif;
    font-weight: 400;
@@ -623,11 +632,12 @@
  .sec-title.text-left h6:before {
    position: absolute;
    content: '';
-   background: url(/assets/imgs/icons/wave-2.png);
+   background: url(/assets/imgs/icons/wave-9.png);
    width: 60px;
    height: 7px;
    left: 0px;
    top: 50%;
+   margin-bottom: 2rem;
    transform: translateY(-50%);
    background-repeat: no-repeat;
  }
@@ -1421,9 +1431,9 @@
  }
 
  .mobile-menu .nav-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    position: relative;
    padding-top: 3rem;
    padding-bottom: 5rem;
@@ -1860,7 +1870,7 @@
 
  .banner-section .owl-nav .owl-next ::before,
  .banner-section .owl-nav .owl-prev ::before {
-  font-size: 5rem;
+   font-size: 5rem;
  }
 
  .banner-section .owl-nav .owl-prev {
@@ -3439,10 +3449,12 @@
 
  .news-block-one .inner-box {
    position: relative;
-   display: block;
+   display: flex;
+   flex-direction: column;
    background: #fff;
-   border-radius: 5px;
+   border-radius: 15px;
    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+   height: 100%;
  }
 
  .news-block-one .inner-box .image-box {
@@ -3453,7 +3465,7 @@
    position: relative;
    display: block;
    overflow: hidden;
-   border-radius: 5px 5px 0px 0px;
+   border-radius: 15px 15px 0px 0px;
  }
 
  .news-block-one .inner-box .image-box .image img {
@@ -3490,6 +3502,7 @@
  }
 
  .news-block-one .inner-box .lower-content {
+  flex: 1;
    position: relative;
    display: block;
    padding: 20px 30px 23px 30px;
@@ -3501,14 +3514,15 @@
    font-size: 14px;
    line-height: 18px;
    font-family: 'Inter', sans-serif;
-   color: #646578;
+   color: var(--secondary-color);
    font-weight: 600;
    text-transform: uppercase;
-   border-bottom: 1px solid #9e9ea9;
    margin-bottom: 13px;
  }
 
- .news-block-one .inner-box .lower-content .category a:hover {}
+ .news-block-one .inner-box .lower-content .category a:hover {
+   color: var(--primary-color);
+ }
 
  .news-block-one .inner-box .lower-content h4 {
    margin-bottom: 13px;
@@ -3534,7 +3548,6 @@
 
  .news-block-one .inner-box .lower-content .link a:before {
    position: absolute;
-   content: '';
    width: 2px;
    height: 11px;
    left: 0px;

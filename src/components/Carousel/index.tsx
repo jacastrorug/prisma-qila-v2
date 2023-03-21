@@ -8,7 +8,7 @@ function Carousel() {
   const banners = [
     {
       id: "banner_1",
-      imgUrl: "url(/assets/imgs/banner/banner-1.jpg",
+      imgUrl: "url(/assets/imgs/banner/banner-2.jpg",
       title: t("home.carousel.banner_1_title"),
       description: t("home.carousel.banner_1_description"),
       link: "about.html",
