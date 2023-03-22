@@ -216,7 +216,7 @@
 }
 
 .project-block-one .inner-box .text a{
-	background: #3133d0;
+	background: var(--primary-color);
 }
 
 .nav-style-one .owl-nav .owl-prev:hover,

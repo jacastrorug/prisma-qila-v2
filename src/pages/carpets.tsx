@@ -9,11 +9,16 @@ const carpets = [
     id: 'carpets',
     title: 'Limpieza de alfombras',
     imgList: [
-      'url(/assets/imgs/Prisma-serv-1.jpg)',
-      'url(/assets/imgs/Prisma-serv-2.jpg)',
-      'url(/assets/imgs/Prisma-serv-3.jpg)',
-      'url(/assets/imgs/Prisma-serv-4.jpg)',
-
+      '/assets/imgs/Prisma-serv-1.jpg',
+      '/assets/imgs/Prisma-serv-2.jpg',
+      '/assets/imgs/Prisma-serv-3.jpg',
+      '/assets/imgs/Prisma-serv-4.jpg',
+    ],
+    innerTxtList: [
+      'Extracción y shampoo',
+      'Limpieza y sanitización',
+      'Solo shampoo',
+      'Lavado en seco'
     ],
     description: 'Tus alfombras limpias en 3 simples pasos',
     img: '/assets/imgs/floor-polisher.png',
@@ -32,6 +37,7 @@ function Carpets() {
           id={carpets.id}
           title={carpets.title}
           imgList={carpets.imgList}
+          innerTxtList={carpets.innerTxtList}
           description={carpets.description}
           img={carpets.img}
           text={carpets.text}

@@ -131,9 +131,6 @@ a.btn-custom {
 
 .title_cleaning {
   color: var(--secondary-color);
-  font-size: 3rem;
-  line-height: 2rem;
-  margin-bottom: 3rem;
 }
 
 .description_cleaning {
@@ -142,6 +139,13 @@ a.btn-custom {
   line-height: 1.4rem;
   margin: 5rem 0 3rem 0;
   padding-left: 5rem;
+}
+
+.section-lower_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-icons_container {
@@ -156,7 +160,6 @@ a.btn-custom {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 20rem;
   width: 12rem;
   margin: 1rem;
   padding: 1rem;
@@ -194,17 +197,10 @@ a.btn-custom {
     margin-bottom: 1rem;
   }
 
-  .title_cleaning {
-    font-size: 3.5rem;
-    line-height: 2.3rem;
-    margin-bottom: 3rem;
-  }
-
   .description_cleaning {
-    font-size: 2.8rem;
-    line-height: 1.8rem;
-    margin: 5rem 0 3rem 0;
-    padding-left: 5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
   }
 
   .service-icons_container {
@@ -212,12 +208,12 @@ a.btn-custom {
   }
 
   .service-icon_card {
-    height: 31rem;
-    width: 23rem;
+    width: 34rem;
   }
   .service_span{
     font-size: var(--desktop-sm);
     margin-top: 1.5rem;
+    justify-self: center;
   }
 
 }

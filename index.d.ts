@@ -19,6 +19,7 @@ type CleaningServices = {
     title: string;
     imgList: string[];
     description: string;
+    innerTxtList: string[];
     img: string;
-    text: string;
+    text: string
 }
