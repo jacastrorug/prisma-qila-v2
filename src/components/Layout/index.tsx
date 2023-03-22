@@ -3,11 +3,10 @@ import Head from "next/head";
 import Footer from "../Footer";
 import Header from "../Header";
 import { FloatingBtn } from "../FloatingBtn/index";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 function Layout(props: React.PropsWithChildren) {
   const { t } = useTranslation("common");
-  console.log(t("layout.header.ask_quote"));
 
   return (
     <>
@@ -17,7 +16,7 @@ function Layout(props: React.PropsWithChildren) {
       </Head>
       <main className="boxed_wrapper">
         <Header />
-        <main>{props.children}</main>
+        <main className="page-main-content">{props.children}</main>
         <FloatingBtn />
         <Footer />
       </main>
