@@ -13,3 +13,12 @@ type Service = {
     title: string;
     listServices: string[]
 }
+
+type CleaningServices = {
+    id: string;
+    title: string;
+    imgList: string[];
+    description: string;
+    img: string;
+    text: string;
+}
