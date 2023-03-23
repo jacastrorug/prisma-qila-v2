@@ -9,7 +9,7 @@
   --pink: #f291ec;
   --green: #0bd3d3;
   --blue: #00a0bd;
-  --gray-contrast: #646578;
+  --grey-contrast: #646578;
   --gray-bg: #e3e8ed;
   --mobile-sm: 1.4rem;
   --mobile-md: 1.8rem;
@@ -92,27 +92,26 @@ body * {
   color: var(--primary-color);
 }
 
-a.btn-custom{
+a.btn-custom {
   color: var(--secondary-color);
   margin-right: 2rem;
 }
 
-.btn_container{
+.btn_container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin : 0.5rem;
+  margin: 0.5rem;
   padding: 0.5rem;
 }
 
-.title_custom{
+.title_custom {
   color: var(--primary-color);
   font-size: 3.5rem;
   line-height: 2.3rem;
-
 }
 
-.service-subTitle_container{
+.service-subTitle_container {
   display: flex;
   flex-direction: row;
   height: 2rem;
@@ -122,6 +121,66 @@ a.btn-custom{
 
 .service-img_container {
   margin-right: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cleaning-serv {
+  display: flex;
+}
+
+.title_pink {
+  color: var(--secondary-color);
+}
+
+.description_cleaning {
+  color: var(--secondary-color);
+  font-size: var(--mobile-md);
+  line-height: 1.4rem;
+  margin: 5rem 0 3rem 0;
+  padding-left: 5rem;
+}
+
+.section-lower_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-icons_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-icon_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.service_span{
+  color: var(--secondary-color);
+  font-size: var(--mobile-md);
+}
+
+.color_text{
+  color: var(--grey-contrast);
+}
+
+.btn_custom {
+  color: var(--primary-color);
+  background-color: var(--grey-contrast);
 }
 
 /* Tablet and Smaller Desktop */
@@ -144,13 +203,34 @@ a.btn-custom{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3.5rem;
   }
-  .title_custom{
+
+  .title_custom {
     font-size: var(--desktop-lg);
     line-height: 50px;
     font-weight: 600;
   }
 
-  .service-subTitle_container{
+  .service-subTitle_container {
     margin-bottom: 1rem;
   }
+
+  .description_cleaning {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+
+  .service-icons_container {
+    flex-direction: row;
+  }
+
+  .service-icon_card {
+    width: 34rem;
+  }
+  .service_span{
+    font-size: var(--desktop-sm);
+    margin-top: 1.5rem;
+    justify-self: center;
+  }
+
 }
