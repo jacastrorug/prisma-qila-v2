@@ -21,7 +21,7 @@ function CleaningServices(props: PropsComponent) {
         <section className="">
           <div className="auto-container">
             <div className="sec-title text-center ">
-              <h2 className="title_cleaning">{props.title}</h2>
+              <h2 className="title_pink">{props.title}</h2>
             </div>
 
             <div className="project-inner">
@@ -39,7 +39,7 @@ function CleaningServices(props: PropsComponent) {
                       </figure>
                       {innerText.map((txt, index) => (
                         <div className="text" key={index}>
-                          <h4 className="title_cleaning">
+                          <h4 className="title_pink">
                             {txt}
                           </h4>
                           <a href="project-details.html">

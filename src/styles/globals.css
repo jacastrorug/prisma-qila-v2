@@ -9,7 +9,7 @@
   --pink: #f291ec;
   --green: #0bd3d3;
   --blue: #00a0bd;
-  --gray-contrast: #646578;
+  --grey-contrast: #646578;
   --gray-bg: #e3e8ed;
   --mobile-sm: 1.4rem;
   --mobile-md: 1.8rem;
@@ -129,7 +129,7 @@ a.btn-custom {
   display: flex;
 }
 
-.title_cleaning {
+.title_pink {
   color: var(--secondary-color);
 }
 
@@ -168,6 +168,15 @@ a.btn-custom {
 .service_span{
   color: var(--secondary-color);
   font-size: var(--mobile-md);
+}
+
+.color_text{
+  color: var(--grey-contrast);
+}
+
+.btn_custom {
+  color: var(--primary-color);
+  background-color: var(--grey-contrast);
 }
 
 /* Tablet and Smaller Desktop */

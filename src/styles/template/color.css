@@ -59,7 +59,7 @@
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li:hover > a{
-  color: var(--gray-contrast);
+  color: var(--grey-contrast);
 }
 
 .main-menu .navigation > li > ul,
@@ -1302,7 +1302,7 @@
 }
 
 .contact-section .default-form .theme-btn-three{
-	color: #3133d0;
+	color: var(--secondary-color);
 }
 
 .contact-info-section .single-info-box .inner-box .icon-box{
@@ -1367,7 +1367,7 @@
 }
 
 .main-header.style-five .menu-right-content .social-links li a:hover{
-	background: var(--gray-contrast);
+	background: var(--grey-contrast);
 }
 
 .main-header.style-five .search-box-btn:hover{

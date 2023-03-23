@@ -4,6 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Carousel from "@/components/Carousel";
 import { useTranslation } from "react-i18next";
 import { ServicesList } from "@/components/Services/ServicesList";
+import { ContactForm } from "@/components/ContactForm";
 
 function Home() {
   const { t } = useTranslation("common");
@@ -12,6 +13,7 @@ function Home() {
     <Layout>
       <Carousel />
       <ServicesList />
+      <ContactForm />
     </Layout>
   );
 }
