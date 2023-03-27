@@ -141,7 +141,7 @@ a.btn-custom {
   padding-left: 5rem;
 }
 
-.section-lower_container{
+.section-lower_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,18 +165,46 @@ a.btn-custom {
   padding: 1rem;
 }
 
-.service_span{
+.service_span {
   color: var(--secondary-color);
   font-size: var(--mobile-md);
 }
 
-.color_text{
+.color_text {
   color: var(--grey-contrast);
 }
 
 .btn_custom {
   color: var(--primary-color);
   background-color: var(--grey-contrast);
+}
+
+.contact-social-media {
+  display: flex;
+  flex-direction: row;
+  padding: 53px 15px 54px 90px;
+}
+
+.contact-social-media li a {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  line-height: 42px;
+  background: #e3e8ed;
+  color: var(--secondary-color);
+  font-size: 8rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.contact-card_img {
+  position: absolute;
+  left: 0px;
+  width: 100px;
+  line-height: 3.1rem;
+  text-align: center;
 }
 
 /* Tablet and Smaller Desktop */
@@ -219,7 +247,8 @@ a.btn-custom {
   .service-icon_card {
     width: 34rem;
   }
-  .service_span{
+
+  .service_span {
     font-size: var(--desktop-sm);
     margin-top: 1.5rem;
     justify-self: center;
