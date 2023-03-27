@@ -35,6 +35,7 @@ function ServicesList() {
             img={service.image}
             title={service.title}
             list={service.listServices}
+            href={service.href}
           />
         ))}
       </section>

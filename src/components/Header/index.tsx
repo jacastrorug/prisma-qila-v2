@@ -59,45 +59,26 @@ function Header() {
                   >
                     <ul className="navigation clearfix">
                       <li className="current dropdown">
-                        <a href="">Home</a>
+                        <a href="/home">Home</a>
                       </li>
                       <li className="dropdown">
                         <a href="">Services</a>
                         <ul>
                           <li>
-                            <a href="service.html">Commerical</a>
+                            <a href="/services/floor">Limpiza y/o mantenimiento de pisos</a>
                           </li>
                           <li>
-                            <a href="service-2.html">Residential</a>
+                            <a href="/services/carpets">Limpieza de alfombras</a>
                           </li>
                           <li>
-                            <a href="service-details.html">
-                              Hospitality & Hotel
+                            <a href="/services/general">
+                              Limpieza general
                             </a>
-                          </li>
-                          <li>
-                            <a href="service-details-2.html">Municipalities</a>
-                          </li>
-                          <li>
-                            <a href="service-details-3.html">
-                              Education Centre
-                            </a>
-                          </li>
-                          <li>
-                            <a href="service-details-4.html">
-                              Office Buildings
-                            </a>
-                          </li>
-                          <li>
-                            <a href="service-details-5.html">Restaurants</a>
-                          </li>
-                          <li>
-                            <a href="service-details-6.html">Car Showrooms</a>
                           </li>
                         </ul>
                       </li>
                       <li className="dropdown">
-                        <a href="contact.html">Contact</a>
+                        <a href="/contac">Contact</a>
                       </li>
                     </ul>
                   </div>
@@ -150,7 +131,7 @@ function Header() {
                 </li>
                 <li className="dropdown">
                   <a href="">Services</a>
-                  <ul style={{display: "none"}}>
+                  <ul style={{ display: "none" }}>
                     <li>
                       <a href="service.html">Commerical</a>
                     </li>

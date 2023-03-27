@@ -8,7 +8,8 @@ const data = {
         'Restauración y pulido o cristalización de pisos en marmol.',
         'Cepillado de pisos en cerámica.',
         'Pulido termoplástico por nebulización y finalización y encerado de pisos en Vinil.'
-      ]
+      ],
+      href: '/services/floor'
     },
     'serviceItem2': {
       id: 'service-2',
@@ -19,7 +20,8 @@ const data = {
         'Extracción y shampoo',
         'Shampoo',
         'Lavado en seco',
-      ]
+      ],
+      href: '/services/carpets'
     },
     'serviceItem3': {
       id: 'service-3',
@@ -28,7 +30,8 @@ const data = {
       listServices: [
         'Mantenimiento de áreas comunes',
         'Servicio de limpieza residencial o comercial',
-      ]
+      ],
+      href: '/services/general'
     },
   }
 }
