@@ -63,10 +63,8 @@ function Header() {
                     <ul className="navigation clearfix">
                       <li className="current dropdown">
                         <Link href="/home">Home</Link>
-                        <Link href="/">Home</Link>
                       </li>
                       <li className="dropdown">
-                        <Link href="">Services</Link>
                         <Link href="/services/carpets">Services</Link>
                         <ul>
                           <li>
