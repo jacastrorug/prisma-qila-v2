@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdEmail } from 'react-icons/md';
+import Link from 'next/link';
 import {
   FaFacebookF,
   FaTwitter,
@@ -31,11 +32,13 @@ function ContactComponent() {
                   <div className="inner-box">
                     <div className="contact-card_img ">
                       <i>
-                        <FaMobileAlt size={45} style={{color: '#e5007d'}} />
+                        <FaMobileAlt size={45} style={{ color: '#e5007d' }} />
                       </i>
                     </div>
                     <h5 className="title_pink">Teléfono</h5>
-                    <p><a href="tel:+1786809-7925">+1(786)809-7925</a></p>
+                    <p>
+                      <Link href="tel:+1786809-7925">+1(786)809-7925</Link>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -44,11 +47,13 @@ function ContactComponent() {
                   <div className="inner-box">
                     <div className="contact-card_img ">
                       <i>
-                        <MdEmail size={50} style={{color: '#e5007d'}} />
+                        <MdEmail size={50} style={{ color: '#e5007d' }} />
                       </i>
                     </div>
                     <h5 className="title_pink">Email</h5>
-                    <p><a href="mailto:supportyou@info.com">info@prismaqila.com</a></p>
+                    <p>
+                      <Link href="mailto:supportyou@info.com">info@prismaqila.com</Link>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -56,19 +61,19 @@ function ContactComponent() {
                 <div className="single-info-box ">
                   <ul className="contact-social-media">
                     <li>
-                      <a href="" className="icon-box">
+                      <Link href="" className="icon-box">
                         <FaFacebookF size={22} />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="" className="icon-box">
+                      <Link href="" className="icon-box">
                         <FaTwitter size={22} />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="" className="icon-box">
+                      <Link href="" className="icon-box">
                         <FaYoutube size={22} />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
