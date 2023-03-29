@@ -142,13 +142,13 @@ function Header() {
                   <Link href="/services/carpets">Services</Link>
                   <ul style={{ display: "none" }}>
                     <li>
-                      <Link href="/services/carpetss">Limpieza Alfombras</Link>
+                      <Link href="/services/carpets">Limpieza Alfombras</Link>
                     </li>
                     <li>
-                      <Link href="/services/carpetss">Limpieza de Pisos</Link>
+                      <Link href="/services/carpets">Limpieza de Pisos</Link>
                     </li>
                     <li>
-                      <Link href="/services/carpetss">Limpieza General</Link>
+                      <Link href="/services/carpets">Limpieza General</Link>
                     </li>
                   </ul>
                   <div className="dropdown-btn">
