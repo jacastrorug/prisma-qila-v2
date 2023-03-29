@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   FaFacebookF,
@@ -6,10 +6,10 @@ import {
   FaYoutube,
   FaInstagram,
   FaTimes,
-  FaAngleDown
+  FaAngleDown,
 } from "react-icons/fa";
 import { TOOGLE_MENU } from "@/redux/types";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -63,9 +63,11 @@ function Header() {
                     <ul className="navigation clearfix">
                       <li className="current dropdown">
                         <Link href="/home">Home</Link>
+                        <Link href="/">Home</Link>
                       </li>
                       <li className="dropdown">
                         <Link href="">Services</Link>
+                        <Link href="/services/carpets">Services</Link>
                         <ul>
                           <li>
                             <Link href="/services/floor">Limpiza y/o mantenimiento de pisos</Link>
@@ -120,44 +122,33 @@ function Header() {
 
         <nav className="menu-box">
           <div className="nav-logo">
-            <Image src="/assets/imgs/prisma-qila-white.png" alt="PrismaQila Logo" width="150" height="150" />
+            <Image
+              src="/assets/imgs/prisma-qila-white.png"
+              alt="PrismaQila Logo"
+              width="150"
+              height="150"
+            />
           </div>
           <div className="menu-outer">
-
             <div
               className="collapse navbar-collapse show clearfix"
               id="navbarSupportedContent"
             >
               <ul className="navigation clearfix">
                 <li className="current dropdown">
-                  <a href="">Home</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="dropdown">
-                  <a href="">Services</a>
+                  <Link href="/services/carpets">Services</Link>
                   <ul style={{ display: "none" }}>
                     <li>
-                      <a href="service.html">Commerical</a>
+                      <Link href="/services/carpetss">Limpieza Alfombras</Link>
                     </li>
                     <li>
-                      <a href="service-2.html">Residential</a>
+                      <Link href="/services/carpetss">Limpieza de Pisos</Link>
                     </li>
                     <li>
-                      <a href="service-details.html">Hospitality &amp; Hotel</a>
-                    </li>
-                    <li>
-                      <a href="service-details-2.html">Municipalities</a>
-                    </li>
-                    <li>
-                      <a href="service-details-3.html">Education Centre</a>
-                    </li>
-                    <li>
-                      <a href="service-details-4.html">Office Buildings</a>
-                    </li>
-                    <li>
-                      <a href="service-details-5.html">Restaurants</a>
-                    </li>
-                    <li>
-                      <a href="service-details-6.html">Car Showrooms</a>
+                      <Link href="/services/carpetss">Limpieza General</Link>
                     </li>
                   </ul>
                   <div className="dropdown-btn">
@@ -165,11 +156,10 @@ function Header() {
                   </div>
                 </li>
                 <li className="dropdown">
-                  <a href="contact.html">Contact</a>
+                  <Link href="/">Contact</Link>
                 </li>
               </ul>
             </div>
-
           </div>
           <div className="contact-info">
             <h4>Contact Info</h4>

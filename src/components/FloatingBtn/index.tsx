@@ -5,9 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useTranslation } from "next-i18next";
 
 function FloatingBtn() {
-
   const { t, i18n } = useTranslation("common");
-  console.log(i18n);
 
   const whatsappMessage = t("whatsapp_message");
   const whatsappUrl = `https://wa.me/${process.env.WHATSAPP}?text=${whatsappMessage}`;
