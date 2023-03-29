@@ -11,6 +11,7 @@ import {
 import { TOOGLE_MENU } from "@/redux/types";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import Link from "next/link";
 
 function Header() {
   const { t, i18n } = useTranslation("common");
@@ -22,6 +23,8 @@ function Header() {
     dispatch({ type: TOOGLE_MENU });
   };
 
+  const mailTo = 'mailto:info@prismaqila.com'
+
   return (
     <section className={menuIsOpen ? "mobile-menu-visible" : ""}>
       <header className="main-header style-five">
@@ -32,11 +35,11 @@ function Header() {
                 <li>
                   <i className="flaticon-telephone"></i>
                   {"layout.header.ask_quote"}{" "}
-                  <a href="tel:17542441721">+1 (754) 244-1721</a>
+                  <Link href="tel:17542441721">+1 (754) 244-1721</Link>
                 </li>
                 <li>
                   <i className="flaticon-email"></i>
-                  <a href="mailto:info@prismaqila.com">info@prismaqila.com</a>
+                  <Link href={mailTo}>info@prismaqila.com</Link>
                 </li>
               </ul>
             </div>
@@ -59,26 +62,26 @@ function Header() {
                   >
                     <ul className="navigation clearfix">
                       <li className="current dropdown">
-                        <a href="/home">Home</a>
+                        <Link href="/home">Home</Link>
                       </li>
                       <li className="dropdown">
-                        <a href="">Services</a>
+                        <Link href="">Services</Link>
                         <ul>
                           <li>
-                            <a href="/services/floor">Limpiza y/o mantenimiento de pisos</a>
+                            <Link href="/services/floor">Limpiza y/o mantenimiento de pisos</Link>
                           </li>
                           <li>
-                            <a href="/services/carpets">Limpieza de alfombras</a>
+                            <Link href="/services/carpets">Limpieza de alfombras</Link>
                           </li>
                           <li>
-                            <a href="/services/general">
+                            <Link href="/services/general">
                               Limpieza general
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="dropdown">
-                        <a href="/contac">Contact</a>
+                        <Link href="/contact">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -88,19 +91,19 @@ function Header() {
               <div className="menu-right-content clearfix">
                 <ul className="social-links clearfix">
                   <li>
-                    <a href="">
+                    <Link href="">
                       <FaFacebookF size={16} />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="">
+                    <Link href="">
                       <FaTwitter size={16} />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="">
+                    <Link href="">
                       <FaYoutube size={16} />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
