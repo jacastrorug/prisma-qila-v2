@@ -11945,14 +11945,14 @@
    margin-top: -80px;
    border-radius: 5px;
    z-index: 1;
-   box-shadow: -23px 0px 30px 0px rgba(0, 0, 0, 0.1);
+   box-shadow: 18px 0px 30px 0px #646578;
  }
 
  .contact-info-section .inner-container:before {
    position: absolute;
    content: '';
    background: #ffffff;
-   width: 5000px;
+   width: 500px;
    height: 100%;
    left: -30px;
    top: 0px;
@@ -11963,7 +11963,6 @@
    position: absolute;
    content: '';
    background: #e3e6ec;
-   width: 5000px;
    height: 20px;
    left: 0px;
    bottom: -20px;
@@ -11979,7 +11978,6 @@
  .contact-info-section .single-info-box .inner-box:before {
    position: absolute;
    content: '';
-   background: #dcdee5;
    width: 1px;
    height: 88px;
    top: 60px;

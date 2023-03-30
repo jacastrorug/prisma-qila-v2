@@ -11,7 +11,8 @@ type Service = {
     id: string;
     image: string;
     title: string;
-    listServices: string[]
+    listServices: string[];
+    href: string;
 }
 
 type CleaningServices = {

@@ -6,6 +6,7 @@ type PropsComponent = {
   img: string;
   title: string;
   list: Array<string>;
+  href: string;
 };
 
 function ServiceItem(props: PropsComponent) {
@@ -39,7 +40,7 @@ function ServiceItem(props: PropsComponent) {
           </ul>
         </div>
         <div className="link tab-buttons-2  btn_container">
-          <a href="blog-details.html" className="btn-custom">
+          <a href={props.href} className="btn-custom">
             Saber más
           </a>
         </div>

@@ -11,7 +11,7 @@ function Carousel() {
       imgUrl: "url(/assets/imgs/banner/banner-2.jpg",
       title: t("home.carousel.banner_1_title"),
       description: t("home.carousel.banner_1_description"),
-      link: "about.html",
+      link: "/services/general",
       btnLabel: t("home.carousel.banner_1_btnLabel"),
     },
     {
@@ -19,7 +19,7 @@ function Carousel() {
       imgUrl: "url(/assets/imgs/banner/banner-2.jpg)",
       title: t("home.carousel.banner_2_title"),
       description: t("home.carousel.banner_2_description"),
-      link: "service.html",
+      link: "/services/floor",
       btnLabel: t("home.carousel.banner_2_btnLabel"),
     },
     {
@@ -27,7 +27,7 @@ function Carousel() {
       imgUrl: "url(/assets/imgs/banner/banner-3.jpg)",
       title: t("home.carousel.banner_3_title"),
       description: t("home.carousel.banner_3_description"),
-      link: "about.html",
+      link: "/services/carpets",
       btnLabel: t("home.carousel.banner_3_btnLabel"),
     },
   ];

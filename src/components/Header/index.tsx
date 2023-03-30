@@ -23,6 +23,8 @@ function Header() {
     dispatch({ type: TOOGLE_MENU });
   };
 
+  const mailTo = 'mailto:info@prismaqila.com'
+
   return (
     <section className={menuIsOpen ? "mobile-menu-visible" : ""}>
       <header className="main-header style-five">
@@ -32,12 +34,12 @@ function Header() {
               <ul className="info pull-left clearfix">
                 <li>
                   <i className="flaticon-telephone"></i>
-                  {t("layout.header.ask_quote")}{" "}
-                  <a href="tel:17542441721">+1 (754) 244-1721</a>
+                  {"layout.header.ask_quote"}{" "}
+                  <Link href="tel:17542441721">+1 (754) 244-1721</Link>
                 </li>
                 <li>
                   <i className="flaticon-email"></i>
-                  <a href="mailto:info@prismaqila.com">info@prismaqila.com</a>
+                  <Link href={mailTo}>info@prismaqila.com</Link>
                 </li>
               </ul>
             </div>
@@ -60,30 +62,26 @@ function Header() {
                   >
                     <ul className="navigation clearfix">
                       <li className="current dropdown">
-                        <Link href="/">Home</Link>
+                        <Link href="/home">Home</Link>
                       </li>
                       <li className="dropdown">
                         <Link href="/services/carpets">Services</Link>
                         <ul>
                           <li>
-                            <Link href="/services/carpetss">
-                              Limpieza Alfombras
-                            </Link>
+                            <Link href="/services/floor">Limpiza y/o mantenimiento de pisos</Link>
                           </li>
                           <li>
-                            <Link href="/services/carpetss">
-                              Limpieza de Pisos
-                            </Link>
+                            <Link href="/services/carpets">Limpieza de alfombras</Link>
                           </li>
                           <li>
-                            <Link href="/services/carpetss">
-                              Limpieza General
+                            <Link href="/services/general">
+                              Limpieza general
                             </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="dropdown">
-                        <Link href="/">Contact</Link>
+                        <Link href="/contact">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -93,19 +91,19 @@ function Header() {
               <div className="menu-right-content clearfix">
                 <ul className="social-links clearfix">
                   <li>
-                    <a href="">
+                    <Link href="">
                       <FaFacebookF size={16} />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="">
+                    <Link href="">
                       <FaTwitter size={16} />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="">
+                    <Link href="">
                       <FaYoutube size={16} />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -142,13 +140,13 @@ function Header() {
                   <Link href="/services/carpets">Services</Link>
                   <ul style={{ display: "none" }}>
                     <li>
-                      <Link href="/services/carpetss">Limpieza Alfombras</Link>
+                      <Link href="/services/carpets">Limpieza Alfombras</Link>
                     </li>
                     <li>
-                      <Link href="/services/carpetss">Limpieza de Pisos</Link>
+                      <Link href="/services/carpets">Limpieza de Pisos</Link>
                     </li>
                     <li>
-                      <Link href="/services/carpetss">Limpieza General</Link>
+                      <Link href="/services/carpets">Limpieza General</Link>
                     </li>
                   </ul>
                   <div className="dropdown-btn">
