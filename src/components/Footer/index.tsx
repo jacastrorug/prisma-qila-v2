@@ -12,22 +12,6 @@ function Footer() {
       <div className="auto-container">
         <div className="footer-top">
           <div className="row clearfix">
-            <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
-              <div className="footer-widget logo-widget">
-                <figure className="footer-logo" style={{ textAlign: "center" }}>
-                  <a href="">
-                    <Image
-                      src={prismaqilaLogo}
-                      width="180"
-                      alt="Logo PrismaQila"
-                    />
-                  </a>
-                </figure>
-                <div className="text">
-                </div>
-              </div>
-            </div>
-
             <div className="col-lg-6 col-md-4 col-sm-2 footer-column">
               <div className="footer-widget contact-widget">
                 <div className="widget-title">
@@ -56,6 +40,19 @@ function Footer() {
                     </Link>
                   </li>
                 </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
+              <div className="footer-widget logo-widget">
+                <figure className="footer-logo" style={{ textAlign: "center" }}>
+                  <a href="">
+                    <Image
+                      src={prismaqilaLogo}
+                      width="180"
+                      alt="Logo PrismaQila"
+                    />
+                  </a>
+                </figure>
               </div>
             </div>
           </div>

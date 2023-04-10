@@ -211,6 +211,11 @@ a.btn-custom {
   text-align: center;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 500px) and (max-width: 900px) {}
 

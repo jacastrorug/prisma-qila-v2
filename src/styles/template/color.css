@@ -105,7 +105,7 @@
 }
 
 .thm-btn:before{
-	background: var(--black);
+	background: var(--primary-color);
 }
 
 .banner-section .owl-nav .owl-next:hover,
