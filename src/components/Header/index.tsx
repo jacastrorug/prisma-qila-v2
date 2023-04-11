@@ -45,7 +45,6 @@ function Header() {
             </div>
           </div>
         </div>
-
         <div className="header-lower">
           <div className="auto-container">
             <div className="outer-box clearfix">
@@ -162,12 +161,9 @@ function Header() {
           <div className="contact-info">
             <h4>Contact Info</h4>
             <ul>
-              <li>Chicago 12, Melborne City, USA</li>
+              <li><Link href={mailTo}>info@prismaqila.com</Link></li>
               <li>
-                <a href="tel:+8801682648101">+88 01682648101</a>
-              </li>
-              <li>
-                <a href="mailto:info@example.com">info@example.com</a>
+                <Link href="tel:17542441721">+1 (754) 244-1721</Link>
               </li>
             </ul>
           </div>

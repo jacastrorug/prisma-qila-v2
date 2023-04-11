@@ -21,7 +21,7 @@ function UnderConstruction() {
   const [seconds, setSeconds] = useState(0)
 
   useEffect(() => {
-    const target = new Date('03/15/2023 23:59:59')
+    const target = new Date('04/13/2023 23:59:59')
 
     const interval = setInterval(() => {
       const now = new Date()
