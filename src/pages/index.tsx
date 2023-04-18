@@ -1,27 +1,29 @@
-import Head from "next/head";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import UnderConstruction from "@/components/UnderConstruction";
+import Layout from "@/components/Layout";
+import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Carousel from "@/components/Carousel";
+import { useTranslation } from "next-i18next";
+import { ServicesList } from "@/components/Services/ServicesList";
+import { ContactForm } from "@/components/ContactForm";
 
-const inter = Inter({ subsets: ["latin"] });
+function Home() {
+  const { t, i18n } = useTranslation("common");
 
-export default function Home() {
   return (
-    <>
-      <Head>
-        <title>PrismaQila - Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <main className={styles.main}>
-        <UnderConstruction />
-      </main>
-    </>
+    <Layout>
+      <Carousel />
+      <ServicesList />
+      <ContactForm />
+    </Layout>
   );
 }
 
-export const getStaticProps = async ({ locale }: { locale: string }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["common"])),
-  },
-});
+export const getStaticProps = async ({ locale }: { locale: string }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"], null, ["es", "en"])),
+    },
+  };
+};
+
+export default Home;
