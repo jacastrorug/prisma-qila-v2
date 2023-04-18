@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   FaFacebookF,
@@ -22,8 +22,46 @@ function Header() {
   const handleToogleMenu = () => {
     dispatch({ type: TOOGLE_MENU });
   };
-
   const mailTo = 'mailto:info@prismaqila.com'
+
+
+  const [scrollTop, setScrollTop] = useState<string>("6rem");
+  const prevScrollTopRef = useRef<number>(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
+      if (window.innerWidth < 1180 && currentScrollTop === 0) {
+        setScrollTop("0rem");
+      } else {
+        if (prevScrollTopRef.current < currentScrollTop && currentScrollTop > 48) {
+          setScrollTop("0rem");
+        } else {
+          setScrollTop("6rem");
+        }
+      }
+      prevScrollTopRef.current = currentScrollTop;
+    };
+
+    const handleResize = () => {
+      const currentScrollTop = window.scrollY;
+      if (window.innerWidth < 1180 && currentScrollTop === 0) {
+        setScrollTop("0rem");
+      } else {
+        setScrollTop("6rem");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
 
   return (
     <section className={menuIsOpen ? "mobile-menu-visible" : ""}>
@@ -34,8 +72,8 @@ function Header() {
               <ul className="info pull-left clearfix">
                 <li>
                   <i className="flaticon-telephone"></i>
-                  {"layout.header.ask_quote"}{" "}
-                  <Link href="tel:17542441721">+1 (754) 244-1721</Link>
+                  {"Ask for a quote"}{" "}
+                  <Link href="tel:17868097925">+1(786)809-7925</Link>
                 </li>
                 <li>
                   <i className="flaticon-email"></i>
@@ -45,8 +83,8 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="header-lower">
-          <div className="auto-container">
+        <div className="header-lower " style={{ position: 'fixed', top: scrollTop, width: '100%' }} >
+          <div className="auto-container" >
             <div className="outer-box clearfix">
               <div className="menu-area pull-left clearfix">
                 <div className="mobile-nav-toggler" onClick={handleToogleMenu}>
@@ -131,21 +169,21 @@ function Header() {
               className="collapse navbar-collapse show clearfix"
               id="navbarSupportedContent"
             >
-              <ul className="navigation clearfix">
+              <ul className="navigation clearfix" onClick={handleToogleMenu}>
                 <li className="current dropdown">
-                  <Link href="/">Home</Link>
+                  <Link href="/home">Home</Link>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown" onClick={handleToogleMenu}>
                   <Link href="/services/carpets">Services</Link>
                   <ul style={{ display: "none" }}>
                     <li>
                       <Link href="/services/carpets">Limpieza Alfombras</Link>
                     </li>
                     <li>
-                      <Link href="/services/carpets">Limpieza de Pisos</Link>
+                      <Link href="/services/floor">Limpieza de Pisos</Link>
                     </li>
                     <li>
-                      <Link href="/services/carpets">Limpieza General</Link>
+                      <Link href="/services/general">Limpieza General</Link>
                     </li>
                   </ul>
                   <div className="dropdown-btn">
@@ -153,7 +191,7 @@ function Header() {
                   </div>
                 </li>
                 <li className="dropdown">
-                  <Link href="/">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
             </div>

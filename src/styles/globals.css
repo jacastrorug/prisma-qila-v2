@@ -150,6 +150,7 @@ a.btn-custom {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30rem;
 }
 
 .service-icons_container {
@@ -212,8 +213,7 @@ a.btn-custom {
 }
 
 .sticky {
-  position: sticky;
-  top: 0;
+  width: 100%;
 }
 
 /* Tablet and Smaller Desktop */
@@ -265,6 +265,15 @@ a.btn-custom {
     font-size: var(--desktop-sm);
     margin-top: 1.5rem;
     justify-self: center;
+  }
+
+  .section-lower_container {
+    margin-top: 38rem;
+  }
+
+  .project-section .project-inner {
+    position: relative;
+    width: 100%;
   }
 
 }

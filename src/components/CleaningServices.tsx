@@ -16,11 +16,10 @@ function CleaningServices(props: PropsComponent) {
   const images = props.imgList;
   const innerText = props.innerTxtList;
   return (
-    <section className="cleaning-serv_content flex-center">
-      <div className="project-section">
-        <section className="">
+    <section className="cleaning-serv_content flex-center ">
+        <section className="project-section">
           <div className="auto-container">
-            <div className="sec-title text-center ">
+            <div className="sec-title text-center">
               <h2 className="title_pink">{props.title}</h2>
             </div>
 
@@ -85,7 +84,6 @@ function CleaningServices(props: PropsComponent) {
 
           </div>
         </section>
-      </div>
     </section>
   )
 }
