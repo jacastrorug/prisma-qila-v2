@@ -2957,7 +2957,7 @@
 
  .project-section {
    position: relative;
-   padding: 113px 0px 119px 0px;
+   padding: 100px 0px 119px 0px;
  }
 
  .project-section .owl-carousel {
@@ -2976,7 +2976,7 @@
    display: block;
    overflow: hidden;
    border-radius: 5px;
-   width: 90%;
+   width: 100%;
  }
 
  .project-block-one .inner-box {
@@ -2997,6 +2997,9 @@
 
  .project-block-one .inner-box .text {
    position: absolute;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
    left: 30px;
    bottom: 30px;
    width: calc(100% - 60px);
@@ -3503,7 +3506,7 @@
  }
 
  .news-block-one .inner-box .lower-content {
-  flex: 1;
+   flex: 1;
    position: relative;
    display: block;
    padding: 20px 30px 23px 30px;

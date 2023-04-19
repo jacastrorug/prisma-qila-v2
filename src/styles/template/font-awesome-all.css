@@ -6184,6 +6184,7 @@ readers do not read off random characters that represent icons */
 .fal {
   font-family: 'Font Awesome 5 Pro';
   font-weight: 300;
+  font-size: 40px;
 }
 
 @font-face {

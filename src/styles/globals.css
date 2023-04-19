@@ -14,6 +14,7 @@
   --mobile-sm: 1.4rem;
   --mobile-md: 1.8rem;
   --mobile-lg: 2rem;
+  --bs-link-hover-color: #e5007d;
 
   --tablet-sm: 1.6rem;
   --tablet-md: 2rem;
@@ -131,10 +132,15 @@ a.btn-custom {
 
 .cleaning-serv {
   display: flex;
+  width: 100%;
 }
 
 .title_pink {
   color: var(--secondary-color);
+}
+
+.title_grey {
+  color: var(--grey-contrast);
 }
 
 .description_cleaning {
@@ -151,6 +157,7 @@ a.btn-custom {
   justify-content: center;
   align-items: center;
   margin-top: 30rem;
+  width: 100%;
 }
 
 .service-icons_container {
@@ -163,15 +170,30 @@ a.btn-custom {
 .service-icon_card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 12rem;
+  align-items: flex-start;
+  height: 22rem;
+  width: 22rem;
   margin: 1rem;
   padding: 1rem;
+  background-color: var(--grey);
+  border-radius: 0.8rem;
+  margin-right: 0.8rem;
+
+}
+
+.service-icon_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  width: 8rem;
+  height: 8rem;
+  margin-left: 1rem;
 }
 
 .service_span {
-  color: var(--secondary-color);
+  color: var(--grey-contrast);
   font-size: var(--mobile-md);
 }
 
@@ -212,8 +234,8 @@ a.btn-custom {
   text-align: center;
 }
 
-.sticky {
-  width: 100%;
+.page-max_content {
+  width: 90%;
 }
 
 /* Tablet and Smaller Desktop */
@@ -255,15 +277,22 @@ a.btn-custom {
 
   .service-icons_container {
     flex-direction: row;
+   width: 132rem;
   }
 
   .service-icon_card {
-    width: 34rem;
+    width: 100%;
+    height: 22rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--grey);
+    border-radius: 0.8rem;
+    margin-right: 0.8rem;
   }
 
   .service_span {
     font-size: var(--desktop-sm);
-    margin-top: 1.5rem;
+    margin-top: 4.5rem;
     justify-self: center;
   }
 

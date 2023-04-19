@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 
 
+
 type PropsComponent = {
   id: string;
   title: string;
@@ -16,10 +17,11 @@ function CleaningServices(props: PropsComponent) {
   const images = props.imgList;
   const innerText = props.innerTxtList;
   return (
-    <section className="cleaning-serv_content flex-center ">
-        <section className="project-section">
-          <div className="auto-container">
-            <div className="sec-title text-center">
+    <section className="cleaning-serv flex-center">
+      <div className="project-section ">
+        <section className="">
+          <div className="">
+            <div className="sec-title text-center ">
               <h2 className="title_pink">{props.title}</h2>
             </div>
 
@@ -38,10 +40,10 @@ function CleaningServices(props: PropsComponent) {
                       </figure>
                       {innerText.map((txt, index) => (
                         <div className="text" key={index}>
-                          <h4 className="title_pink">
+                          <h4 className="title_grey">
                             {txt}
                           </h4>
-                          <a href="project-details.html">
+                          <a className='flex-center'>
                             <i className="fal fa-long-arrow-right"></i>
                           </a>
                         </div>
@@ -55,35 +57,41 @@ function CleaningServices(props: PropsComponent) {
               <h3 className='description_cleaning'>{props.description}</h3>
               <div className="service-icons_container">
                 <div className="service-icon_card">
-                  <Image
-                    src='/assets/imgs/plazo.png'
-                    alt="img PrismaQila"
-                    width="120" height="100"
-                  />
-                  <span className="service_span">Cotización del servicio</span>
+                  <div className='service-icon_img'>
+                    <Image
+                      src='/assets/imgs/plazo.png'
+                      alt="img PrismaQila"
+                      width="70" height="50"
+                    />
+                  </div>
+                  <span className="service_span">Cotización del servicio.</span>
                 </div>
                 <div className="service-icon_card">
-                  <Image
-                    src='/assets/imgs/calendar.png'
-                    alt="img PrismaQila"
-                    width="120" height="100"
-                  />
-                  <span className="service_span">Agendamiento de estimación GRATIS</span>
+                  <div className='service-icon_img'>
+                    <Image
+                      src='/assets/imgs/calendar.png'
+                      alt="img PrismaQila"
+                      width="70" height="50"
+                    />
+                  </div>
+                  <span className="service_span">Agendamiento de estimación GRATIS.</span>
                 </div>
                 <div className="service-icon_card">
-                  <Image
-                    src={props.img}
-                    alt="img PrismaQila"
-                    width="120" height="100"
-                  />
+                  <div className='service-icon_img'>
+                    <Image
+                      src={props.img}
+                      alt="img PrismaQila"
+                      width="70" height="50"
+                    />
+                  </div>
                   <span className="service_span">{props.text}</span>
                 </div>
               </div>
             </section>
 
-
           </div>
         </section>
+      </div>
     </section>
   )
 }
