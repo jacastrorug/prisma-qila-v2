@@ -31,21 +31,24 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop = window.scrollY;
-      if (window.innerWidth < 1180 && currentScrollTop === 0) {
+
+      // Mobile check
+      if (window.innerWidth < 1180) {
+        setScrollTop("0rem");
+        return;
+      }
+
+      if (currentScrollTop > 58) {
         setScrollTop("0rem");
       } else {
-        if (prevScrollTopRef.current < currentScrollTop && currentScrollTop > 48) {
-          setScrollTop("0rem");
-        } else {
-          setScrollTop("6rem");
-        }
+        setScrollTop("6rem");
       }
-      prevScrollTopRef.current = currentScrollTop;
+      
     };
 
     const handleResize = () => {
       const currentScrollTop = window.scrollY;
-      if (window.innerWidth < 1180 && currentScrollTop === 0) {
+      if (window.innerWidth < 1180) {
         setScrollTop("0rem");
       } else {
         setScrollTop("6rem");
@@ -99,7 +102,7 @@ function Header() {
                   >
                     <ul className="navigation clearfix">
                       <li className="current dropdown">
-                        <Link href="/home">Home</Link>
+                        <Link href="/">Home</Link>
                       </li>
                       <li className="dropdown">
                         <Link href="/services/carpets">Services</Link>
@@ -171,7 +174,7 @@ function Header() {
             >
               <ul className="navigation clearfix" onClick={handleToogleMenu}>
                 <li className="current dropdown">
-                  <Link href="/home">Home</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="dropdown" onClick={handleToogleMenu}>
                   <Link href="/services/carpets">Services</Link>

@@ -16,8 +16,8 @@ const floors = [
     ],
     innerTxtList: [
       'Pulido o cristalizacion de Marmol',
-      'Cepillado de pisos en cerámica',
       'Finalización y encerado de pisos en cerámica',
+      'Cepillado de pisos en cerámica',
     ],
     description: 'Tus pisos limpios en 3 simples pasos',
     img: '/assets/imgs/floor-polisher.png',
