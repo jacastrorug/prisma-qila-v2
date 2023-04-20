@@ -12,6 +12,9 @@ import { TOOGLE_MENU } from "@/redux/types";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
+import { StateModel } from "index";
+
+const mailTo = 'mailto:info@prismaqila.com';
 
 function Header() {
   const { t, i18n } = useTranslation("common");
@@ -22,10 +25,8 @@ function Header() {
   const handleToogleMenu = () => {
     dispatch({ type: TOOGLE_MENU });
   };
-  const mailTo = 'mailto:info@prismaqila.com'
 
-
-  const [scrollTop, setScrollTop] = useState<string>("6rem");
+  const [scrollTop, setScrollTop] = useState<string>("0rem");
   const prevScrollTopRef = useRef<number>(0);
 
   useEffect(() => {
@@ -47,13 +48,14 @@ function Header() {
     };
 
     const handleResize = () => {
-      const currentScrollTop = window.scrollY;
       if (window.innerWidth < 1180) {
         setScrollTop("0rem");
       } else {
         setScrollTop("6rem");
       }
     };
+
+    handleResize();
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
@@ -105,7 +107,7 @@ function Header() {
                         <Link href="/">Home</Link>
                       </li>
                       <li className="dropdown">
-                        <Link href="/services/carpets">Services</Link>
+                        <Link href=''>Services</Link>
                         <ul>
                           <li>
                             <Link href="/services/floor">Limpiza y/o mantenimiento de pisos</Link>
@@ -177,7 +179,7 @@ function Header() {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="dropdown" onClick={handleToogleMenu}>
-                  <Link href="/services/carpets">Services</Link>
+                  <Link href="">Services</Link>
                   <ul style={{ display: "none" }}>
                     <li>
                       <Link href="/services/carpets">Limpieza Alfombras</Link>

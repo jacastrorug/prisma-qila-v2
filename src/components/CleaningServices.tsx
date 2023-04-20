@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Image from "next/image";
-
+import { BsCalendarWeekFill } from 'react-icons/bs';
+import { GiVacuumCleaner } from 'react-icons/Gi';
+import { FaFileInvoiceDollar } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
 
 type PropsComponent = {
@@ -11,11 +14,14 @@ type PropsComponent = {
   description: string;
   img: string;
   text: string;
+  icon: IconType;
 };
 
 function CleaningServices(props: PropsComponent) {
   const images = props.imgList;
   const innerText = props.innerTxtList;
+  const Icon = props.icon;
+
   return (
     <section className="cleaning-serv flex-center">
       <div className="project-section ">
@@ -44,7 +50,7 @@ function CleaningServices(props: PropsComponent) {
                             {txt}
                           </h4>
                           <a className='flex-center'>
-                            <i className="fal fa-long-arrow-right"></i>
+                            <i className="fal fa-long-arrow-right flex-center"></i>
                           </a>
                         </div>
                       ))}
@@ -56,36 +62,41 @@ function CleaningServices(props: PropsComponent) {
             <section className="section-lower_container">
               <h3 className='description_cleaning'>{props.description}</h3>
               <div className="service-icons_container">
-                <div className="service-icon_card">
-                  <div className='service-icon_img'>
-                    <Image
-                      src='/assets/imgs/plazo.png'
-                      alt="img PrismaQila"
-                      width="70" height="50"
-                    />
-                  </div>
-                  <span className="service_span">Cotización del servicio.</span>
-                </div>
-                <div className="service-icon_card">
-                  <div className='service-icon_img'>
-                    <Image
-                      src='/assets/imgs/calendar.png'
-                      alt="img PrismaQila"
-                      width="70" height="50"
-                    />
-                  </div>
-                  <span className="service_span">Agendamiento de estimación GRATIS.</span>
-                </div>
-                <div className="service-icon_card">
-                  <div className='service-icon_img'>
-                    <Image
-                      src={props.img}
-                      alt="img PrismaQila"
-                      width="70" height="50"
-                    />
-                  </div>
-                  <span className="service_span">{props.text}</span>
-                </div>
+                <section className="service-icon_card">
+                  <article className="service-container_img-title">
+                    <div className='service-icon_img'>
+                      <BsCalendarWeekFill
+                        style={{ color: "#e5007d", fontSize: "4.5rem" }}
+                      />
+                    </div>
+                    <span className="service_span">Cotización del servicio.</span>
+                  </article>
+                  <div className="service-number_icon">1</div>
+                </section>
+
+                <section className="service-icon_card">
+                  <article className="service-container_img-title">
+                    <div className='service-icon_img'>
+                      <FaFileInvoiceDollar
+                        style={{ color: "#e5007d", fontSize: "4.5rem" }}
+                      />
+                    </div>
+                    <span className="service_span">Agendamiento de <br/> estimacion GRATIS.</span>
+                  </article>
+                  <div className="service-number_icon">2</div>
+                </section>
+
+                <section className="service-icon_card">
+                  <article className="service-container_img-title">
+                    <div className='service-icon_img'>
+                      <Icon
+                        style={{ color: "#e5007d", fontSize: "4.5rem" }}
+                      />
+                    </div>
+                    <span className="service_span">{props.text}.</span>
+                  </article>
+                  <div className="service-number_icon">3</div>
+                </section>
               </div>
             </section>
 

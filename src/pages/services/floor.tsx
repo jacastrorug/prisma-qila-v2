@@ -1,10 +1,11 @@
 import Layout from "@/components/Layout";
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "react-i18next";
 import { CleaningServices } from "@/components/CleaningServices";
+import { CleaningServicesProps } from "index";
+import { GiFloorPolisher } from 'react-icons/Gi';
 
-const floors = [
+const floors: CleaningServicesProps[] = [
   {
     id: 'floors',
     title: 'Limpieza de Pisos',
@@ -19,18 +20,17 @@ const floors = [
       'Finalización y encerado de pisos en cerámica',
       'Cepillado de pisos en cerámica',
     ],
-    description: 'Tus pisos limpios en 3 simples pasos',
+    description: 'Tus pisos limpios en 3 simples pasos.',
     img: '/assets/imgs/floor-polisher.png',
-    text: 'Limpieza de tus pisos'
+    text: 'Limpieza de tus pisos',
+    icon: GiFloorPolisher
   }
 ]
 
 function Floors() {
-  const { t } = useTranslation("common");
-
   return (
     <Layout>
-      {floors.map((item: CleaningServices, index: React.Key | null | undefined) => (
+      {floors.map((item: CleaningServicesProps, index: React.Key | null | undefined) => (
         <CleaningServices
           key={index}
           id={item.id}
@@ -40,6 +40,7 @@ function Floors() {
           description={item.description}
           img={item.img}
           text={item.text}
+          icon={item.icon}
         />
       ))}
 

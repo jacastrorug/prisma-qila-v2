@@ -3,8 +3,10 @@ import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "react-i18next";
 import { CleaningServices } from "@/components/CleaningServices";
+import { CleaningServicesProps } from "index";
+import { GiBroom } from 'react-icons/Gi';
 
-const generalCleaning = [
+const generalCleaning : CleaningServicesProps[]= [
   {
     id: 'general-cleaning',
     title: 'Limpieza General',
@@ -18,9 +20,10 @@ const generalCleaning = [
       'Limpieza de áreas comunes',
       'Limpieza y sanitización',
     ],
-    description: 'Tus alfombras limpias en 3 simples pasos',
+    description: 'Tus alfombras limpias en 3 simples pasos.',
     img: '/assets/imgs/floor-polisher.png',
-    text: 'Limpieza de tus pisos'
+    text: 'Limpieza de tus pisos',
+    icon: GiBroom
   }
 ]
 
@@ -29,7 +32,7 @@ function GeneralCleaning() {
 
   return (
     <Layout>
-      {generalCleaning.map((item: CleaningServices, index: React.Key | null | undefined) => (
+      {generalCleaning.map((item: CleaningServicesProps, index: React.Key | null | undefined) => (
         <CleaningServices
           key={index}
           id={item.id}
@@ -39,6 +42,7 @@ function GeneralCleaning() {
           description={item.description}
           img={item.img}
           text={item.text}
+          icon={item.icon}
         />
       ))}
 
