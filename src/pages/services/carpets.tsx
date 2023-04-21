@@ -8,7 +8,7 @@ import { GiVacuumCleaner } from 'react-icons/Gi';
 const carpets: CleaningServicesProps[] = [
   {
     id: 'carpets',
-    title: 'Limpieza de alfombras',
+    title: 'steps.carpet_title',
     imgList: [
       '/assets/imgs/Prisma-serv-1.jpg',
       '/assets/imgs/Prisma-serv-2.jpg',
@@ -19,11 +19,11 @@ const carpets: CleaningServicesProps[] = [
       'Extracción y shampoo',
       'Limpieza y sanitización',
       'Solo shampoo',
-      'Lavado en seco'
+      'services.carpet_services_description4'
     ],
-    description: 'Tus alfombras limpias en 3 simples pasos',
+    description: 'steps.carpet_subtitle',
     img: '/assets/imgs/floor-polisher.png',
-    text: 'Limpieza de tus alfombras',
+    text: 'steps.carpet_card',
     icon: GiVacuumCleaner
   }
 ]

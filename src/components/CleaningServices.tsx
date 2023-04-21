@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import Image from "next/image";
 import { BsCalendarWeekFill } from 'react-icons/bs';
-import { GiVacuumCleaner } from 'react-icons/Gi';
 import { FaFileInvoiceDollar } from 'react-icons/fa';
+import { useTranslation } from "next-i18next";
 import { IconType } from 'react-icons';
 
 
@@ -22,13 +22,17 @@ function CleaningServices(props: PropsComponent) {
   const innerText = props.innerTxtList;
   const Icon = props.icon;
 
+  const { t, i18n } = useTranslation("common");
+  console.log(i18n);
+
+
   return (
     <section className="cleaning-serv flex-center">
       <div className="project-section ">
         <section className="">
           <div className="">
             <div className="sec-title text-center ">
-              <h2 className="title_pink">{props.title}</h2>
+              <h2 className="title_pink">{t(props.title)}</h2>
             </div>
 
             <div className="project-inner">
@@ -47,7 +51,7 @@ function CleaningServices(props: PropsComponent) {
                       {innerText.map((txt, index) => (
                         <div className="text" key={index}>
                           <h4 className="title_grey">
-                            {txt}
+                            {t(txt)}
                           </h4>
                           <a className='flex-center'>
                             <i className="fal fa-long-arrow-right flex-center"></i>
@@ -60,7 +64,7 @@ function CleaningServices(props: PropsComponent) {
               </div>
             </div>
             <section className="section-lower_container">
-              <h3 className='description_cleaning'>{props.description}</h3>
+              <h3 className='description_cleaning'>{t(props.description)}</h3>
               <div className="service-icons_container">
                 <section className="service-icon_card">
                   <article className="service-container_img-title">
@@ -69,7 +73,7 @@ function CleaningServices(props: PropsComponent) {
                         style={{ color: "#e5007d", fontSize: "4.5rem" }}
                       />
                     </div>
-                    <span className="service_span">Cotización del servicio.</span>
+                    <span className="service_span">{t("steps.invoise")}</span>
                   </article>
                   <div className="service-number_icon">1</div>
                 </section>
@@ -81,7 +85,7 @@ function CleaningServices(props: PropsComponent) {
                         style={{ color: "#e5007d", fontSize: "4.5rem" }}
                       />
                     </div>
-                    <span className="service_span">Agendamiento de <br/> estimacion GRATIS.</span>
+                    <span className="service_span">{t("steps.schedule")}</span>
                   </article>
                   <div className="service-number_icon">2</div>
                 </section>
@@ -93,7 +97,7 @@ function CleaningServices(props: PropsComponent) {
                         style={{ color: "#e5007d", fontSize: "4.5rem" }}
                       />
                     </div>
-                    <span className="service_span">{props.text}.</span>
+                    <span className="service_span">{t(props.text)}</span>
                   </article>
                   <div className="service-number_icon">3</div>
                 </section>

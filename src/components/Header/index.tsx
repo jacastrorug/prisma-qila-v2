@@ -77,7 +77,7 @@ function Header() {
               <ul className="info pull-left clearfix">
                 <li>
                   <i className="flaticon-telephone"></i>
-                  {"Ask for a quote"}{" "}
+                  {t("layout.header.ask_quote")}
                   <Link href="tel:17868097925">+1(786)809-7925</Link>
                 </li>
                 <li>
@@ -107,23 +107,23 @@ function Header() {
                         <Link href="/">Home</Link>
                       </li>
                       <li className="dropdown">
-                        <Link href=''>Services</Link>
+                        <Link href=''>{t("nav_services")}</Link>
                         <ul>
                           <li>
-                            <Link href="/services/floor">Limpiza y/o mantenimiento de pisos</Link>
+                            <Link href="/services/floor">{t("nav_services_floor")}</Link>
                           </li>
                           <li>
-                            <Link href="/services/carpets">Limpieza de alfombras</Link>
+                            <Link href="/services/carpets">{t("nav_services_carpets")}</Link>
                           </li>
                           <li>
                             <Link href="/services/general">
-                              Limpieza general
+                              {t("nav_services_general")}
                             </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="dropdown">
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/contact">{t("nav_contact")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -179,16 +179,16 @@ function Header() {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="dropdown" onClick={handleToogleMenu}>
-                  <Link href="">Services</Link>
+                  <Link href="">{t("nav_services")}</Link>
                   <ul style={{ display: "none" }}>
                     <li>
-                      <Link href="/services/carpets">Limpieza Alfombras</Link>
+                      <Link href="/services/carpets">{t("nav_services_carpets")}</Link>
                     </li>
                     <li>
-                      <Link href="/services/floor">Limpieza de Pisos</Link>
+                      <Link href="/services/floor">{t("nav_services_floor")}</Link>
                     </li>
                     <li>
-                      <Link href="/services/general">Limpieza General</Link>
+                      <Link href="/services/general">{t("nav_services_general")}</Link>
                     </li>
                   </ul>
                   <div className="dropdown-btn">
@@ -196,7 +196,7 @@ function Header() {
                   </div>
                 </li>
                 <li className="dropdown">
-                  <Link href="/contact">Contact</Link>
+                  <Link href="/contact">{t("nav_contact")}</Link>
                 </li>
               </ul>
             </div>

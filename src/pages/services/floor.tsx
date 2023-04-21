@@ -8,7 +8,7 @@ import { GiFloorPolisher } from 'react-icons/Gi';
 const floors: CleaningServicesProps[] = [
   {
     id: 'floors',
-    title: 'Limpieza de Pisos',
+    title: 'steps.floor_title',
     imgList: [
       '/assets/imgs/Prisma-serv-1.jpg',
       '/assets/imgs/Prisma-serv-2.jpg',
@@ -18,11 +18,11 @@ const floors: CleaningServicesProps[] = [
     innerTxtList: [
       'Pulido o cristalizacion de Marmol',
       'Finalización y encerado de pisos en cerámica',
-      'Cepillado de pisos en cerámica',
+      'services.floor_services_description2',
     ],
-    description: 'Tus pisos limpios en 3 simples pasos.',
+    description: 'steps.floor_subtitle',
     img: '/assets/imgs/floor-polisher.png',
-    text: 'Limpieza de tus pisos',
+    text: 'steps.floor_card',
     icon: GiFloorPolisher
   }
 ]

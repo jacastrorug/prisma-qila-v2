@@ -7,8 +7,12 @@ import {
   FaYoutube,
   FaMobileAlt,
 } from "react-icons/fa";
+import { useTranslation } from 'next-i18next';
 
 function ContactComponent() {
+  const { t, i18n } = useTranslation("common");
+  console.log(i18n);
+  
   return (
     <>
       <section
@@ -18,7 +22,7 @@ function ContactComponent() {
         <div className="auto-container">
           <div className="content-box">
             <div className="title">
-              <h1>Contáctanos</h1>
+              <h1>{t("contact_component.contact_component_title")}</h1>
             </div>
           </div>
         </div>
@@ -35,7 +39,7 @@ function ContactComponent() {
                         <FaMobileAlt size={45} style={{ color: '#e5007d' }} />
                       </i>
                     </div>
-                    <h5 className="title_pink">Teléfono</h5>
+                    <h5 className="title_pink">{t("contact_component.contact_phone")}</h5>
                     <p>
                       <Link href="tel:+1786809-7925">+1(786)809-7925</Link>
                     </p>
@@ -50,7 +54,7 @@ function ContactComponent() {
                         <MdEmail size={50} style={{ color: '#e5007d' }} />
                       </i>
                     </div>
-                    <h5 className="title_pink">Email</h5>
+                    <h5 className="title_pink">{t("contact_component.contact_email")}</h5>
                     <p>
                       <Link href="mailto:supportyou@info.com">info@prismaqila.com</Link>
                     </p>

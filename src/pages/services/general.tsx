@@ -1,15 +1,14 @@
 import Layout from "@/components/Layout";
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "react-i18next";
 import { CleaningServices } from "@/components/CleaningServices";
 import { CleaningServicesProps } from "index";
 import { GiBroom } from 'react-icons/Gi';
 
-const generalCleaning : CleaningServicesProps[]= [
+const generalCleaning: CleaningServicesProps[] = [
   {
     id: 'general-cleaning',
-    title: 'Limpieza General',
+    title: 'steps.general_title',
     imgList: [
       '/assets/imgs/Prisma-serv-1.jpg',
       '/assets/imgs/Prisma-serv-2.jpg',
@@ -18,17 +17,16 @@ const generalCleaning : CleaningServicesProps[]= [
     ],
     innerTxtList: [
       'Limpieza de áreas comunes',
-      'Limpieza y sanitización',
+      'services.carpet_services_description1',
     ],
-    description: 'Tus alfombras limpias en 3 simples pasos.',
+    description: 'steps.general_subtitle',
     img: '/assets/imgs/floor-polisher.png',
-    text: 'Limpieza de tus pisos',
+    text: 'steps.general_card',
     icon: GiBroom
   }
 ]
 
 function GeneralCleaning() {
-  const { t } = useTranslation("common");
 
   return (
     <Layout>

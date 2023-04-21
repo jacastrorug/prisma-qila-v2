@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'next-i18next';
 //import emailjs from 'emailjs-com';
 
 interface FormProperties extends HTMLFormControlsCollection {
@@ -11,6 +12,9 @@ interface FormProperties extends HTMLFormControlsCollection {
 } 
 
 function ContactForm() {
+  const { t, i18n } = useTranslation("common");
+  console.log(i18n);
+  
   const formRef = useRef<HTMLFormElement>(null);
   const [error, setError] = useState<string>();
 
@@ -37,7 +41,6 @@ function ContactForm() {
     }
 
     try {
-
       const data = {
         name: name.value,
         email: email.value,
@@ -60,17 +63,6 @@ function ContactForm() {
       console.error(e);
     }
 
-    /*
-    const value = inputRef.current?.value ?? '';
-    const emailValue = emailRef.current?.value ?? '';
-    console.log('email', emailValue)
-    console.log('send succesfull', value)
-    if (isValidEmail(emailValue)) {
-      sendEmail({ name: value, email: emailValue })
-    } else {
-      console.log(`invalid email, try again`)
-    }
-    */
   }
 
   const sendEmail = (form: { [key: string]: any }) => {
@@ -96,29 +88,29 @@ function ContactForm() {
     <section className="contact-section service-section_container">
       <div className="auto-container">
         <div className="sec-title text-center">
-          <h2 className="title_pink">Envíanos un mensaje</h2>
-          <h1 className="color_text">Porfavor escríbenos y aclaremos tu dudas</h1>
+          <h2 className="title_pink">{t("contact.contact_title")}</h2>
+          <h1 className="color_text">{t('contact.contact_subtitle')}</h1>
         </div>
         <div className="form-inner">
           <form id="contact-form" className="default-form" ref={formRef} onSubmit={handleSubmit}>
             <div className="row clearfix">
               <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                <input type="text" name="name" placeholder="Full Name *" required />
+                <input type="text" name="name" placeholder={t("contact.contact_name")} required />
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                <input type="email" name="email" placeholder="Email Address *" onChange={handleChangeEmail} required />
+                <input type="email" name="email" placeholder={t("contact.contact_email")} onChange={handleChangeEmail} required />
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                <input type="text" name="phone" placeholder="Phone Number" />
+                <input type="text" name="phone" placeholder={t("contact.contact_Phone")} />
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                <input type="text" name="subject" placeholder="Subject *" required />
+                <input type="text" name="subject" placeholder={t("contact.contact_subject")} required />
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                <textarea name="message" placeholder="Your Message *" required ></textarea>
+                <textarea name="message" placeholder={t("contact.contact_message")} required ></textarea>
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn centred">
-                <button className=" btn_custom theme-btn-three thm-btn" type="submit" name="submit-form">Send Message</button>
+                <button className=" btn_custom theme-btn-three thm-btn" type="submit" name="submit-form">{t("contact.contact_btn")}</button>
               </div>
             </div>
           </form>
