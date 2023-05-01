@@ -3,7 +3,7 @@ import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { CleaningServices } from "@/components/CleaningServices";
 import { CleaningServicesProps } from "index";
-import { GiFloorPolisher } from 'react-icons/Gi';
+import { GiFloorPolisher } from 'react-icons/gi';
 
 const floors: CleaningServicesProps[] = [
   {
