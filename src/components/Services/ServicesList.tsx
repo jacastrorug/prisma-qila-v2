@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 import { ServiceItem } from '../Services/ServiceItem';
-
+import { Service } from 'index';
+import { useTranslation } from "next-i18next";
 
 function ServicesList() {
+  const { t, i18n } = useTranslation("common");
+  console.log(i18n);
   const [serviceList, setServiceList] = useState<any>([]);
 
   useEffect(() => {
@@ -25,9 +28,9 @@ function ServicesList() {
           alt="img PrismaQila"
           width="47" height="26"
         />
-        <h4>services</h4>
+        <h4>{t("services.services_main_title1")}</h4>
       </div>
-      <h2 className='sec-title h2 title_custom'>Our services</h2>
+      <h2 className='sec-title h2 title_custom'>{t("services.services_main_title2")}</h2>
       <section className='service_container'>
         {serviceList.map((service: Service, index: React.Key | null | undefined) => (
           <ServiceItem

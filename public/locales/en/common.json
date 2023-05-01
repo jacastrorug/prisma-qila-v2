@@ -4,16 +4,60 @@
       "banner_1_title": "We do maintenance and floor cleaning",
       "banner_1_description": "Emphasizing prevention to maintain the useful life of the material.",
       "banner_1_btnLabel": "Know more",
-
       "banner_2_title": "We clean your carpets",
       "banner_2_description": "Using the right technology and products for each material.",
       "banner_2_btnLabel": "Know more",
-
       "banner_3_title": "We offer you general cleaning",
       "banner_3_description": "A service tailored to the needs of our customers. We do cleaning and maintenance indoors and outdoors.",
       "banner_3_btnLabel": "Know more"
-  
     }
+  },
+  "services": {
+    "services_main_title1": "Services",
+    "services_main_title2": "Our Services",
+    "floor_services_title": "CLEANING AND/OR MAINTENANCE OF FLOOR SERVICES",
+    "floor_services_description1": "Restoration, polishing or crystallization of marble floors.",
+    "floor_services_description2": "Ceramic tile floor brushing.",
+    "floor_services_description3": "Thermoplastic polishing by nebulization, finishing, and waxing of vinyl floors.",
+    "carpet_services_title": "CARPET CLEANING",
+    "carpet_services_description1": "Cleaning and sanitization.",
+    "carpet_services_description2": "Extraction and shampoo",
+    "carpet_services_description3": "Shampoo.",
+    "carpet_services_description4": "Dry cleaning.",
+    "general_services_title": "GENERAL CLEANING SERVICE",
+    "general_services_description1": "Maintenance of common areas.",
+    "general_services_description2": "Residential or commercial cleaning service.",
+    "more_btn": "More"
+
+  },
+  "contact": {
+    "contact_title": "Send us a message",
+    "contact_subtitle": "Please write to us and we will clarify your doubts.",
+    "contact_name": "Full Name *",
+    "contact_Phone": "Phone Number",
+    "contact_email": "Email Address *",
+    "contact_subject": "Subject *",
+    "contact_message": "Message *",
+    "contact_btn": "Send Message"
+  },
+  "steps": {
+    "floor_title": "Floor Cleaning",
+    "floor_subtitle": "Your clean floors in 3 simple steps.",
+    "floor_card": "Cleaning your floors.",
+    "carpet_title": "Carpet cleaning",
+    "carpet_subtitle": "Your clean carpets in 3 simple steps.",
+    "carpet_card": "Cleaning your carpets.",
+    "general_title": "General cleaning",
+    "general_subtitle": "Your home or office clean in 3 simple steps.",
+    "general_card": "Cleaning your floors.",
+    "invoise": "Service quote.",
+    "schedule": "FREE estimate schedule."
+
+  },
+  "contact_component": {
+    "contact_component_title": "Contact Us",
+    "contact_phone":"Phone number",
+    "contact_email": "Email"
   },
   "layout": {
     "header": {
@@ -27,6 +71,11 @@
   "minutes_text_underConstruction": "Minutes",
   "seconds_text_underConstruction": "Seconds",
   "input_placeholder": "Enter your email",
-  "notify_btn": "Notify"
-
+  "notify_btn": "Notify",
+  "nav_home" : "Home",
+  "nav_services": "Services",
+  "nav_contact": "Contact",
+  "nav_services_floor": "Floor cleaning and/or maintenance",
+  "nav_services_carpets": "Carpet cleaning",
+  "nav_services_general": "General cleaning"
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   FaFacebookF,
@@ -12,6 +12,9 @@ import { TOOGLE_MENU } from "@/redux/types";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
+import { StateModel } from "index";
+
+const mailTo = 'mailto:info@prismaqila.com';
 
 function Header() {
   const { t, i18n } = useTranslation("common");
@@ -23,7 +26,47 @@ function Header() {
     dispatch({ type: TOOGLE_MENU });
   };
 
-  const mailTo = 'mailto:info@prismaqila.com'
+  const [scrollTop, setScrollTop] = useState<string>("0rem");
+  const prevScrollTopRef = useRef<number>(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
+
+      // Mobile check
+      if (window.innerWidth < 1180) {
+        setScrollTop("0rem");
+        return;
+      }
+
+      if (currentScrollTop > 58) {
+        setScrollTop("0rem");
+      } else {
+        setScrollTop("6rem");
+      }
+      
+    };
+
+    const handleResize = () => {
+      if (window.innerWidth < 1180) {
+        setScrollTop("0rem");
+      } else {
+        setScrollTop("6rem");
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
 
   return (
     <section className={menuIsOpen ? "mobile-menu-visible" : ""}>
@@ -34,8 +77,8 @@ function Header() {
               <ul className="info pull-left clearfix">
                 <li>
                   <i className="flaticon-telephone"></i>
-                  {"layout.header.ask_quote"}{" "}
-                  <Link href="tel:17542441721">+1 (754) 244-1721</Link>
+                  {t("layout.header.ask_quote")}
+                  <Link href="tel:17868097925">+1(786)809-7925</Link>
                 </li>
                 <li>
                   <i className="flaticon-email"></i>
@@ -45,8 +88,8 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="header-lower">
-          <div className="auto-container">
+        <div className="header-lower " style={{ position: 'fixed', top: scrollTop, width: '100%' }} >
+          <div className="auto-container" >
             <div className="outer-box clearfix">
               <div className="menu-area pull-left clearfix">
                 <div className="mobile-nav-toggler" onClick={handleToogleMenu}>
@@ -61,26 +104,26 @@ function Header() {
                   >
                     <ul className="navigation clearfix">
                       <li className="current dropdown">
-                        <Link href="/home">Home</Link>
+                        <Link href="/">Home</Link>
                       </li>
                       <li className="dropdown">
-                        <Link href="/services/carpets">Services</Link>
+                        <Link href=''>{t("nav_services")}</Link>
                         <ul>
                           <li>
-                            <Link href="/services/floor">Limpiza y/o mantenimiento de pisos</Link>
+                            <Link href="/services/floor">{t("nav_services_floor")}</Link>
                           </li>
                           <li>
-                            <Link href="/services/carpets">Limpieza de alfombras</Link>
+                            <Link href="/services/carpets">{t("nav_services_carpets")}</Link>
                           </li>
                           <li>
                             <Link href="/services/general">
-                              Limpieza general
+                              {t("nav_services_general")}
                             </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="dropdown">
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/contact">{t("nav_contact")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -131,21 +174,21 @@ function Header() {
               className="collapse navbar-collapse show clearfix"
               id="navbarSupportedContent"
             >
-              <ul className="navigation clearfix">
+              <ul className="navigation clearfix" onClick={handleToogleMenu}>
                 <li className="current dropdown">
                   <Link href="/">Home</Link>
                 </li>
-                <li className="dropdown">
-                  <Link href="/services/carpets">Services</Link>
+                <li className="dropdown" onClick={handleToogleMenu}>
+                  <Link href="">{t("nav_services")}</Link>
                   <ul style={{ display: "none" }}>
                     <li>
-                      <Link href="/services/carpets">Limpieza Alfombras</Link>
+                      <Link href="/services/carpets">{t("nav_services_carpets")}</Link>
                     </li>
                     <li>
-                      <Link href="/services/carpets">Limpieza de Pisos</Link>
+                      <Link href="/services/floor">{t("nav_services_floor")}</Link>
                     </li>
                     <li>
-                      <Link href="/services/carpets">Limpieza General</Link>
+                      <Link href="/services/general">{t("nav_services_general")}</Link>
                     </li>
                   </ul>
                   <div className="dropdown-btn">
@@ -153,7 +196,7 @@ function Header() {
                   </div>
                 </li>
                 <li className="dropdown">
-                  <Link href="/">Contact</Link>
+                  <Link href="/contact">{t("nav_contact")}</Link>
                 </li>
               </ul>
             </div>

@@ -1,13 +1,14 @@
 import Layout from "@/components/Layout";
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "react-i18next";
 import { CleaningServices } from "@/components/CleaningServices";
+import { CleaningServicesProps } from "index";
+import { GiVacuumCleaner } from 'react-icons/gi';
 
-const carpets = [
+const carpets: CleaningServicesProps[] = [
   {
     id: 'carpets',
-    title: 'Limpieza de alfombras',
+    title: 'steps.carpet_title',
     imgList: [
       '/assets/imgs/Prisma-serv-1.jpg',
       '/assets/imgs/Prisma-serv-2.jpg',
@@ -18,29 +19,30 @@ const carpets = [
       'Extracción y shampoo',
       'Limpieza y sanitización',
       'Solo shampoo',
-      'Lavado en seco'
+      'services.carpet_services_description4'
     ],
-    description: 'Tus alfombras limpias en 3 simples pasos',
+    description: 'steps.carpet_subtitle',
     img: '/assets/imgs/floor-polisher.png',
-    text: 'Limpieza de tus alfombras'
+    text: 'steps.carpet_card',
+    icon: GiVacuumCleaner
   }
 ]
 
 function Carpets() {
-  const { t } = useTranslation("common");
 
   return (
     <Layout>
-      {carpets.map((carpets: CleaningServices, index: React.Key | null | undefined) => (
+      {carpets.map((carpet: CleaningServicesProps, index: React.Key | null | undefined) => (
         <CleaningServices
           key={index}
-          id={carpets.id}
-          title={carpets.title}
-          imgList={carpets.imgList}
-          innerTxtList={carpets.innerTxtList}
-          description={carpets.description}
-          img={carpets.img}
-          text={carpets.text}
+          id={carpet.id}
+          title={carpet.title}
+          imgList={carpet.imgList}
+          innerTxtList={carpet.innerTxtList}
+          description={carpet.description}
+          img={carpet.img}
+          text={carpet.text}
+          icon={carpet.icon}
         />
       ))}
 

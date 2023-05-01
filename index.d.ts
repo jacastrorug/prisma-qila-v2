@@ -1,3 +1,6 @@
+import { ReactElement } from "react"
+import { IconType } from "react-icons"
+
 type ActionModel = {
     type: string
     payload: any
@@ -15,12 +18,21 @@ type Service = {
     href: string;
 }
 
-type CleaningServices = {
+type CleaningServicesProps = {
     id: string;
     title: string;
     imgList: string[];
     description: string;
     innerTxtList: string[];
     img: string;
-    text: string
+    text: string;
+    icon: IconType
+}
+
+interface FormData {
+    name: string;
+    email: string;
+    phone: string;
+    subject: string;
+    message: string;
 }

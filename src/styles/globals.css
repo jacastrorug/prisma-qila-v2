@@ -14,6 +14,7 @@
   --mobile-sm: 1.4rem;
   --mobile-md: 1.8rem;
   --mobile-lg: 2rem;
+  --bs-link-hover-color: #e5007d;
 
   --tablet-sm: 1.6rem;
   --tablet-md: 2rem;
@@ -131,10 +132,15 @@ a.btn-custom {
 
 .cleaning-serv {
   display: flex;
+  width: 100%;
 }
 
 .title_pink {
   color: var(--secondary-color);
+}
+
+.title_grey {
+  color: var(--grey-contrast);
 }
 
 .description_cleaning {
@@ -142,7 +148,7 @@ a.btn-custom {
   font-size: var(--mobile-md);
   line-height: 1.4rem;
   margin: 5rem 0 3rem 0;
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 
 .section-lower_container {
@@ -150,6 +156,8 @@ a.btn-custom {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30rem;
+  width: 100%;
 }
 
 .service-icons_container {
@@ -157,21 +165,63 @@ a.btn-custom {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+
+.service-number_icon {
+  display: flex;
+  position: relative;
+  top: -4rem;
+  left: 3rem;
+  border-radius: 4rem;
+  background-color: #0bd3d3;
+  width: 13rem;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.5rem
 }
 
 .service-icon_card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 12rem;
+  align-items: flex-start;
+  height: 24rem;
+  width: 24rem;
   margin: 1rem;
   padding: 1rem;
+  background-color: var(--grey);
+  border-radius: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.service-icon_card:hover {
+  border: 0.2rem solid var(--bs-link-hover-color);
+}
+
+.service-icon_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.service-container_img-title {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
 }
 
 .service_span {
-  color: var(--secondary-color);
+  color: var(--grey-contrast);
   font-size: var(--mobile-md);
+  font-weight: 400;
+  margin-top: 0.8rem;
+  margin-left: 0.5rem;
 }
 
 .color_text {
@@ -211,9 +261,8 @@ a.btn-custom {
   text-align: center;
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
+.page-max_content {
+  width: 90%;
 }
 
 /* Tablet and Smaller Desktop */
@@ -255,16 +304,38 @@ a.btn-custom {
 
   .service-icons_container {
     flex-direction: row;
+    width: 132rem;
+    gap: 3rem;
   }
 
   .service-icon_card {
-    width: 34rem;
+    width: 100%;
+    height: 22rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .service-number_icon {
+    width: 6rem;
+    height: 6rem;
+    left: 9rem;
   }
 
   .service_span {
-    font-size: var(--desktop-sm);
-    margin-top: 1.5rem;
+    font-size: var(--desktop-md);
+    margin-top: 4.5rem;
     justify-self: center;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+  }
+
+  .section-lower_container {
+    margin-top: 38rem;
+  }
+
+  .project-section .project-inner {
+    position: relative;
+    width: 100%;
   }
 
 }
