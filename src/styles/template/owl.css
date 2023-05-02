@@ -269,6 +269,7 @@
 
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
+  background: transparent;
 }
 
 .owl-theme .owl-dots .owl-dot span {

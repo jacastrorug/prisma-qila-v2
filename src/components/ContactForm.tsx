@@ -122,6 +122,7 @@ function ContactForm() {
                   pauseOnFocusLoss
                   pauseOnHover
                   theme="light"
+                  toastStyle={{ textAlign: 'left' }}
                 />
               </div>
             </div>
