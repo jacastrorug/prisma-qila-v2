@@ -1,18 +1,17 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaYoutube,
-  FaInstagram,
-  FaTimes,
-  FaAngleDown,
-} from "react-icons/fa";
 import { TOOGLE_MENU } from "@/redux/types";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { StateModel } from "index";
+import { useEffect, useState } from "react";
+import {
+  FaAngleDown,
+  FaFacebookF,
+  FaInstagram,
+  FaTimes,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
 
 const mailTo = 'mailto:info@prismaqila.com';
 
@@ -27,7 +26,6 @@ function Header() {
   };
 
   const [scrollTop, setScrollTop] = useState<string>("0rem");
-  const prevScrollTopRef = useRef<number>(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +63,6 @@ function Header() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
 
   return (
@@ -180,7 +177,7 @@ function Header() {
                 </li>
                 <li className="dropdown" onClick={handleToogleMenu}>
                   <Link href="">{t("nav_services")}</Link>
-                  <ul style={{ display: "none" }}>
+                  <ul style={{ display: "none" }} onClick={handleToogleMenu}>
                     <li>
                       <Link href="/services/carpets">{t("nav_services_carpets")}</Link>
                     </li>

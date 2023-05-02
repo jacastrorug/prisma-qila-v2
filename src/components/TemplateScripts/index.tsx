@@ -1,7 +1,11 @@
 import Script from "next/script";
-import React from "react";
+import React, { useEffect } from "react";
 
 function TemplateScripts() {
+  useEffect(() => {
+    console.log('Load tempalte script')
+  });
+
   return (
     <>
       <Script src="/assets/js/jquery.js" strategy="afterInteractive" />

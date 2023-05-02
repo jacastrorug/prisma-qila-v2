@@ -7,26 +7,26 @@ emailjs.init({
 });
 
 const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
-    if(req.method !== 'POST') {
+    if (req.method !== 'POST') {
         res.status(403)
-        .setHeader("Content-Type", "application/json")
-        .json({status: false, message: 'This endpoint allow just post requests'});
+            .setHeader("Content-Type", "application/json")
+            .json({ status: false, message: 'This endpoint allow just post requests' });
     }
 
-    const params = {...req.body};
+    const params = { ...req.body };
 
     try {
         const request = await emailjs.send('service_yh4bx2k', 'template_9998i0f', params);
 
         console.log(request);
         res.status(200)
-        .setHeader("Content-Type", "application/json")
-        .json({ status: true, message: 'Message sent' });
-    } catch(e) {
+            .setHeader("Content-Type", "application/json")
+            .json({ status: true, message: 'Message sent' });
+    } catch (e) {
         console.log(e);
         res.status(500)
-        .setHeader("Content-Type", "application/json")
-        .json({status: false, message: 'Error sending the message'});
+            .setHeader("Content-Type", "application/json")
+            .json({ status: false, message: 'Error sending the message' });
     }
 };
 

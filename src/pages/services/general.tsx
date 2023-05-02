@@ -2,7 +2,6 @@ import Layout from "@/components/Layout";
 import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { CleaningServices } from "@/components/CleaningServices";
-import { CleaningServicesProps } from "index";
 import { GiBroom } from 'react-icons/gi';
 
 const generalCleaning: CleaningServicesProps[] = [
