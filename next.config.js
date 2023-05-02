@@ -5,9 +5,6 @@ const webpack = require("webpack");
 const nextConfig = {
   reactStrictMode: true,
   i18n,
-  env: {
-    WHATSAPP: "17868097925",
-  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins.push(
       new webpack.ProvidePlugin({

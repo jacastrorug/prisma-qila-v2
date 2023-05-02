@@ -2,8 +2,8 @@ import { NextApiRequest, NextApiResponse } from "next";
 import emailjs from '@emailjs/nodejs';
 
 emailjs.init({
-    publicKey: 'UmKaAQ9Cah4KKB30y',
-    privateKey: 'm2vBPKrQnaSvnySvefxk8'
+    publicKey: 'CgktGXHkb4Rwd-A90',
+    privateKey: process.env.PRIVATE_KEY
 });
 
 const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -16,7 +16,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     const params = { ...req.body };
 
     try {
-        const request = await emailjs.send('service_yh4bx2k', 'template_9998i0f', params);
+        const request = await emailjs.send('service_z1b9lnb', 'template_2xfnhed', params);
 
         console.log(request);
         res.status(200)
