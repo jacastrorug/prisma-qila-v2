@@ -38,7 +38,9 @@
 
 .main_text {
     font-size: var(--mobile-lg);
+    font-weight: 800;
     text-align: center;
+    color: var(--black);
 }
 
 .cards_container {
@@ -57,7 +59,6 @@
     height: 10rem;
     border-radius: 1.4rem;
     background-color: var(--black);
-    color: var(--grey);
     margin-right: 1rem;
     font-size: var(--mobile-md);
 }
@@ -65,11 +66,14 @@
 .card_number {
     margin: 0;
     font-size: 4.5rem;
+    color: var(--white);
+    margin-bottom: 0.2em;
 }
 
 .card_title {
     margin-top: 0;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    color: var(--white);
 }
 
 .section_container_buttons {
@@ -77,6 +81,10 @@
     flex-direction: column;
     width: 100%;
     max-width: 23rem;
+}
+
+.btn_whatsapp_container > *:hover{
+    color: var(--white);
 }
 
 .btn_whatsapp {
@@ -118,20 +126,21 @@
     justify-content: center;
     padding-left: 0.5rem;
     border: none;
-    border: none;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+    font-size: 1.8rem;
 }
 
 .btn_email {
     height: 100%;
     padding: 0 2rem;
-    background: var(--blue);
+    background: var(--primary-color);
     color: var(--grey);
     border: none;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     cursor: pointer;
+    font-size: 1.8rem;
 }
 
 /* Shared Styles */
@@ -145,11 +154,11 @@
     }
 }
 
-
 /* Tablet and Smaller Desktop */
 @media (min-width: 500px) and (max-width: 900px) {
     .main_text {
         font-size: var(--tablet-lg);
+        font-weight: 700;
     }
 
     .logo {
@@ -173,6 +182,7 @@
 
     .card_number {
         font-size: 6.2rem;
+        margin-bottom: 0.4em;
     }
 
     .card_title {

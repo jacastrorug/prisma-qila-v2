@@ -1,0 +1,79 @@
+{
+  "home": {
+    "carousel": {
+      "banner_1_title": "Realizamos mantenimiento y limpieza de pisos",
+      "banner_1_description": "Haciendo énfasis en la prevención para mantener la vida útil del material.",
+      "banner_1_btnLabel": "Saber más",
+      "banner_2_title": "Limpiamos tus alfombras",
+      "banner_2_description": "Usando la tecnología y productos adecuados para cada material.",
+      "banner_2_btnLabel": "Saber más",
+      "banner_3_title": "Te ofrecemos limpieza general",
+      "banner_3_description": "Un servicio a la medida de las necesidades de nuestros clientes. Realizamos limpieza y mantenimiento en interiores y exteriores.",
+      "banner_3_btnLabel": "Saber más"
+    }
+  },
+  "services": {
+    "services_main_title1": "Servicios",
+    "services_main_title2": "Nuestros servicios",
+    "floor_services_title": "LIMPIEZA Y/O MANTENIMIENTO DE PISOS",
+    "floor_services_description1": "Restauración y pulido o cristalización de pisos en marmol.",
+    "floor_services_description2": "Cepillado de pisos en cerámica.",
+    "floor_services_description3": "Pulido termoplástico por nebulización y finalización y encerado de pisos en Vinil.",
+    "carpet_services_title": "LIMPIEZA DE ALFOMBRAS.",
+    "carpet_services_description1": "Limpieza y sanitización.",
+    "carpet_services_description2": "Extracción y shampoo.",
+    "carpet_services_description3": "Shampoo.",
+    "carpet_services_description4": "Lavado en seco.",
+    "general_services_title": "LIMPIEZA GENERAL",
+    "general_services_description1": "Mantenimiento de áreas comunes.",
+    "general_services_description2": "Servicio de limpieza residencial o comercial.",
+    "more_btn": "Saber más"
+  },
+  "contact": {
+    "contact_title": "Envíanos un mensaje",
+    "contact_subtitle": "Porfavor escríbenos y aclaremos tus dudas.",
+    "contact_name": "Nombre Completo *",
+    "contact_Phone": "Número Celular",
+    "contact_email": "Correo electrónico *",
+    "contact_subject": "Asunto *",
+    "contact_message": "Mensaje *",
+    "contact_btn": "Enviar"
+  },
+  "steps": {
+    "floor_title": "Limpieza de Pisos",
+    "floor_subtitle": "Tus pisos limpios en 3 simples pasos.",
+    "floor_card": "Limpieza de tus pisos.",
+    "carpet_title": "Limpieza de alfombras",
+    "carpet_subtitle": "Tus alfombras limpias en 3 simples pasos.",
+    "carpet_card": "Limpieza de tus alfombras.",
+    "general_title": "Limpieza General",
+    "general_subtitle": "Tu hogar u oficina limpios en 3 simples pasos.",
+    "general_card": "Limpieza de tus pisos.",
+    "invoise": "Cotización del servicio.",
+    "schedule": "Agendamiento de estimacion GRATIS."
+  },
+  "contact_component": {
+    "contact_component_title": "Contáctanos",
+    "contact_phone":"Teléfono",
+    "contact_email": "Correo electrónico"
+  },
+  "layout": {
+    "header": {
+      "ask_quote": "Haz tu cotización"
+    }
+  },
+  "whatsapp_message": "Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios!",
+  "main_text_underConstruction": "Estamos construyendo algo genial para ti!",
+  "days_text_underConstruction": "Días",
+  "hours_text_underConstruction": "Horas",
+  "minutes_text_underConstruction": "Minutos",
+  "seconds_text_underConstruction": "Segundos",
+  "input_placeholder": "Escribe tu correo",
+  "notify_btn": "Notificar",
+  "nav_home" : "Home",
+  "nav_services": "Servicios",
+  "nav_services_floor": "Limpieza y/o mantenimineto de pisos",
+  "nav_services_carpets": "Limpieza de alfombras",
+  "nav_services_general": "Limpieza general",
+  "nav_contact": "Contacto"
+}
