@@ -1,13 +1,10 @@
-import React from "react";
 import Head from "next/head";
+import React from "react";
+import { FloatingBtn } from "../FloatingBtn/index";
 import Footer from "../Footer";
 import Header from "../Header";
-import { FloatingBtn } from "../FloatingBtn/index";
-import { useTranslation } from "next-i18next";
 
 function Layout(props: React.PropsWithChildren) {
-  const { t } = useTranslation("common");
-
   return (
     <>
       <Head>

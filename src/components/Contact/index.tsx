@@ -11,7 +11,6 @@ import { useTranslation } from 'next-i18next';
 
 function ContactComponent() {
   const { t, i18n } = useTranslation("common");
-  console.log(i18n);
   
   return (
     <>

@@ -314,6 +314,7 @@
   }
 
   // banner-carousel
+  /*
   if ($(".banner-carousel").length) {
     $(".banner-carousel").owlCarousel({
       loop: true,
@@ -344,6 +345,7 @@
       },
     });
   }
+  */
 
   //two-column-carousel
   if ($(".two-column-carousel").length) {
@@ -474,6 +476,7 @@
   }
 
   // clients-carousel
+
   if ($(".clients-carousel").length) {
     $(".clients-carousel").owlCarousel({
       loop: true,

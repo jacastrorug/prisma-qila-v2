@@ -12,8 +12,7 @@ interface FormProperties extends HTMLFormControlsCollection {
 } 
 
 function ContactForm() {
-  const { t, i18n } = useTranslation("common");
-  console.log(i18n);
+  const { t } = useTranslation("common");
   
   const formRef = useRef<HTMLFormElement>(null);
   const [error, setError] = useState<string>();
@@ -31,7 +30,6 @@ function ContactForm() {
     event.preventDefault();
 
     const elements = formRef.current?.elements as FormProperties;
-    console.log(elements);
 
     const { name, email, phone, subject, message } = elements;
 
@@ -58,7 +56,6 @@ function ContactForm() {
       };
 
       const response = await fetch('/api/send_email', config);
-      console.log(response);
     } catch(e) {
       console.error(e);
     }

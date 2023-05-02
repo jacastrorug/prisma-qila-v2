@@ -49,8 +49,7 @@ function UnderConstruction() {
     return () => clearInterval(interval)
   }, [])
 
-  const { t, i18n } = useTranslation("common");
-  console.log(i18n);
+  const { t } = useTranslation("common");
 
   const whatsappMessage = t("whatsapp_message");
   const whatsappUrl = `https://wa.me/${process.env.WHATSAPP}?text=${whatsappMessage}`;
@@ -73,10 +72,9 @@ function UnderConstruction() {
     const value = inputRef.current?.value ?? '';
 
     if (isValidEmail(value)) {
-      console.log('send succesfull', value)
       sendEmail({ email: value })
     } else {
-      console.log(`invalid email, try again`)
+      console.error(`invalid email, try again`)
     }
   }
 

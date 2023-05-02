@@ -1,13 +1,11 @@
-import Layout from "@/components/Layout";
-import React from "react";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Carousel from "@/components/Carousel";
-import { useTranslation } from "next-i18next";
-import { ServicesList } from "@/components/Services/ServicesList";
 import { ContactForm } from "@/components/ContactForm";
+import Layout from "@/components/Layout";
+import { ServicesList } from "@/components/Services/ServicesList";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 function Home() {
-  const { t, i18n } = useTranslation("common");
 
   return (
     <Layout>

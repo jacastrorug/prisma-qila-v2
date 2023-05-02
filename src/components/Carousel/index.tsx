@@ -1,6 +1,45 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
+import { OwlCarouselProps } from "react-owl-carousel";
 import CarouselItem from "./CarouselItem";
+
+var $ = require("jquery");
+if (typeof window !== "undefined") {
+  //Client-side-only code
+  window.$ = window.jQuery = require("jquery");
+}
+
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), { ssr: false });
+
+const options: OwlCarouselProps = {
+  loop: true,
+  margin: 0,
+  nav: true,
+  animateOut: "fadeOut",
+  animateIn: "fadeIn",
+  smartSpeed: 1000,
+  autoPlay: true,
+  children: null,
+  navText: [
+    '<span class="fal fa-angle-right"></span>',
+    '<span class="fal fa-angle-left"></span>',
+  ],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    800: {
+      items: 1,
+    },
+    1024: {
+      items: 1,
+    },
+  },
+};
 
 function Carousel() {
   const { t } = useTranslation("common");
@@ -34,7 +73,10 @@ function Carousel() {
 
   return (
     <section className="banner-section style-one">
-      <div className="banner-carousel owl-theme owl-carousel">
+      <OwlCarousel
+        className="banner-carousel owl-theme owl-carousel"
+        {...options}
+      >
         {banners.map((banner) => (
           <CarouselItem
             key={banner.id}
@@ -45,7 +87,13 @@ function Carousel() {
             btnLabel={banner.btnLabel}
           />
         ))}
+      </OwlCarousel>
+      {/**
+         * 
+      <div className="banner-carousel owl-theme owl-carousel">
+
       </div>
+         */}
     </section>
   );
 }
