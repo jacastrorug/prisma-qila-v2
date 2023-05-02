@@ -26,7 +26,7 @@ const data = {
     'serviceItem3': {
       id: 'service-3',
       image: '/assets/imgs/Prisma-058.jpg',
-      title: 'services.eneral_services_title',
+      title: 'services.general_services_title',
       listServices: [
         'services.general_services_description1',
         'services.general_services_description2',
