@@ -2,7 +2,7 @@ const data = {
   'services': {
     'serviceItem1': {
       id: 'service-1',
-      image: '/assets/imgs/Prisma-058.jpg',
+      image: '/assets/imgs/CardAlfombras.jpg',
       title: 'services.floor_services_title',
       listServices: [
         'services.floor_services_description1',
@@ -13,7 +13,7 @@ const data = {
     },
     'serviceItem2': {
       id: 'service-2',
-      image: '/assets/imgs/Prisma-058.jpg',
+      image: '/assets/imgs/CardPisos.jpg',
       title: 'services.carpet_services_title',
       listServices: [
         'services.carpet_services_description1',
@@ -25,7 +25,7 @@ const data = {
     },
     'serviceItem3': {
       id: 'service-3',
-      image: '/assets/imgs/Prisma-058.jpg',
+      image: '/assets/imgs/CardLimpiezaGen.png',
       title: 'services.general_services_title',
       listServices: [
         'services.general_services_description1',

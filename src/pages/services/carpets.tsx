@@ -9,10 +9,10 @@ const carpets: CleaningServicesProps[] = [
     id: 'carpets',
     title: 'steps.carpet_title',
     imgList: [
-      '/assets/imgs/Prisma-serv-1.jpg',
-      '/assets/imgs/Prisma-serv-2.jpg',
-      '/assets/imgs/Prisma-serv-3.jpg',
-      '/assets/imgs/Prisma-serv-4.jpg',
+      '/assets/imgs/ExtracciónAlfombras.png',//fix img size 
+      '/assets/imgs/LimpiezaSanitización.png',
+      '/assets/imgs/AlfombrasShampoo.png',
+      '/assets/imgs/LavadoSeco.png',
     ],
     innerTxtList: [
       'Extracción y shampoo',
