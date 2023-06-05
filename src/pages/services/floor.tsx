@@ -9,10 +9,9 @@ const floors: CleaningServicesProps[] = [
     id: 'floors',
     title: 'steps.floor_title',
     imgList: [
-      '/assets/imgs/Prisma-serv-1.jpg',
-      '/assets/imgs/Prisma-serv-2.jpg',
-      '/assets/imgs/Prisma-serv-3.jpg',
-      '/assets/imgs/Prisma-serv-4.jpg',
+      '/assets/imgs/Pisosmarmol.png',
+      '/assets/imgs/banner/SliderPisos.png',
+      '/assets/imgs/CepilladoPisos.png',
     ],
     innerTxtList: [
       'Pulido o cristalizacion de Marmol',

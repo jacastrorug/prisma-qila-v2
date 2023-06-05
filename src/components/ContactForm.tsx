@@ -1,7 +1,9 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'next-i18next';
-//import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 interface FormProperties extends HTMLFormControlsCollection {
   name: HTMLInputElement,
@@ -9,7 +11,7 @@ interface FormProperties extends HTMLFormControlsCollection {
   phone: HTMLInputElement,
   subject: HTMLInputElement,
   message: HTMLTextAreaElement
-} 
+}
 
 function ContactForm() {
   const { t } = useTranslation("common");
@@ -33,7 +35,7 @@ function ContactForm() {
 
     const { name, email, phone, subject, message } = elements;
 
-    if(email.value && !isValidEmail(email.value)) {
+    if (email.value && !isValidEmail(email.value)) {
       setError('El email es inválido');
       return;
     }
@@ -56,8 +58,12 @@ function ContactForm() {
       };
 
       const response = await fetch('/api/send_email', config);
-    } catch(e) {
+      console.log(response);
+
+      toast.success(t('email_success'));
+    } catch (e) {
       console.error(e);
+      toast.error('Hubo un error al enviar el correo.');
     }
 
   }
@@ -108,11 +114,20 @@ function ContactForm() {
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12 form-group message-btn centred">
                 <button className=" btn_custom theme-btn-three thm-btn" type="submit" name="submit-form">{t("contact.contact_btn")}</button>
+                <ToastContainer
+                  position="top-right"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  pauseOnFocusLoss
+                  pauseOnHover
+                  theme="light"
+                  toastStyle={{ textAlign: 'left' }}
+                />
               </div>
             </div>
           </form>
         </div>
-        {/** TODO: Add error message */}
       </div>
     </section>
   )

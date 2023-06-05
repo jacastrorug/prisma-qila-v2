@@ -1866,6 +1866,7 @@
    cursor: pointer;
    transition: all 500ms ease;
    z-index: 1;
+   background: transparent;
  }
 
  .banner-section .owl-nav .owl-next ::before,
