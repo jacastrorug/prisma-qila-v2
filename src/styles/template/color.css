@@ -1139,7 +1139,7 @@
 }
 
 .default-form .form-group button{
-	background: #3133d0;
+	background: var(--white);
 }
 
 .service-section .tab-buttons-2 li.active-btn-2{

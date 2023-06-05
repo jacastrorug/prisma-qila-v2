@@ -9,10 +9,9 @@ const generalCleaning: CleaningServicesProps[] = [
     id: 'general-cleaning',
     title: 'steps.general_title',
     imgList: [
-      '/assets/imgs/Prisma-serv-1.jpg',
-      '/assets/imgs/Prisma-serv-2.jpg',
-      '/assets/imgs/Prisma-serv-3.jpg',
-      '/assets/imgs/Prisma-serv-4.jpg',
+      '/assets/imgs/Prisma-serv-1.jpg',// add another img
+      '/assets/imgs/CardLimpiezaGen.png',
+      '/assets/imgs/LimpiezaZonas.png'
     ],
     innerTxtList: [
       'Limpieza de áreas comunes',
