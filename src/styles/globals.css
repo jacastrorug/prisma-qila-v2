@@ -265,6 +265,22 @@ a.btn-custom {
   width: 90%;
 }
 
+.row-direction {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 30px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_text{
+  font-size: var(--mobile-md);
+  color: var(--black);
+  margin-top: 20px;
+}
+
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 500px) and (max-width: 900px) {}
 
@@ -330,12 +346,31 @@ a.btn-custom {
   }
 
   .section-lower_container {
-    margin-top: 38rem;
+    margin-top: 48rem;
   }
 
   .project-section .project-inner {
     position: relative;
     width: 100%;
+  }
+
+  .row-direction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .main_text{
+    display: flex;
+    font-size: var(--desktop-md);
+    color: var(--black);
+    width: 55%;
+  }
+  .text_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
