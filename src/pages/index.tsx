@@ -3,14 +3,18 @@ import { ContactForm } from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import { ServicesList } from "@/components/Services/ServicesList";
 import { useTranslation } from "next-i18next";
+import Testimonial from "@/components/Testimonial";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import AboutUs from "@/components/AboutUs";
 
 function Home() {
 
   return (
     <Layout>
       <Carousel />
+      <AboutUs />
       <ServicesList />
+      <Testimonial />
       <ContactForm />
     </Layout>
   );
