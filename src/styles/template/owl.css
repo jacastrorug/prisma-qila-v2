@@ -273,7 +273,7 @@
 }
 
 .owl-theme .owl-dots .owl-dot span {
-  background: #222;
+  background: #e5007d;
   display: block;
   margin: 0px 5px 0px 5px;
   transition: opacity 200ms ease 0s;
@@ -282,5 +282,5 @@
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-  background: none repeat scroll 0 0 #cda274;
+  background: none repeat scroll 0 0 #898f9f;
 }
