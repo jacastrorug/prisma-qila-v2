@@ -1,13 +1,12 @@
-import React from 'react';
-import { MdEmail } from 'react-icons/md';
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import {
   FaFacebookF,
+  FaMobileAlt,
   FaTwitter,
   FaYoutube,
-  FaMobileAlt,
 } from "react-icons/fa";
-import { useTranslation } from 'next-i18next';
+import { MdEmail } from 'react-icons/md';
 
 function ContactComponent() {
   const { t, i18n } = useTranslation("common");

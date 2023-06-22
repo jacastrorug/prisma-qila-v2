@@ -609,7 +609,6 @@
           },
         },
       })
-
       .on("click", ".owl-item", function () {
         $sync3.trigger("to.owl.carousel", [$(this).index(), duration, true]);
       })

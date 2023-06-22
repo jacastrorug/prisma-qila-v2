@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import { ServiceItem } from "../Services/ServiceItem";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { ServiceItem } from "../Services/ServiceItem";
 
 function ServicesList() {
   const { t } = useTranslation("common");

@@ -1,11 +1,10 @@
+import AboutUs from "@/components/AboutUs";
 import Carousel from "@/components/Carousel";
 import { ContactForm } from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import { ServicesList } from "@/components/Services/ServicesList";
-import { useTranslation } from "next-i18next";
-import Testimonial from "@/components/Testimonial";
+import Testimonials from "@/components/Testimonials";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import AboutUs from "@/components/AboutUs";
 
 function Home() {
 
@@ -14,7 +13,7 @@ function Home() {
       <Carousel />
       <AboutUs />
       <ServicesList />
-      <Testimonial />
+      <Testimonials />
       <ContactForm />
     </Layout>
   );

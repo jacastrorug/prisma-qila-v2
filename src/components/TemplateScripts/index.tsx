@@ -1,9 +1,9 @@
 import Script from "next/script";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 function TemplateScripts() {
   useEffect(() => {
-    console.log('Load tempalte script')
+    console.log("Load tempalte script");
   });
 
   return (
