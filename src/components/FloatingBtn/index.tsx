@@ -1,8 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
 import styles from "@/styles/components/FloatingBtn.module.css";
-import { FaWhatsapp } from "react-icons/fa";
 import { useTranslation } from "next-i18next";
+import Link from 'next/link';
+import { FaWhatsapp } from "react-icons/fa";
 
 function FloatingBtn() {
   const { t, i18n } = useTranslation("common");

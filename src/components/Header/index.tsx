@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 
-const mailTo = 'mailto:info@prismaqila.com';
+const mailTo = "mailto:info@prismaqila.com";
 
 function Header() {
   const { t, i18n } = useTranslation("common");
@@ -42,7 +42,6 @@ function Header() {
       } else {
         setScrollTop("6rem");
       }
-      
     };
 
     const handleResize = () => {
@@ -64,7 +63,6 @@ function Header() {
     };
   }, []);
 
-
   return (
     <section className={menuIsOpen ? "mobile-menu-visible" : ""}>
       <header className="main-header style-five">
@@ -85,8 +83,11 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="header-lower " style={{ position: 'fixed', top: scrollTop, width: '100%' }} >
-          <div className="auto-container" >
+        <div
+          className="header-lower "
+          style={{ position: "fixed", top: scrollTop, width: "100%" }}
+        >
+          <div className="auto-container">
             <div className="outer-box clearfix">
               <div className="menu-area pull-left clearfix">
                 <div className="mobile-nav-toggler" onClick={handleToogleMenu}>
@@ -104,13 +105,17 @@ function Header() {
                         <Link href="/">Home</Link>
                       </li>
                       <li className="dropdown">
-                        <Link href=''>{t("nav_services")}</Link>
+                        <Link href="">{t("nav_services")}</Link>
                         <ul>
                           <li>
-                            <Link href="/services/floor">{t("nav_services_floor")}</Link>
+                            <Link href="/services/floor">
+                              {t("nav_services_floor")}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/services/carpets">{t("nav_services_carpets")}</Link>
+                            <Link href="/services/carpets">
+                              {t("nav_services_carpets")}
+                            </Link>
                           </li>
                           <li>
                             <Link href="/services/general">
@@ -179,13 +184,19 @@ function Header() {
                   <Link href="">{t("nav_services")}</Link>
                   <ul style={{ display: "none" }} onClick={handleToogleMenu}>
                     <li>
-                      <Link href="/services/carpets">{t("nav_services_carpets")}</Link>
+                      <Link href="/services/carpets">
+                        {t("nav_services_carpets")}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/services/floor">{t("nav_services_floor")}</Link>
+                      <Link href="/services/floor">
+                        {t("nav_services_floor")}
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/services/general">{t("nav_services_general")}</Link>
+                      <Link href="/services/general">
+                        {t("nav_services_general")}
+                      </Link>
                     </li>
                   </ul>
                   <div className="dropdown-btn">
@@ -201,7 +212,9 @@ function Header() {
           <div className="contact-info">
             <h4>Contact Info</h4>
             <ul>
-              <li><Link href={mailTo}>info@prismaqila.com</Link></li>
+              <li>
+                <Link href={mailTo}>info@prismaqila.com</Link>
+              </li>
               <li>
                 <Link href="tel:17542441721">+1 (754) 244-1721</Link>
               </li>

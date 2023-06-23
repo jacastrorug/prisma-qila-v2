@@ -1,12 +1,11 @@
-import React from "react";
 import Image from "next/image";
-import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 import prismaqilaLogo from "../../../public/assets/imgs/prisma-qila-white.png";
 
 function Footer() {
-  const mailTo = 'mailto:info@prismaqila.com'
+  const mailTo = "mailto:info@prismaqila.com";
   return (
     <footer className="main-footer bg-color-2">
       <div className="auto-container">

@@ -88,12 +88,6 @@ function Carousel() {
           />
         ))}
       </OwlCarousel>
-      {/**
-         * 
-      <div className="banner-carousel owl-theme owl-carousel">
-
-      </div>
-         */}
     </section>
   );
 }

@@ -609,7 +609,7 @@
 
  .sec-title h6 {
    display: block;
-   font-size: 14px;
+   font-size: 16px;
    line-height: 24px;
    font-weight: 600;
    text-transform: uppercase;
@@ -662,7 +662,7 @@
  .sec-title.text-center h6:before {
    position: absolute;
    content: '';
-   background: url(/assets/imgs/icons/wave-2.png);
+
    width: 60px;
    height: 7px;
    left: 50%;
@@ -3605,7 +3605,7 @@
  .testimonial-section .bg-layer:before {
    position: absolute;
    content: '';
-   background: #eceff6;
+   background:#0bd3d311;
    width: 100%;
    height: 100%;
    left: 0px;
