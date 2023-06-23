@@ -39,7 +39,7 @@ function Testimonials() {
       ></div>
       <div className="auto-container">
         <div className="sec-title text-center">
-          <h6>Testimonials</h6>
+          <h6 className="title_pink">Testimonials</h6>
           <h2>Words From Our Customers</h2>
         </div>
         <div className="testimonial-inner">
@@ -54,20 +54,20 @@ function Testimonials() {
                     <div className="col-lg-6 col-md-6 col-sm-12 column">
                       <figure className="image">
                         <Image
-                          src="/assets/imgs/resource/testimonial-1.jpg"
+                          src="/assets/imgs/Antes1.jpeg"
                           alt=""
                           width="270"
                           height="335"
                         />
                         <div className="before">
-                          <h6>Before1</h6>
+                          <h6>Before</h6>
                         </div>
                       </figure>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 column">
                       <figure className="image">
                         <Image
-                          src="/assets/imgs/resource/testimonial-2.jpg"
+                          src="/assets/imgs/Despues2.jpeg"
                           alt=""
                           width="270"
                           height="335"
@@ -84,7 +84,7 @@ function Testimonials() {
                 <div className="testimonial-block-one">
                   <div className="inner-box">
                     <h4>Local Upstanding & Reliable</h4>
-                    <ul className="rating-box clearfix">
+                    {/* <ul className="rating-box clearfix">
                       <li>
                         <i className="fas fa-star"></i>
                       </li>
@@ -100,19 +100,14 @@ function Testimonials() {
                       <li>
                         <i className="fas fa-star"></i>
                       </li>
-                    </ul>
+                    </ul> */}
                     <div className="text">
                       <p>
-                        {`Thank you to Sanito Cleaning Services for a job well
-                        done. The staff was prompt, courteous and professional.
-                        My place looks amazing and I couldn't be hap...`}
+                        {`Tiene razón, el área está como nueva, nada de humedad.`}
                       </p>
                     </div>
                     <div className="author-box">
-                      <h4>Nathan Felix</h4>
-                      <span className="designation">
-                        CEO, High Rise Construction
-                      </span>
+                      <h4>Testimonio #1</h4>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
@@ -137,20 +132,20 @@ function Testimonials() {
                     <div className="col-lg-6 col-md-6 col-sm-12 column">
                       <figure className="image">
                         <Image
-                          src="/assets/imgs/resource/testimonial-1.jpg"
+                          src="/assets/imgs/Despues1.png"
                           alt=""
                           width="270"
                           height="335"
                         />
                         <div className="before">
-                          <h6>Before2</h6>
+                          <h6>Before</h6>
                         </div>
                       </figure>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 column">
                       <figure className="image">
                         <Image
-                          src="/assets/imgs/resource/testimonial-2.jpg"
+                          src="/assets/imgs/Antes2.png"
                           alt=""
                           width="270"
                           height="335"
@@ -166,8 +161,8 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>Local Upstanding & Reliable</h4>
-                    <ul className="rating-box clearfix">
+                    <h4>Fast, easy and reliable</h4>
+                    {/* <ul className="rating-box clearfix">
                       <li>
                         <i className="fas fa-star"></i>
                       </li>
@@ -183,106 +178,16 @@ function Testimonials() {
                       <li>
                         <i className="fas fa-star"></i>
                       </li>
-                    </ul>
+                    </ul> */}
                     <div className="text">
                       <p>
                         {`
-                        Thank you to Sanito Cleaning Services for a job well
-                        done. The staff was prompt, courteous and professional.
-                        My place looks amazing and I couldn't be hap...
+                          1000 por ciento mejor, Gracias!
                         `}
                       </p>
                     </div>
                     <div className="author-box">
-                      <h4>Nathan Felix</h4>
-                      <span className="designation">
-                        CEO, High Rise Construction
-                      </span>
-                    </div>
-                    <div className="quote-box">
-                      <div className="quote">
-                        <i className="flaticon-quote"></i>
-                      </div>
-                      <div
-                        className="shape"
-                        style={{
-                          backgroundImage:
-                            "url(assets/images/icons/star-1.png)",
-                        }}
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row clearfix">
-              <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-                <div className="image-box">
-                  <div className="row clearfix">
-                    <div className="col-lg-6 col-md-6 col-sm-12 column">
-                      <figure className="image">
-                        <Image
-                          src="/assets/imgs/resource/testimonial-1.jpg"
-                          alt=""
-                          width="270"
-                          height="335"
-                        />
-                        <div className="before">
-                          <h6>Before2</h6>
-                        </div>
-                      </figure>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 column">
-                      <figure className="image">
-                        <Image
-                          src="/assets/imgs/resource/testimonial-2.jpg"
-                          alt=""
-                          width="270"
-                          height="335"
-                        />
-                        <div className="after">
-                          <h6>After</h6>
-                        </div>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12 content-column">
-                <div className="testimonial-block-one">
-                  <div className="inner-box">
-                    <h4>Local Upstanding & Reliable</h4>
-                    <ul className="rating-box clearfix">
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <div className="text">
-                      <p>
-                        {`
-                        Thank you to Sanito Cleaning Services for a job well
-                        done. The staff was prompt, courteous and professional.
-                        My place looks amazing and I couldn't be hap...
-                        `}
-                      </p>
-                    </div>
-                    <div className="author-box">
-                      <h4>Nathan Felix</h4>
-                      <span className="designation">
-                        CEO, High Rise Construction
-                      </span>
+                      <h4>Testimonio #2</h4>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
