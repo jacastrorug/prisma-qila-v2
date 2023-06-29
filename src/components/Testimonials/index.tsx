@@ -40,7 +40,7 @@ function Testimonials() {
       <div className="auto-container">
         <div className="sec-title text-center">
           <h6 className="title_pink">Testimonials</h6>
-          <h2>Words From Our Customers</h2>
+          <h2>Our happy customers</h2>
         </div>
         <div className="testimonial-inner">
           <OwlCarousel
@@ -54,7 +54,7 @@ function Testimonials() {
                     <div className="col-lg-6 col-md-6 col-sm-12 column">
                       <figure className="image">
                         <Image
-                          src="/assets/imgs/Antes1.jpeg"
+                          src="/assets/imgs/Antes-1.png"
                           alt=""
                           width="270"
                           height="335"
@@ -67,7 +67,7 @@ function Testimonials() {
                     <div className="col-lg-6 col-md-6 col-sm-12 column">
                       <figure className="image">
                         <Image
-                          src="/assets/imgs/Despues2.jpeg"
+                          src="/assets/imgs/Despues-2.png"
                           alt=""
                           width="270"
                           height="335"
@@ -83,31 +83,117 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>Local Upstanding & Reliable</h4>
-                    {/* <ul className="rating-box clearfix">
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                    </ul> */}
+                    <h4>primero</h4>
                     <div className="text">
                       <p>
-                        {`Tiene razón, el área está como nueva, nada de humedad.`}
+                        {`1000% mejor, muchas gracias!`}
                       </p>
                     </div>
-                    <div className="author-box">
-                      <h4>Testimonio #1</h4>
+                    <div className="quote-box">
+                      <div className="quote">
+                        <i className="flaticon-quote"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row clearfix">
+              <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div className="image-box">
+                  <div className="row clearfix">
+                    <div className="col-lg-6 col-md-6 col-sm-12 column">
+                      <figure className="image">
+                        <Image
+                          src="/assets/imgs/Antes-2.jpeg"
+                          alt=""
+                          width="270"
+                          height="335"
+                        />
+                        <div className="before">
+                          <h6>Before</h6>
+                        </div>
+                      </figure>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12 column">
+                      <figure className="image">
+                        <Image
+                          src="/assets/imgs/Despues-2.jpeg"
+                          alt=""
+                          width="270"
+                          height="335"
+                        />
+                        <div className="after">
+                          <h6>After</h6>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div className="testimonial-block-one">
+                  <div className="inner-box">
+                    <h4>second</h4>
+                    <div className="text">
+                      <p>
+                        {`
+                          Mut brillante y reluciente gracias...
+                        `}
+                      </p>
+                    </div>
+                    <div className="quote-box">
+                      <div className="quote">
+                        <i className="flaticon-quote"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row clearfix">
+              <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div className="image-box">
+                  <div className="row clearfix">
+                    <div className="col-lg-6 col-md-6 col-sm-12 column">
+                      <figure className="image">
+                        <Image
+                          src="/assets/imgs/Antes-3.png"
+                          alt=""
+                          width="270"
+                          height="335"
+                        />
+                        <div className="before">
+                          <h6>Before</h6>
+                        </div>
+                      </figure>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12 column">
+                      <figure className="image">
+                        <Image
+                          src="/assets/imgs/Despues-3.png"
+                          alt=""
+                          width="270"
+                          height="335"
+                        />
+                        <div className="after">
+                          <h6>After</h6>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div className="testimonial-block-one">
+                  <div className="inner-box">
+                    <h4>third</h4>
+                    <div className="text">
+                      <p>
+                        {`
+                          1000 por ciento mejor, Gracias!
+                        `}
+                      </p>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
@@ -132,7 +218,7 @@ function Testimonials() {
                     <div className="col-lg-6 col-md-6 col-sm-12 column">
                       <figure className="image">
                         <Image
-                          src="/assets/imgs/Despues1.png"
+                          src="/assets/imgs/Antes-4.png"
                           alt=""
                           width="270"
                           height="335"
@@ -145,7 +231,7 @@ function Testimonials() {
                     <div className="col-lg-6 col-md-6 col-sm-12 column">
                       <figure className="image">
                         <Image
-                          src="/assets/imgs/Antes2.png"
+                          src="/assets/imgs/Despues-4.png"
                           alt=""
                           width="270"
                           height="335"
@@ -161,24 +247,7 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>Fast, easy and reliable</h4>
-                    {/* <ul className="rating-box clearfix">
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i className="fas fa-star"></i>
-                      </li>
-                    </ul> */}
+                    <h4>4</h4>
                     <div className="text">
                       <p>
                         {`
@@ -186,8 +255,125 @@ function Testimonials() {
                         `}
                       </p>
                     </div>
-                    <div className="author-box">
-                      <h4>Testimonio #2</h4>
+                    <div className="quote-box">
+                      <div className="quote">
+                        <i className="flaticon-quote"></i>
+                      </div>
+                      <div
+                        className="shape"
+                        style={{
+                          backgroundImage:
+                            "url(assets/images/icons/star-1.png)",
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row clearfix">
+              <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div className="image-box">
+                  <div className="row clearfix">
+                    <div className="col-lg-6 col-md-6 col-sm-12 column">
+                      <figure className="image">
+                        <Image
+                          src="/assets/imgs/Antes-5.png"
+                          alt=""
+                          width="270"
+                          height="335"
+                        />
+                        <div className="before">
+                          <h6>Before</h6>
+                        </div>
+                      </figure>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12 column">
+                      <figure className="image">
+                        <Image
+                          src="/assets/imgs/Despues-5.png"
+                          alt=""
+                          width="270"
+                          height="335"
+                        />
+                        <div className="after">
+                          <h6>After</h6>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div className="testimonial-block-one">
+                  <div className="inner-box">
+                    <h4>5</h4>
+                    <div className="text">
+                      <p>
+                        {`
+                          1000 por ciento mejor, Gracias!
+                        `}
+                      </p>
+                    </div>
+                    <div className="quote-box">
+                      <div className="quote">
+                        <i className="flaticon-quote"></i>
+                      </div>
+                      <div
+                        className="shape"
+                        style={{
+                          backgroundImage:
+                            "url(assets/images/icons/star-1.png)",
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row clearfix">
+              <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div className="image-box">
+                  <div className="row clearfix">
+                    <div className="col-lg-6 col-md-6 col-sm-12 column">
+                      <figure className="image">
+                        <Image
+                          src="/assets/imgs/Antes-6.png"
+                          alt=""
+                          width="270"
+                          height="335"
+                        />
+                        <div className="before">
+                          <h6>Before</h6>
+                        </div>
+                      </figure>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12 column">
+                      <figure className="image">
+                        <Image
+                          src="/assets/imgs/Despues-6.png"
+                          alt=""
+                          width="270"
+                          height="335"
+                        />
+                        <div className="after">
+                          <h6>After</h6>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div className="testimonial-block-one">
+                  <div className="inner-box">
+                    <h4>6</h4>
+                    <div className="text">
+                      <p>
+                        {`
+                          1000 por ciento mejor, Gracias!
+                        `}
+                      </p>
                     </div>
                     <div className="quote-box">
                       <div className="quote">

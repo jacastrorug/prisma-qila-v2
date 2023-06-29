@@ -171,16 +171,16 @@ a.btn-custom {
 .service-number_icon {
   display: flex;
   position: relative;
-  top: -4rem;
+  bottom: 3rem;
   left: 3rem;
   border-radius: 4rem;
   background-color: #0bd3d3;
-  width: 13rem;
-  height: 7rem;
+  width: 6rem;
+  height: 4rem;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 2.5rem
+  font-size: 1.8rem
 }
 
 .service-icon_card {
@@ -349,9 +349,10 @@ a.btn-custom {
   }
 
   .service-number_icon {
-    width: 6rem;
-    height: 6rem;
-    left: 9rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    left: 10rem;
+    bottom: 3rem;
   }
 
   .service_span {
