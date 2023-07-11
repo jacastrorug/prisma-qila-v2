@@ -10,23 +10,31 @@
       "banner_3_title": "Te ofrecemos limpieza general",
       "banner_3_description": "Un servicio a la medida de las necesidades de nuestros clientes. Realizamos limpieza y mantenimiento en interiores y exteriores.",
       "banner_3_btnLabel": "Saber más"
+    },
+    "testimonials": {
+      "banner_1": "Cien por ciento mejor, salieron las manchas, limpieza profunda y un resultado perfecto",
+      "banner_2": "1000% mejor, casi como nuevo",
+      "banner_3": "Trabajo profesional, excelente trabajo de mármol muy brillante",
+      "banner_4": "Limpieza de alfombra profesional, muy limpia y como nueva",
+      "banner_5": "Stripper de piso profesional, brillante y muy limpio",
+      "banner_6": "Excelente Mantenimiento de piso un cepillado “scrubfloor” profundo todo muy limpio"
     }
   },
   "services": {
     "services_main_title1": "Servicios",
     "services_main_title2": "Nuestros servicios",
     "floor_services_title": "LIMPIEZA Y/O MANTENIMIENTO DE PISOS",
-    "floor_services_description1": "Restauración y pulido o cristalización de pisos en marmol.",
-    "floor_services_description2": "Cepillado de pisos en cerámica.",
-    "floor_services_description3": "Pulido termoplástico por nebulización y finalización y encerado de pisos en Vinil.",
-    "carpet_services_title": "LIMPIEZA DE ALFOMBRAS.",
-    "carpet_services_description1": "Limpieza y sanitización.",
-    "carpet_services_description2": "Extracción y shampoo.",
-    "carpet_services_description3": "Shampoo.",
-    "carpet_services_description4": "Lavado en seco.",
+    "floor_services_description1": "Restauración y pulido o cristalización de pisos en marmol",
+    "floor_services_description2": "Cepillado de pisos en cerámica",
+    "floor_services_description3": "Pulido termoplástico por nebulización y finalización y encerado de pisos en Vinil",
+    "carpet_services_title": "LIMPIEZA DE ALFOMBRAS",
+    "carpet_services_description1": "Limpieza y sanitización",
+    "carpet_services_description2": "Extracción y shampoo",
+    "carpet_services_description3": "Shampoo",
+    "carpet_services_description4": "Lavado en seco",
     "general_services_title": "LIMPIEZA GENERAL",
-    "general_services_description1": "Mantenimiento de áreas comunes.",
-    "general_services_description2": "Servicio de limpieza residencial o comercial.",
+    "general_services_description1": "Mantenimiento de áreas comunes",
+    "general_services_description2": "Servicio de limpieza residencial o comercial",
     "more_btn": "Saber más"
   },
   "contact": {
@@ -41,16 +49,16 @@
   },
   "steps": {
     "floor_title": "Limpieza de Pisos",
-    "floor_subtitle": "Tus pisos limpios en 3 simples pasos.",
-    "floor_card": "Limpieza de tus pisos.",
+    "floor_subtitle": "Tus pisos limpios en 3 simples pasos",
+    "floor_card": "Limpieza de tus pisos",
     "carpet_title": "Limpieza de alfombras",
-    "carpet_subtitle": "Tus alfombras limpias en 3 simples pasos.",
-    "carpet_card": "Limpieza de tus alfombras.",
+    "carpet_subtitle": "Tus alfombras limpias en 3 simples pasos",
+    "carpet_card": "Limpieza de tus alfombras",
     "general_title": "Limpieza General",
-    "general_subtitle": "Tu hogar u oficina limpios en 3 simples pasos.",
-    "general_card": "Limpieza de tus pisos.",
-    "invoise": "Cotización del servicio.",
-    "schedule": "Agendamiento de estimacion GRATIS."
+    "general_subtitle": "Tu hogar u oficina limpios en 3 simples pasos",
+    "general_card": "Limpieza de tus pisos",
+    "invoise": "Cotización del servicio",
+    "schedule": "Agendamiento de estimacion GRATIS"
   },
   "contact_component": {
     "contact_component_title": "Contáctanos",

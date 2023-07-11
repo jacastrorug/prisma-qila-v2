@@ -26,6 +26,7 @@ function Header() {
   };
 
   const [scrollTop, setScrollTop] = useState<string>("0rem");
+  const [position, setPosition] = useState<Position>("absolute");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,13 +35,16 @@ function Header() {
       // Mobile check
       if (window.innerWidth < 1180) {
         setScrollTop("0rem");
+        setPosition("fixed");
         return;
       }
 
       if (currentScrollTop > 58) {
         setScrollTop("0rem");
+        setPosition("fixed")
       } else {
         setScrollTop("6rem");
+        setPosition("absolute");
       }
     };
 
@@ -85,7 +89,7 @@ function Header() {
         </div>
         <div
           className="header-lower "
-          style={{ position: "fixed", top: scrollTop, width: "100%" }}
+          style={{ position: position, top: scrollTop, width: "100%" }}
         >
           <div className="auto-container">
             <div className="outer-box clearfix">

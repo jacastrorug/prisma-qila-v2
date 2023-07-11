@@ -10,23 +10,31 @@
       "banner_3_title": "We offer you general cleaning",
       "banner_3_description": "A service tailored to the needs of our customers. We do cleaning and maintenance indoors and outdoors.",
       "banner_3_btnLabel": "Know more"
+    },
+    "testimonials": {
+      "banner_1": "One hundred percent better, the stains are gone, deep cleaning, and a perfect result",
+      "banner_2": "1000% better, almost like new",
+      "banner_3": "Professional work, excellent job with highly shiny marble",
+      "banner_4": "Professional carpet cleaning, very clean and like new",
+      "banner_5": "Professional floor stripping, shiny and very clean",
+      "banner_6": "Excellent floor maintenance, deep scrubbing, everything is very clean"
     }
   },
   "services": {
     "services_main_title1": "Services",
     "services_main_title2": "Our Services",
     "floor_services_title": "CLEANING AND/OR MAINTENANCE OF FLOOR SERVICES",
-    "floor_services_description1": "Restoration, polishing or crystallization of marble floors.",
-    "floor_services_description2": "Ceramic tile floor brushing.",
-    "floor_services_description3": "Thermoplastic polishing by nebulization, finishing, and waxing of vinyl floors.",
+    "floor_services_description1": "Restoration, polishing or crystallization of marble floors",
+    "floor_services_description2": "Ceramic tile floor brushing",
+    "floor_services_description3": "Thermoplastic polishing by nebulization, finishing, and waxing of vinyl floors",
     "carpet_services_title": "CARPET CLEANING",
-    "carpet_services_description1": "Cleaning and sanitization.",
+    "carpet_services_description1": "Cleaning and sanitization",
     "carpet_services_description2": "Extraction and shampoo",
-    "carpet_services_description3": "Shampoo.",
-    "carpet_services_description4": "Dry cleaning.",
+    "carpet_services_description3": "Shampoo",
+    "carpet_services_description4": "Dry cleaning",
     "general_services_title": "GENERAL CLEANING SERVICE",
-    "general_services_description1": "Maintenance of common areas.",
-    "general_services_description2": "Residential or commercial cleaning service.",
+    "general_services_description1": "Maintenance of common areas",
+    "general_services_description2": "Residential or commercial cleaning service",
     "more_btn": "More"
 
   },
@@ -42,16 +50,16 @@
   },
   "steps": {
     "floor_title": "Floor Cleaning",
-    "floor_subtitle": "Your clean floors in 3 simple steps.",
-    "floor_card": "Cleaning your floors.",
+    "floor_subtitle": "Your clean floors in 3 simple steps",
+    "floor_card": "Cleaning your floors",
     "carpet_title": "Carpet cleaning",
-    "carpet_subtitle": "Your clean carpets in 3 simple steps.",
-    "carpet_card": "Cleaning your carpets.",
+    "carpet_subtitle": "Your clean carpets in 3 simple steps",
+    "carpet_card": "Cleaning your carpets",
     "general_title": "General cleaning",
-    "general_subtitle": "Your home or office clean in 3 simple steps.",
-    "general_card": "Cleaning your floors.",
-    "invoise": "Service quote.",
-    "schedule": "FREE estimate schedule."
+    "general_subtitle": "Your home or office clean in 3 simple steps",
+    "general_card": "Cleaning your floors",
+    "invoise": "Service quote",
+    "schedule": "FREE estimate schedule"
 
   },
   "contact_component": {
