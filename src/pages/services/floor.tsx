@@ -9,7 +9,7 @@ const floors: CleaningServicesProps[] = [
     id: 'floors',
     title: 'steps.floor_title',
     imgList: [
-      '/assets/imgs/PisosMarmol.png',
+      '/assets/imgs/banner/pisos_marmol.png',
       '/assets/imgs/banner/SliderPisos.png',
       '/assets/imgs/CepilladoPisos.png',
     ],

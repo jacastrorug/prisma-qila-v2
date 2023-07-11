@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { OwlCarouselProps } from "react-owl-carousel";
+import { useTranslation } from "react-i18next";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -24,11 +25,13 @@ const options: OwlCarouselProps = {
   ],
   dots: true,
   autoplay: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 10000,
   children: null,
 };
 
 function Testimonials() {
+  const { t } = useTranslation();
+
   return (
     <section className="testimonial-section">
       <div
@@ -83,11 +86,8 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>primero</h4>
-                    <div className="text">
-                      <p>
-                        {`1000% mejor, muchas gracias!`}
-                      </p>
+                    <div className="testimonial-description">
+                      <p>{t("home.testimonials.banner_1")}</p>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
@@ -134,13 +134,8 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>second</h4>
-                    <div className="text">
-                      <p>
-                        {`
-                          Mut brillante y reluciente gracias...
-                        `}
-                      </p>
+                    <div className="testimonial-description">
+                      <p>{t("home.testimonials.banner_2")}</p>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
@@ -187,13 +182,8 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>third</h4>
-                    <div className="text">
-                      <p>
-                        {`
-                          1000 por ciento mejor, Gracias!
-                        `}
-                      </p>
+                    <div className="testimonial-description">
+                      <p>{t("home.testimonials.banner_3")}</p>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
@@ -247,13 +237,8 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>4</h4>
-                    <div className="text">
-                      <p>
-                        {`
-                          1000 por ciento mejor, Gracias!
-                        `}
-                      </p>
+                    <div className="testimonial-description">
+                      <p>{t("home.testimonials.banner_4")}</p>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
@@ -307,13 +292,8 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>5</h4>
-                    <div className="text">
-                      <p>
-                        {`
-                          1000 por ciento mejor, Gracias!
-                        `}
-                      </p>
+                    <div className="testimonial-description">
+                      <p>{t("home.testimonials.banner_5")}</p>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
@@ -367,13 +347,8 @@ function Testimonials() {
               <div className="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div className="testimonial-block-one">
                   <div className="inner-box">
-                    <h4>6</h4>
-                    <div className="text">
-                      <p>
-                        {`
-                          1000 por ciento mejor, Gracias!
-                        `}
-                      </p>
+                    <div className="testimonial-description">
+                      <p>{t('home.testimonials.banner_6')}</p>
                     </div>
                     <div className="quote-box">
                       <div className="quote">
