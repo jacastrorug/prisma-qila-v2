@@ -10,6 +10,14 @@
       "banner_3_title": "We offer you general cleaning",
       "banner_3_description": "A service tailored to the needs of our customers. We do cleaning and maintenance indoors and outdoors.",
       "banner_3_btnLabel": "Know more"
+    },
+    "testimonials": {
+      "banner_1": "One hundred percent better, the stains are gone, deep cleaning, and a perfect result",
+      "banner_2": "1000% better, almost like new",
+      "banner_3": "Professional work, excellent job with highly shiny marble",
+      "banner_4": "Professional carpet cleaning, very clean and like new",
+      "banner_5": "Professional floor stripping, shiny and very clean",
+      "banner_6": "Excellent floor maintenance, deep scrubbing, everything is very clean"
     }
   },
   "services": {
