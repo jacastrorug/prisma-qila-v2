@@ -3,7 +3,7 @@
   --primary-color: #0bd3d3;
   --secondary-color: #e5007d;
   --white-light: #f2f2f2;
-  --white: #FFFFFF;
+  --white: #ffffff;
   --black: #262626;
   --grey: #f2f2f2;
   --pink: #f291ec;
@@ -55,7 +55,6 @@ body * {
 }
 
 @media (min-width: 500px) {
-
   body * {
     font-size: 1.8rem;
   }
@@ -180,7 +179,7 @@ a.btn-custom {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 1.8rem
+  font-size: 1.8rem;
 }
 
 .service-icon_card {
@@ -280,7 +279,6 @@ a.btn-custom {
   margin-top: 20px;
 }
 
-
 .testimonial-section .owl-dots {
   color: var(--primary-color);
   display: flex;
@@ -298,8 +296,18 @@ a.btn-custom {
   color: var(--primary-color);
 }
 
+.testimonial-description > p {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+}
+
+.testimonial-block-one .inner-box {
+  height: 300px;
+}
+
 /* Tablet and Smaller Desktop */
-@media (min-width: 500px) and (max-width: 900px) {}
+@media (min-width: 500px) and (max-width: 900px) {
+}
 
 /* Desktop */
 @media (min-width: 900px) {
@@ -399,5 +407,4 @@ a.btn-custom {
   .testimonial-block-one .inner-box .text p {
     margin-top: 13rem;
   }
-
 }

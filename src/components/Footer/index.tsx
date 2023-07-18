@@ -18,7 +18,7 @@ function Footer() {
                 </div>
                 <ul className="info clearfix">
                   <li>
-                    <Link href="tel:17542441721">+1 (754) 244-1721</Link>
+                    <Link href="tel:17868097925">+1 (786) 809-7925</Link>
                   </li>
                   <Link href={mailTo}>info@prismaqila.com</Link>
                 </ul>

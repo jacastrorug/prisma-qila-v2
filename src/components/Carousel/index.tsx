@@ -55,7 +55,7 @@ function Carousel() {
     },
     {
       id: "banner_2",
-      imgUrl: "url(/assets/imgs/banner/SliderLimpiezagral.png)",
+      imgUrl: "url(/assets/imgs/banner/SliderAlfombras.png)",
       title: t("home.carousel.banner_2_title"),
       description: t("home.carousel.banner_2_description"),
       link: "/services/floor",
@@ -63,7 +63,7 @@ function Carousel() {
     },
     {
       id: "banner_3",
-      imgUrl: "url(/assets/imgs/banner/SliderAlfombras.png)",
+      imgUrl: "url(/assets/imgs/banner/SliderLimpiezagral.png)",
       title: t("home.carousel.banner_3_title"),
       description: t("home.carousel.banner_3_description"),
       link: "/services/carpets",

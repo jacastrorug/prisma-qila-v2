@@ -10,6 +10,14 @@
       "banner_3_title": "Te ofrecemos limpieza general",
       "banner_3_description": "Un servicio a la medida de las necesidades de nuestros clientes. Realizamos limpieza y mantenimiento en interiores y exteriores.",
       "banner_3_btnLabel": "Saber más"
+    },
+    "testimonials": {
+      "banner_1": "Cien por ciento mejor, salieron las manchas, limpieza profunda y un resultado perfecto",
+      "banner_2": "1000% mejor, casi como nuevo",
+      "banner_3": "Trabajo profesional, excelente trabajo de mármol muy brillante",
+      "banner_4": "Limpieza de alfombra profesional, muy limpia y como nueva",
+      "banner_5": "Stripper de piso profesional, brillante y muy limpio",
+      "banner_6": "Excelente Mantenimiento de piso un cepillado “scrubfloor” profundo todo muy limpio"
     }
   },
   "services": {
