@@ -80,14 +80,12 @@ function CleaningServices(props: PropsComponent) {
                       <figure className="image-box">
                         <Image src={img} alt="" width={1000} height={1000} />
                       </figure>
-                      {innerText.map((txt, index) => (
-                        <div className="text" key={index}>
-                          <h4 className="title_grey">{t(txt)}</h4>
+                      <div className="text" key={index}>
+                          <h4 className="title_grey">{t(props.innerTxtList[index])}</h4>
                           <a className="flex-center">
                             <i className="fal fa-long-arrow-right flex-center"></i>
                           </a>
                         </div>
-                      ))}
                     </div>
                   </div>
                 ))}
