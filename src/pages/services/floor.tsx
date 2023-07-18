@@ -14,9 +14,9 @@ const floors: CleaningServicesProps[] = [
       '/assets/imgs/CepilladoPisos.png',
     ],
     innerTxtList: [
-      'Pulido o cristalizacion de Marmol',
-      'Finalización y encerado de pisos en cerámica',
+      'services.floor_services_description1',
       'services.floor_services_description2',
+      'services.floor_services_description3',
     ],
     description: 'steps.floor_subtitle',
     img: '/assets/imgs/floor-polisher.png',
