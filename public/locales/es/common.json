@@ -33,8 +33,9 @@
     "carpet_services_description3": "Shampoo",
     "carpet_services_description4": "Lavado en seco",
     "general_services_title": "LIMPIEZA GENERAL",
-    "general_services_description1": "Mantenimiento de áreas comunes",
+    "general_services_description1": "Limpieza de áreas comunes",
     "general_services_description2": "Servicio de limpieza residencial o comercial",
+    "general_services_description3": "Cepillado de psios",
     "more_btn": "Saber más"
   },
   "contact": {
@@ -56,7 +57,7 @@
     "carpet_card": "Limpieza de tus alfombras",
     "general_title": "Limpieza General",
     "general_subtitle": "Tu hogar u oficina limpios en 3 simples pasos",
-    "general_card": "Limpieza de tus pisos",
+    "general_card": "Limpiamos tus espacios",
     "invoise": "Cotización del servicio",
     "schedule": "Agendamiento de estimacion GRATIS"
   },

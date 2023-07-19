@@ -11,11 +11,12 @@ const generalCleaning: CleaningServicesProps[] = [
     imgList: [
       '/assets/imgs/LimpiezaComer.png',// add another img
       '/assets/imgs/CardLimpiezaGen.png',
-      '/assets/imgs/LimpiezaZonas.png'
+      '/assets/imgs/LimpiezadeVentanas.jpg'
     ],
     innerTxtList: [
-      'Limpieza de áreas comunes',
-      'services.carpet_services_description1',
+      'services.general_services_description1',
+      'services.carpet_services_description2',
+      'services.general_services_description3'
     ],
     description: 'steps.general_subtitle',
     img: '/assets/imgs/floor-polisher.png',
