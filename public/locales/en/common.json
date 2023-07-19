@@ -29,12 +29,13 @@
     "floor_services_description3": "Thermoplastic polishing waxing of vinyl floors",
     "carpet_services_title": "CARPET CLEANING",
     "carpet_services_description1": "Cleaning and sanitization",
-    "carpet_services_description2": "Extraction and shampoo",
-    "carpet_services_description3": "Shampoo",
+    "carpet_services_description2": "Extraction cleaning",
+    "carpet_services_description3": "Shampoo cleaning",
     "carpet_services_description4": "Dry cleaning",
     "general_services_title": "GENERAL CLEANING SERVICE",
-    "general_services_description1": "Maintenance of common areas",
+    "general_services_description1": "Cleaning in common areas",
     "general_services_description2": "Residential or commercial cleaning service",
+    "general_services_description3": "Scrub floors",
     "more_btn": "More"
 
   },
@@ -57,7 +58,7 @@
     "carpet_card": "Cleaning your carpets",
     "general_title": "General cleaning",
     "general_subtitle": "Your home or office clean in 3 simple steps",
-    "general_card": "Cleaning your floors",
+    "general_card": "We cleaning your spaces",
     "invoise": "Service quote",
     "schedule": "FREE estimate schedule"
 
