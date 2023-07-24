@@ -18,6 +18,7 @@ const carpets: CleaningServicesProps[] = [
       'services.carpet_services_description1',
       'services.carpet_services_description2',
       'services.carpet_services_description3',
+      'services.carpet_services_description4'
     ],
     description: 'steps.carpet_subtitle',
     img: '/assets/imgs/floor-polisher.png',
