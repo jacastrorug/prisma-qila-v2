@@ -1,8 +1,8 @@
+import { useTranslation } from "next-i18next";
 import React from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { OwlCarouselProps } from "react-owl-carousel";
-import { useTranslation } from "react-i18next";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -30,7 +30,7 @@ const options: OwlCarouselProps = {
 };
 
 function Testimonials() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   return (
     <section className="testimonial-section">
@@ -42,8 +42,8 @@ function Testimonials() {
       ></div>
       <div className="auto-container">
         <div className="sec-title text-center">
-          <h6 className="title_pink">Testimonials</h6>
-          <h2>Our happy customers</h2>
+          <h6 className="title_pink">{t('home.testimonials.title')}</h6>
+          <h2>{t('home.testimonials.sub-title')}</h2>
         </div>
         <div className="testimonial-inner">
           <OwlCarousel
@@ -63,7 +63,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="before">
-                          <h6>Before</h6>
+                          <h6>{t("home.testimonials.before")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -76,7 +76,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="after">
-                          <h6>After</h6>
+                          <h6>{t("home.testimonials.after")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -111,7 +111,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="before">
-                          <h6>Before</h6>
+                          <h6>{t("home.testimonials.before")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -124,7 +124,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="after">
-                          <h6>After</h6>
+                          <h6>{t("home.testimonials.after")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -159,7 +159,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="before">
-                          <h6>Before</h6>
+                          <h6>{t("home.testimonials.before")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -172,7 +172,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="after">
-                          <h6>After</h6>
+                          <h6>{t("home.testimonials.after")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -214,7 +214,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="before">
-                          <h6>Before</h6>
+                          <h6>{t("home.testimonials.before")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -227,7 +227,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="after">
-                          <h6>After</h6>
+                          <h6>{t("home.testimonials.after")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -269,7 +269,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="before">
-                          <h6>Before</h6>
+                          <h6>{t("home.testimonials.before")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -282,7 +282,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="after">
-                          <h6>After</h6>
+                          <h6>{t("home.testimonials.after")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -324,7 +324,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="before">
-                          <h6>Before</h6>
+                          <h6>{t("home.testimonials.before")}</h6>
                         </div>
                       </figure>
                     </div>
@@ -337,7 +337,7 @@ function Testimonials() {
                           height="335"
                         />
                         <div className="after">
-                          <h6>After</h6>
+                          <h6>{t("home.testimonials.after")}</h6>
                         </div>
                       </figure>
                     </div>
