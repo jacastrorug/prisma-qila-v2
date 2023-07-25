@@ -30,7 +30,7 @@ function ServiceItem(props: PropsComponent) {
         </div>
         <div className="lower-content">
           <div className="category">
-            <Link href="">{t(props.title)}</Link>
+            <Link href={props.href}>{t(props.title)}</Link>
           </div>
           <ul className="card-list_container">
             {bullets &&

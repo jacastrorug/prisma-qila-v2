@@ -12,12 +12,16 @@
       "banner_3_btnLabel": "Know more"
     },
     "testimonials": {
+      "title": "TESTIMONIALS",
+      "sub-title":"Our happy customers",
       "banner_1": "One hundred percent better, the stains are gone, deep cleaning, and a perfect result",
       "banner_2": "1000% better, almost like new",
       "banner_3": "Professional work, excellent job with highly shiny marble",
       "banner_4": "Professional carpet cleaning, very clean and like new",
       "banner_5": "Professional floor stripping, shiny and very clean",
-      "banner_6": "Excellent floor maintenance, deep scrubbing, everything is very clean"
+      "banner_6": "Excellent floor maintenance, deep scrubbing, everything is very clean",
+      "before": "Before",
+      "after": "After"
     }
   },
   "services": {

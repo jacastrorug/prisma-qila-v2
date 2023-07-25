@@ -140,6 +140,7 @@ a.btn-custom {
 
 .title_grey {
   color: var(--grey-contrast);
+  font-size: small;
 }
 
 .description_cleaning {
