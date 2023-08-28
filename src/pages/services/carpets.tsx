@@ -9,7 +9,7 @@ const carpets: CleaningServicesProps[] = [
     id: 'carpets',
     title: 'steps.carpet_title',
     imgList: [
-      '/assets/imgs/ExtracciónAlfombras.png',//fix img size 
+      '/assets/imgs/ExtracciónAlfombras.png',
       '/assets/imgs/LimpiezaSanitización.png',
       '/assets/imgs/AlfombrasShampoo.png',
       '/assets/imgs/LavadoSeco.png',

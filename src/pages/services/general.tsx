@@ -9,7 +9,7 @@ const generalCleaning: CleaningServicesProps[] = [
     id: 'general-cleaning',
     title: 'steps.general_title',
     imgList: [
-      '/assets/imgs/LimpiezaComer.png',// add another img
+      '/assets/imgs/LimpiezaComer.png',
       '/assets/imgs/CardLimpiezaGen.png',
       '/assets/imgs/LimpiezadeVentanas.jpg'
     ],
