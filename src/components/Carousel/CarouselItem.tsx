@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link"
+
 
 type PropsComponent = {
   img: string;
@@ -27,9 +29,9 @@ function CarouselItem(props: PropsComponent) {
           <p>{props.description}</p>
           {props.link && (
             <div className="btn-box">
-              <a href={props.link} className="theme-btn-two thm-btn">
+              <Link href={props.link} className="theme-btn-two thm-btn">
                 {props.btnLabel}
-              </a>
+              </Link>
             </div>
           )}
         </div>
