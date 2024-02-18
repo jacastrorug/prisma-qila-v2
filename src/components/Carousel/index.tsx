@@ -47,6 +47,12 @@ function Carousel() {
   const banners = [
     {
       id: "banner_1",
+      imgUrl: "url(/assets/imgs/banner/Miami_banner.png",
+      title: t("home.carousel.banner_title"),
+      description: t("home.carousel.banner"),
+    },
+    {
+      id: "banner_2",
       imgUrl: "url(/assets/imgs/banner/SliderPisos.png",
       title: t("home.carousel.banner_1_title"),
       description: t("home.carousel.banner_1_description"),
@@ -54,7 +60,7 @@ function Carousel() {
       btnLabel: t("home.carousel.banner_1_btnLabel"),
     },
     {
-      id: "banner_2",
+      id: "banner_3",
       imgUrl: "url(/assets/imgs/banner/SliderAlfombras.png)",
       title: t("home.carousel.banner_2_title"),
       description: t("home.carousel.banner_2_description"),
@@ -62,7 +68,7 @@ function Carousel() {
       btnLabel: t("home.carousel.banner_2_btnLabel"),
     },
     {
-      id: "banner_3",
+      id: "banner_4",
       imgUrl: "url(/assets/imgs/banner/SliderLimpiezagral.png)",
       title: t("home.carousel.banner_3_title"),
       description: t("home.carousel.banner_3_description"),
@@ -83,7 +89,7 @@ function Carousel() {
             img={banner.imgUrl}
             title={banner.title}
             description={banner.description}
-            link={banner.link}
+            link={banner?.link}
             btnLabel={banner.btnLabel}
           />
         ))}

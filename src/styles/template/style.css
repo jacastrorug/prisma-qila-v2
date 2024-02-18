@@ -1704,16 +1704,7 @@
    overflow: hidden;
  }
 
- .banner-carousel .slide-item:before {
-   position: absolute;
-   content: '';
-   width: 100%;
-   height: 100%;
-   background: -webkit-linear-gradient(0deg, black, rgba(0, 0, 0, 0.0) 100%);
-   top: 0px;
-   right: 0px;
-   z-index: 1;
- }
+
 
  .banner-carousel .slide-item .image-layer {
    position: absolute;
@@ -3606,7 +3597,7 @@
  .testimonial-section .bg-layer:before {
    position: absolute;
    content: '';
-   background:#0bd3d311;
+   background: #0bd3d311;
    width: 100%;
    height: 100%;
    left: 0px;
