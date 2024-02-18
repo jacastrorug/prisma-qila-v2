@@ -1,12 +1,14 @@
 import React from "react";
+import Link from "next/link"
+
 
 type PropsComponent = {
   img: string;
   title: string;
   subtitle?: string;
   description: string;
-  link: string;
-  btnLabel: string;
+  link?: string;
+  btnLabel?: string;
 };
 
 function CarouselItem(props: PropsComponent) {
@@ -25,11 +27,13 @@ function CarouselItem(props: PropsComponent) {
             {props.subtitle}
           </h2>
           <p>{props.description}</p>
-          <div className="btn-box">
-            <a href={props.link} className="theme-btn-two thm-btn">
-              {props.btnLabel}
-            </a>
-          </div>
+          {props.link && (
+            <div className="btn-box">
+              <Link href={props.link} className="theme-btn-two thm-btn">
+                {props.btnLabel}
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </div>
