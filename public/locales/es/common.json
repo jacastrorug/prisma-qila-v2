@@ -1,6 +1,9 @@
 {
   "home": {
     "carousel": {
+      "banner_0_title":"Grandes Proyectos",
+      "banner_0_description":"Descubre nuestra iniciativa innovadora de limpieza y desinfección no tóxica liderada por Jeams Quiroz, diseñada para hospitales, escuelas, y edificios residenciales. Prioriza la higiene y seguridad sin productos químicos nocivos.",
+      "banner_0_btnLabel":"Conoce más",
       "banner_title": "Servicios de limpieza diurnos y nocturnos.",
       "banner":"Prisma Qila ofrece servicios de limpieza regulares durante el día y la noche. Podemos adaptarnos a su horario, ya sea que necesite limpieza durante el día o fuera del horario de atención. Ofrecemos servicios de limpieza y conserjería comercial las 24 horas, los 7 días de la semana, que se adaptan a las necesidades, el presupuesto y el cronograma de sus instalaciones. Podemos satisfacer todas sus necesidades de servicios comerciales de limpieza y mantenimiento y brindarle el mejor valor y servicio disponible. Con sede en Dania Beach, FL, brindamos servicio a los condados de Miami-Dade y Broward.",
       "banner_1_title": "Realizamos mantenimiento y limpieza de pisos",

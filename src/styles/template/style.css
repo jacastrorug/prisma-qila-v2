@@ -632,7 +632,7 @@
  .sec-title.text-left h6:before {
    position: absolute;
    content: '';
-   background: url(/assets/imgs/icons/wave-9.png);
+   background: url(/assets/imgs/icons/wave-6.png);
    width: 60px;
    height: 7px;
    left: 0px;
@@ -4575,6 +4575,10 @@
    background: #f3f3f3;
  }
 
+ .bg-color-10 {
+  background: rgb(0,212,255);
+background: radial-gradient(circle, rgba(0,212,255,0.21614583333333337) 50%, rgba(211,11,164,0.12931109943977592) 56%);
+ }
 
  /** about-style-two **/
 
