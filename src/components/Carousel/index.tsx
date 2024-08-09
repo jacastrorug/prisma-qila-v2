@@ -58,7 +58,7 @@ function Carousel() {
       imgUrl: "url(/assets/imgs/banner/banner-cominSoon.jpg)",
       title: t("home.carousel.banner_0_title"),
       description: t("home.carousel.banner_0_description"),
-      link: "/services/floor",
+      link: "#ComingSoon",
       btnLabel: t("home.carousel.banner_0_btnLabel"),
     },
     {

@@ -9,7 +9,7 @@ import { FaLeaf } from "react-icons/fa";
 
 function ComingSoon() {
   return (
-    <section className="text_container_bigProyects">
+    <section className="text_container_bigProyects" id="ComingSoon">
       <h6 className="title_custom ">Grandes Proyectos</h6>
 
       <section className="section_content">
