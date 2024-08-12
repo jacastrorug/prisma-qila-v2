@@ -632,7 +632,7 @@
  .sec-title.text-left h6:before {
    position: absolute;
    content: '';
-   background: url(/assets/imgs/icons/wave-9.png);
+   background: url(/assets/imgs/icons/wave-6.png);
    width: 60px;
    height: 7px;
    left: 0px;
@@ -1704,16 +1704,7 @@
    overflow: hidden;
  }
 
- .banner-carousel .slide-item:before {
-   position: absolute;
-   content: '';
-   width: 100%;
-   height: 100%;
-   background: -webkit-linear-gradient(0deg, black, rgba(0, 0, 0, 0.0) 100%);
-   top: 0px;
-   right: 0px;
-   z-index: 1;
- }
+
 
  .banner-carousel .slide-item .image-layer {
    position: absolute;
@@ -3606,7 +3597,7 @@
  .testimonial-section .bg-layer:before {
    position: absolute;
    content: '';
-   background:#0bd3d311;
+   background: #0bd3d311;
    width: 100%;
    height: 100%;
    left: 0px;
@@ -4584,6 +4575,10 @@
    background: #f3f3f3;
  }
 
+ .bg-color-10 {
+  background: rgb(0,212,255);
+background: radial-gradient(circle, rgba(0,212,255,0.21614583333333337) 50%, rgba(211,11,164,0.12931109943977592) 56%);
+ }
 
  /** about-style-two **/
 

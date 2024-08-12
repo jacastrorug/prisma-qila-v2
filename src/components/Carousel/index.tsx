@@ -19,7 +19,8 @@ const options: OwlCarouselProps = {
   animateOut: "fadeOut",
   animateIn: "fadeIn",
   smartSpeed: 1000,
-  autoPlay: true,
+  autoplay: true,
+  autoplayTimeout: 5000, 
   children: null,
   navText: [
     '<span class="fal fa-angle-right"></span>',
@@ -46,15 +47,30 @@ function Carousel() {
 
   const banners = [
     {
+      id: "banner_0",
+      imgUrl: "url(/assets/imgs/banner/Miami_banner.png)",
+      title: t("home.carousel.banner_title"),
+      description: t("home.carousel.banner"),
+      btnLabel: t("home.carousel.banner_1_btnLabel"),
+    },  
+    {
       id: "banner_1",
-      imgUrl: "url(/assets/imgs/banner/SliderPisos.png",
+      imgUrl: "url(/assets/imgs/banner/banner-cominSoon.jpg)",
+      title: t("home.carousel.banner_0_title"),
+      description: t("home.carousel.banner_0_description"),
+      link: "#ComingSoon",
+      btnLabel: t("home.carousel.banner_0_btnLabel"),
+    },
+    {
+      id: "banner_2",
+      imgUrl: "url(/assets/imgs/banner/SliderPisos.png)",
       title: t("home.carousel.banner_1_title"),
       description: t("home.carousel.banner_1_description"),
       link: "/services/floor",
       btnLabel: t("home.carousel.banner_1_btnLabel"),
     },
     {
-      id: "banner_2",
+      id: "banner_3",
       imgUrl: "url(/assets/imgs/banner/SliderAlfombras.png)",
       title: t("home.carousel.banner_2_title"),
       description: t("home.carousel.banner_2_description"),
@@ -62,7 +78,7 @@ function Carousel() {
       btnLabel: t("home.carousel.banner_2_btnLabel"),
     },
     {
-      id: "banner_3",
+      id: "banner_4",
       imgUrl: "url(/assets/imgs/banner/SliderLimpiezagral.png)",
       title: t("home.carousel.banner_3_title"),
       description: t("home.carousel.banner_3_description"),
@@ -83,7 +99,7 @@ function Carousel() {
             img={banner.imgUrl}
             title={banner.title}
             description={banner.description}
-            link={banner.link}
+            link={banner?.link}
             btnLabel={banner.btnLabel}
           />
         ))}

@@ -1,6 +1,11 @@
 {
   "home": {
     "carousel": {
+      "banner_0_title":"Grandes Proyectos",
+      "banner_0_description":"Descubre nuestra iniciativa innovadora de limpieza y desinfección no tóxica liderada por Jeams Quiroz, diseñada para hospitales, escuelas, y edificios residenciales. Prioriza la higiene y seguridad sin productos químicos nocivos.",
+      "banner_0_btnLabel":"Conoce más",
+      "banner_title": "Servicios de limpieza diurnos y nocturnos.",
+      "banner":"Prisma Qila ofrece servicios de limpieza regulares durante el día y la noche. Podemos adaptarnos a su horario, ya sea que necesite limpieza durante el día o fuera del horario de atención. Ofrecemos servicios de limpieza y conserjería comercial las 24 horas, los 7 días de la semana, que se adaptan a las necesidades, el presupuesto y el cronograma de sus instalaciones. Podemos satisfacer todas sus necesidades de servicios comerciales de limpieza y mantenimiento y brindarle el mejor valor y servicio disponible. Con sede en Dania Beach, FL, brindamos servicio a los condados de Miami-Dade y Broward.",
       "banner_1_title": "Realizamos mantenimiento y limpieza de pisos",
       "banner_1_description": "Haciendo énfasis en la prevención para mantener la vida útil del material.",
       "banner_1_btnLabel": "Saber más",
@@ -22,7 +27,18 @@
       "banner_6": "Excelente Mantenimiento de piso un cepillado “scrubfloor” profundo todo muy limpio",
       "before": "Antes",
       "after": "Después"
-    }
+    },
+    "comingSoon":{
+        "title": "Grandes Proyectos",
+        "sub_title_1": "Expansión de Servicios",
+        "text_content_1": "Nuestro proyecto principal es ampliar nuestro portafolio para brindar servicios de limpieza y desinfección en escuelas, hospitales, centros médicos y edificios residenciales de alta gama.",
+        "sub_title_2": "Innovación en Limpieza",
+        "text_content_2" :"Jeams Quiroz está liderando una iniciativa innovadora para desarrollar un sistema de limpieza no tóxico y altamente eficiente, especialmente diseñado para entornos de salud como hospitales, oficinas médicas y laboratorios.",
+        "sub_title_3": "Seguridad y Bienestar",
+        "text_content_3": "Este sistema no solo prioriza la higiene y desinfección, sino que también garantiza la seguridad y bienestar de los pacientes y profesionales de la salud al eliminar el uso de productos químicos nocivos.",
+        "sub_title_4": "Calidad y Actualización",
+        "text_content_4": "Como proveedores de limpieza y sanitización de espacios, tenemos presente que hay un amplio territorio que necesita de nuestros servicios. Queremos seguir brindando la mejor calidad y tecnología disponible y estar siempre actualizados para ayudar a reducir la contaminación ambiental."
+      }
   },
   "services": {
     "services_main_title1": "Servicios",

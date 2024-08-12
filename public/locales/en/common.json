@@ -1,6 +1,11 @@
 {
   "home": {
     "carousel": {
+      "banner_0_title": "Great Projects",
+      "banner_0_description": "Discover our innovative non-toxic cleaning and disinfection initiative led by Jeams Quiroz, designed for hospitals, schools, and high-end residential buildings. It prioritizes hygiene and safety without harmful chemicals.",
+      "banner_0_btnLabel": "Learn more",
+      "banner_title": "Daytime and Nighttime Janitorial Services.",
+      "banner": "Prisma Qila provides regular daytime and nighttime janitorial services. We can fit your schedule- whether you need cleaning during the daytime, or after hours. We offer 24/7 commercial cleaning and janitorial services to fit your facility’s needs, budget, and schedule. We can meet all of your commercial janitorial and maintenance services needs and give you the best value and service available. Based out of Dania Beach, FL- we provide service to Miami-Dade and Broward, counties.",
       "banner_1_title": "We do maintenance and floor cleaning",
       "banner_1_description": "Emphasizing prevention to maintain the useful life of the material.",
       "banner_1_btnLabel": "Know more",
@@ -13,7 +18,7 @@
     },
     "testimonials": {
       "title": "TESTIMONIALS",
-      "sub-title":"Our happy customers",
+      "sub-title": "Our happy customers",
       "banner_1": "One hundred percent better, the stains are gone, deep cleaning, and a perfect result",
       "banner_2": "1000% better, almost like new",
       "banner_3": "Professional work, excellent job with highly shiny marble",
@@ -22,6 +27,17 @@
       "banner_6": "Excellent floor maintenance, deep scrubbing, everything is very clean",
       "before": "Before",
       "after": "After"
+    },
+    "comingSoon": {
+      "title": "Major Projects",
+      "sub_title_1": "Service Expansion",
+      "text_content_1": "Our main project is to expand our portfolio to provide cleaning and disinfection services in schools, hospitals, medical centers and high-end residential buildings.",
+      "sub_title_2": "Innovation in Cleaning",
+      "text_content_2": "Jeams Quiroz is leading an innovative initiative to develop a non-toxic and highly efficient cleaning system, especially designed for healthcare environments such as hospitals, medical offices and laboratories.",
+      "sub_title_3": "Safety and Wellbeing",
+      "text_content_3": "This system not only prioritizes hygiene and disinfection, but also ensures the safety and well-being of patients and healthcare professionals by eliminating the use of harmful chemicals.",
+      "sub_title_4": "Quality and Upgrade",
+      "text_content_4": "As a provider of cleaning and sanitization of spaces, we are aware that there is a wide territory that needs our services. We want to continue to provide the best quality and technology available and to be always updated to help reduce environmental pollution."
     }
   },
   "services": {
@@ -41,7 +57,6 @@
     "general_services_description2": "Residential or commercial cleaning service",
     "general_services_description3": "Scrub floors",
     "more_btn": "More"
-
   },
   "contact": {
     "contact_title": "Send us a message",
@@ -65,11 +80,10 @@
     "general_card": "We cleaning your spaces",
     "invoise": "Service quote",
     "schedule": "FREE estimate schedule"
-
   },
   "contact_component": {
     "contact_component_title": "Contact Us",
-    "contact_phone":"Phone number",
+    "contact_phone": "Phone number",
     "contact_email": "Email"
   },
   "layout": {
@@ -87,11 +101,11 @@
   "seconds_text_underConstruction": "Seconds",
   "input_placeholder": "Enter your email",
   "notify_btn": "Notify",
-  "nav_home" : "Home",
+  "nav_home": "Home",
   "nav_services": "Services",
   "nav_contact": "Contact",
   "nav_services_floor": "Floor cleaning and/or maintenance",
   "nav_services_carpets": "Carpet cleaning",
-  "nav_services_general": "General cleaning", 
+  "nav_services_general": "General cleaning",
   "email_success": "Thank you for your message, our team will contact you soon!"
 }

@@ -3,6 +3,7 @@ import Carousel from "@/components/Carousel";
 import { ContactForm } from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import { ServicesList } from "@/components/Services/ServicesList";
+import ComingSoon from "@/components/ComingSoon";
 import Testimonials from "@/components/Testimonials";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -13,6 +14,7 @@ function Home() {
       <Carousel />
       <AboutUs />
       <ServicesList />
+      <ComingSoon />
       <Testimonials />
       <ContactForm />
     </Layout>
