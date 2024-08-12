@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslation } from 'next-i18next';
 import PictureGroup from '../../../public/assets/imgs/groupPicture.jpg'
 import { TiStarFullOutline } from "react-icons/ti";
 import { TiGlobe } from "react-icons/ti";
@@ -8,67 +9,54 @@ import { FaCheckCircle } from "react-icons/fa";
 import { FaLeaf } from "react-icons/fa";
 
 function ComingSoon() {
+  const { t, i18n } = useTranslation("common");
   return (
     <section className="text_container_bigProyects" id="ComingSoon">
-      <h6 className="title_custom ">Grandes Proyectos</h6>
+      <h6 className="title_custom ">{t("home.comingSoon.title")}</h6>
 
       <section className="section_content">
         <div className="section_content_imagen">
-          <Image 
-          alt="photo" 
-          src={PictureGroup} 
-          className="section_content_img"
+          <Image
+            alt="photo"
+            src={PictureGroup}
+            className="section_content_img"
           />
         </div>
         <div className="section_content_text">
-        <article className="article_bigProyects">
-          <div className="article_title">
-            <TiGlobe className="icon" />
-            <h4>Expansión de Servicios</h4>
-          </div>
-          <p>Nuestro proyecto principal es ampliar nuestro portafolio para brindar servicios de limpieza y
-            desinfección en escuelas, hospitales, centros médicos y edificios residenciales de alta gama.
-          </p>
-        </article>
+          <article className="article_bigProyects">
+            <div className="article_title">
+              <TiGlobe className="icon" />
+              <h4>{t("home.comingSoon.sub_title_1")}</h4>
+            </div>
+            <p>{t("home.comingSoon.text_content_1")}</p>
+          </article>
 
-        <article className="article_bigProyects">
-          <div className="article_title">
-            <TiStarFullOutline className="icon" />
-            <h4>Innovación en Limpieza</h4>
-          </div>
-          <p>
-            Jeams Quiroz está liderando una iniciativa innovadora para desarrollar un sistema
-            de limpieza no tóxico y altamente eficiente.
-          </p>
-        </article>
+          <article className="article_bigProyects">
+            <div className="article_title">
+              <TiStarFullOutline className="icon" />
+              <h4>{t("home.comingSoon.sub_title_2")}</h4>
+            </div>
+            <p>{t("home.comingSoon.text_content_2")}</p>
+          </article>
 
-        <article className="article_bigProyects">
-          <div className="article_title">
-            <FaLeaf className="icon" />
-            <h4>Seguridad y Bienestar</h4>
-          </div>
-          <p>
-            Este sistema no solo prioriza la higiene y desinfección, sino que también garantiza
-            la seguridad y bienestar de los pacientes y profesionales de la salud al eliminar
-            el uso de productos químicos nocivos.
-          </p>
-        </article>
+          <article className="article_bigProyects">
+            <div className="article_title">
+              <FaLeaf className="icon" />
+              <h4>{t("home.comingSoon.sub_title_3")}</h4>
+            </div>
+            <p>{t("home.comingSoon.text_content_3")}</p>
+          </article>
 
-        <article className="article_bigProyects">
-          <div className="article_title">
-            <FaCheckCircle className="icon" />
-            <h4>Calidad y Actualización</h4>
-          </div>
-          <p>
-            Como proveedores de limpieza y sanitización de espacios, tenemos presente que hay
-            un amplio territorio que necesita de nuestros servicios. Queremos seguir brindando
-            la mejor calidad y tecnología disponible y estar siempre actualizados para ayudar
-            a reducir la contaminación ambiental.
-          </p>
-        </article>
+          <article className="article_bigProyects">
+            <div className="article_title">
+              <FaCheckCircle className="icon" />
+              <h4>{t("home.comingSoon.sub_title_4")}</h4>
+            </div>
+            <p>{t("home.comingSoon.text_content_4")}</p>
+          </article>
 
         </div>
-       
+
       </section>
 
     </section>
